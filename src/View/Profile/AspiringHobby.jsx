@@ -52,12 +52,16 @@ function AspiringHobby(hobbies) {
   return (
     <>
       <div className="hobbyAspiMainDiv">
+        <div className="flscghujndiv">
         <p className="hobbyAspHead">Hobbies and Personal Information</p>
-        <div className="tyEvMainDiv" onClick={() => setModalN(true)}>
-          <span className="tyEvIcon">
+        <span className="tyEvIcon">
             <i class="fa-solid fa-plus"></i>
           </span>
-          <p className="tyEvText">Add Hobbies and Personal Information</p>
+        </div>
+   
+        <div className="tyEvMainDiv" onClick={() => setModalN(true)}>
+          
+          {/* <p className="tyEvText">Add Hobbies and Personal Information</p> */}
         </div>
 
         <ul>

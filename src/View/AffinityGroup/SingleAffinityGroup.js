@@ -355,6 +355,8 @@ export default function SingleAffinityGroup() {
   return (
     <>
       {/* Sidebar */}
+      <section className="mainpagediv">
+                <div className='mainpagecontainer'>
       <div className="thought_area_mxh-left">
         <div className="singleAffiDiv">
           <div className="groupNameArea">
@@ -559,6 +561,8 @@ export default function SingleAffinityGroup() {
           <HubAffinityGrp getAffinityPosts={getAffinityPosts} />
         </div> */}
       </div>
+      </div>
+      </section>
 
       {/*  ************************ All MODALS * ********************/}
       {

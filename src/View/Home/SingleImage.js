@@ -296,6 +296,8 @@ const SingleImage = () => {
 
     return (
         <>
+              <section className="mainpagediv">
+                <div className='mainpagecontainer'>
             <div className="thought_area_mxh-left">
                 <BulletinBoard />
                 <HallofFame />
@@ -773,7 +775,7 @@ const SingleImage = () => {
                     <div className="goldClubDiv">
                         <div className="goldInnerDiv">
                             <div>
-                                <p className="eliteSubHead">Status</p>
+                                {/* <p className="eliteSubHead">Status</p> */}
                                 <p className="goldClHead">Gold</p>
                             </div>
                             <figure className="goldIconFig">
@@ -814,6 +816,8 @@ const SingleImage = () => {
                     <HubAffinityGrp />
                 </div>
             </div>
+            </div>
+            </section>
         </>
     )
 }

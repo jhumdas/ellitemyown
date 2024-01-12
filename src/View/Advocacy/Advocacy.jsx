@@ -114,9 +114,9 @@ function Advocacy() {
   return (
     <section className="advocacySection">
       <div className="headFirstPart">
-        <div className="custContain">
+        {/* <div className="custContain"> */}
           <GrowWel />
-        </div>
+        {/* </div> */}
       </div>
       <div className="custContain">
         <div className="row">

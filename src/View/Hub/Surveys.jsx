@@ -223,9 +223,9 @@ function Surveys() {
   return (
     <section className="hubNetWorkingSection">
       <div className="headFirstPart">
-        <div className="custContain">
+        {/* <div className="custContain"> */}
           <GrowWel />
-        </div>
+        {/* </div> */}
       </div>
       <div className="networkSecPart">
         <div className="custContain">

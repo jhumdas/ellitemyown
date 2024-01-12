@@ -261,7 +261,7 @@ a {
   background: #ffffff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.06);
   border-radius: 5px;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   /* padding-bottom: 10px; */
 }
 
@@ -281,6 +281,11 @@ a {
   border-radius: 0.5rem;
   cursor: pointer;
   transition: 0.5s;
+}
+.flscghujndiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .engagement-calender:hover {
@@ -352,7 +357,7 @@ a {
 .bulletin_board .bottom {
   width: 100%;
   max-height: 113px;
-  padding: 0px 10px 0px 25px;
+  padding: 0px 10px 0px 12px;
   overflow-y: hidden;
 }
 
@@ -621,7 +626,7 @@ a {
   background: #ffffff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.06);
   border-radius: 5px;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   overflow: hidden;
   padding-bottom: 10px;
 }
@@ -670,9 +675,9 @@ a {
 
 #halloof_fame .bottom_area {
   width: 100%;
-  height: 257px;
+  /* height: 257px; */
   padding: 0px 18px 0px 22px;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 #halloof_fame .bottom_area .main {
@@ -828,9 +833,11 @@ a {
 
 .hallofdllsdiv {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   flex-wrap: wrap;
   justify-content: flex-start;
+  height: auto;
+  overflow-y: auto;
 }
 
 .hallofmain {
@@ -1711,6 +1718,8 @@ a {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.06);
   border-radius: 5px;
   margin-bottom: 20px;
+  height: 300px;
+  overflow-y: hidden;
 }
 
 .iniSusTabDiv .react-tabs__tab-list {
@@ -1760,18 +1769,20 @@ a {
 
 #initiative_sec .bottom_ara {
   width: 100%;
-  max-height: 14rem;
+  /* max-height: 14rem; */
   padding: 20px 20px 0px;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 #initiative_sec .bottomdiv_ara {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   flex-wrap: wrap;
   padding: 15px 15px 0px 25px;
-  gap:1%
+  gap: 1%;
+  height:auto;
+  overflow-y: auto;
 }
 
 #initiative_sec .bottom_ara .card_area {
@@ -1934,7 +1945,7 @@ a {
   background: #ffffff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.06);
   border-radius: 10px;
-  margin-bottom: 29px;
+  margin-bottom: 20px;
   max-width: 100%;
 }
 
@@ -2222,7 +2233,7 @@ a {
   background: #ffffff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.06);
   border-radius: 10px;
-  margin-bottom: 29px;
+  margin-bottom: 25px;
 }
 
 #sara_tylor .top_area {
@@ -2686,7 +2697,8 @@ a {
   animation-timing-function: ease-out;
   animation-iteration-count: infinite;
 }
-.scrolltop_btn .chatbtimg img{
+
+.scrolltop_btn .chatbtimg img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -3356,6 +3368,15 @@ a {
   flex-wrap: wrap;
   padding: 18px 5px 18px 23px;
   width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+}
+.eventbottom::-webkit-scrollbar {
+  display: none;
+}
+.eventbottom {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .bulletin_board .eventbottom .card_area_event {
@@ -5415,7 +5436,7 @@ a {
   }
 
   #training_card {
-    display: none;
+    display: block;
   }
 
   #jobs_referred {
@@ -5451,9 +5472,9 @@ a {
     height: 90%;
   }
 
-  #initiative_sec .bottom_ara {
+  /* #initiative_sec .bottom_ara {
     height: 90%;
-  }
+  } */
 
   #GoalAchiver .bottom {
     max-height: 90%;
@@ -5486,6 +5507,30 @@ a {
 }
 
 @media (max-width: 767px) {
+  #initiative_sec .bottomdiv_ara {
+   flex-wrap: wrap;
+    height: auto;
+    overflow-y: auto;
+}
+#initiative_sec .bottom_ara .card_area_indtls {
+  width: 100%;
+  max-width: 48%;
+  height: auto;
+  border-radius: 10px;
+  padding: 11px 16px;
+  margin-bottom: 18px;
+  position: relative;
+}
+#initiative_sec .bottomdiv_ara {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  padding: 15px 15px 40px 25px;
+  gap: 1%;
+  height: auto;
+  overflow-y: auto;
+}
   #share_thoughts .bottom {
     flex-wrap: wrap;
   }
@@ -5945,15 +5990,7 @@ input[type="number"] {
     padding: 50px;
   }
 
-  .hallofmain {
-    width: 100%;
-    max-width: 31%;
-    background-color: #fff;
-    box-shadow: 0px 0px 5px 0px #ccc;
-    margin: 10px;
-    border-radius: 10px;
-    padding: 8px;
-  }
+
 }
 
 @media(max-width:991px) {
@@ -6500,6 +6537,15 @@ input[type="number"] {
     font-size: 11px;
     line-height: 18px;
   }
+  #initiative_sec .bottom_ara .card_area_indtls {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 11px 16px;
+    margin-bottom: 18px;
+    position: relative;
+}
 }
 
 @media(max-width:450px) {
@@ -6913,7 +6959,7 @@ body {
 .goldClubDiv {
   background-color: #f0bc55;
   border-radius: 8px;
-  height: 170px;
+  height: 146px;
   padding: 10px;
   width: 100%;
 }
@@ -6929,7 +6975,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 19px;
+  padding-top: 5px;
 }
 
 .cardNumbText {
@@ -7410,6 +7456,16 @@ body {
     margin-right: 22px;
   }
 
+  .hallofmain {
+    width: 100%;
+    max-width: 31%;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px #ccc;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 8px;
+  }
+
   .eventbottom {
     display: flex;
     justify-content: flex-start;
@@ -7533,6 +7589,16 @@ body {
     padding: 10px;
     margin-right: 22px;
   }
+
+  .hallofmain {
+    width: 100%;
+    max-width: 46%;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px #ccc;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 8px;
+  }
 }
 
 @media(max-width:767px) {
@@ -7561,6 +7627,16 @@ body {
   .bulletin_board .eventbottom .card_area_event .hosted p {
     font-size: 11px;
     padding-bottom: 5px;
+  }
+
+  .hallofmain {
+    width: 100%;
+    max-width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px #ccc;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 8px;
   }
 }
 

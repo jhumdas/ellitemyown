@@ -1,8 +1,8 @@
 .headFirstPart {
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 10px 10px 0px 0px;
     width: 100%;
-    padding: 120px 0 30px 0;
+    /* padding: 120px 0 30px 0; */
 }
 
 .hubGrowHead {
@@ -526,6 +526,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap:3%;
 }
 
 .mrkMiddleInnerDivsAn {
@@ -2786,6 +2787,17 @@
 }
 
 @media (max-width: 1199px) {
+    .myevetCresParentDiv {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        /* align-items: center; */
+        padding: 10px 15px 30px 24px;
+        gap: 1%;
+        width: 100%;
+        height: 100vh;
+        overflow-y: auto;
+    }
     .mrkMiddleInnerDivsAn {
         width: 32%;
         margin-right: 11px !important;
@@ -3061,6 +3073,17 @@
 }
 
 @media (max-width: 991px) {
+    .myevetCresParentDiv{
+       flex-wrap: wrap;
+    }
+    .evetCreMainDivdtls {
+        background-color: #F1E5DD;
+        width: 100%;
+        max-width: 48%;
+        padding: 12px 0;
+        border-radius: 6px;
+        margin-bottom: 15px;
+    }
     .champMainDiv {
         width: 48%;
     }
@@ -3377,6 +3400,18 @@
 }
 
 @media (max-width: 479px) {
+    .evetCreMainDivdtls {
+        background-color: #F1E5DD;
+        width: 100%;
+        max-width: 100%;
+        padding: 12px 0;
+        border-radius: 6px;
+        margin-bottom: 15px;
+    }
+    .myimgdiv {
+        width: 77px;
+        height: 78px;
+    }
     .evntMarLedDiv {
         width: 100%;
     }

@@ -244,9 +244,9 @@ function NetWorking() {
   return (
     <section className="hubNetWorkingSection">
       <div className="headFirstPart">
-        <div className="custContain">
+       
           <GrowWel />
-        </div>
+       
       </div>
       <div className="networkSecPart">
         <div className="custContain">

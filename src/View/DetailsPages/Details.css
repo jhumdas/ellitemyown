@@ -30,9 +30,9 @@
     color: #1D36AD;
 }
 
-.bulleDetail #halloof_fame .bottom_area {
+/* .bulleDetail #halloof_fame .bottom_area {
     height: auto;
-}
+} */
 
 .bulleDetail #halloof_fame {
     display: block;
@@ -72,6 +72,8 @@
     /* align-items: center; */
     flex-wrap: wrap;
     gap: 1%;
+    height: 100vh;
+    overflow-y: auto;
 }
 #GoalAchiver .bottomsustaldiv .mainssutandiv {
     width: 100%;
@@ -249,8 +251,8 @@
     background: #ebffe7;
     border-radius: 3px;
     margin-bottom: 15px;
-    margin-top: 15px 
-    
+    margin-top: 15px;
+    border-radius: 5px;
 }
 #jobs_referred .bottom_area_details .mainjobsreferred .top {
     width: 100%;
@@ -274,7 +276,8 @@
     /* justify-content: space-between; */
     align-items: center;
     flex-wrap: wrap;
-    
+    height: 100vh;
+    overflow-y: auto;
 }
 .bulleDetail .card_area_bullentindetails{
     margin-right: 14px;
@@ -342,6 +345,17 @@
     font-size: 14px;
     line-height: 18px;
 }
+.jobsrfrdtsdiv{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.hedrtxtdibpp{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #000;
+}
 
 /* .vsmodalcntnt{
     width: 100%;
@@ -371,15 +385,37 @@
         width: 100%;
         max-height: 113px;
         padding: 0px 0px 0px 30px;
-        overflow-y: hidden;
+        /* overflow-y: hidden; */
     }
 }
 @media(max-width:991px){
     .bulletin_board .bottom {
         width: 100%;
         max-height: 113px;
-        padding: 0px 15px 0px 30px;
-        overflow-y: hidden;
+        padding: 10px 15px 15px 30px;
+        /* overflow-y: hidden; */
+    }
+    .bulleDetail #jobs_referred .bottom_area_details {
+        flex-wrap: wrap;
+        padding: 15px 15px;
+    }
+    .mainjobsreferred {
+        width: 100%;
+        max-width: 48%;
+        background: #ebffe7;
+        border-radius: 3px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+    #GoalAchiver .bottomsustaldiv{
+        flex-wrap: wrap;
+        padding: 20px 16px 45px 25px;
+    }
+    #GoalAchiver .bottomsustaldiv .mainssutandiv {
+        width: 100%;
+        max-width: 48%;
+  
     }
 }
 @media(max-width:767px){
@@ -387,17 +423,48 @@
         margin-right: 14px;
         max-width: 47%;
     }
+    .mainjobsreferred {
+        width: 100%;
+        max-width: 100%;
+        background: #ebffe7;
+        border-radius: 3px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+    .bottomtrainin{
+        flex-wrap: wrap;
+    }
+    #training_card .bottomtrainin .card_area_dtlstraing {
+        width: 100%;
+        max-width: 48%;
+        height: auto;
+        background: #ffebeb;
+        border-radius: 10px;
+        padding: 10px;
+        /* flex-wrap: wrap; */
+    }
+  
 }
 @media(max-width:576px){
     .bulletin_board .bottom {
         width: 100%;
         max-height: 113px;
-        padding: 0px 0px 0px 30px;
-        overflow-y: hidden;
+        padding: 10px 0px 15px 30px;
+        /* overflow-y: hidden; */
     }
     .bulleDetail .card_area_bullentindetails {
         margin-right: 14px;
         max-width: 45%;
+    }
+    #training_card .bottomtrainin .card_area_dtlstraing {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        background: #ffebeb;
+        border-radius: 10px;
+        padding: 10px;
+        /* flex-wrap: wrap; */
     }
 }
 @media(max-width:420px){
@@ -408,7 +475,13 @@
     .bulletin_board .bottom {
         width: 100%;
         max-height: 113px;
-        padding: 0px 0px 0px 13px;
-        overflow-y: hidden;
+        padding: 10px 0px 15px 13px;
+        /* overflow-y: hidden; */
+    }
+    .hedrtxtdibpp{
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 18px;
+        color: #000;
     }
 }

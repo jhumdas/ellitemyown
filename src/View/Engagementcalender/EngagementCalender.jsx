@@ -214,17 +214,13 @@ function EngagementCalender() {
   return (
     <>
       <section className="engaghementmaindiv">
-        <div className="headFirstPart">
-          <div className="custContain">
-            <GrowWel />
-          </div>
-        </div>
+     
         <section id="usrclndr">
-          {/* <div className="headFirstPart">
-          <div className="custContain">
+          <div className="headFirstPart">
+          
             <GrowWel />
-          </div>
-        </div> */}
+      
+        </div>
           <div className="">
             <div className="custContain">
               <div className="row">
@@ -599,13 +595,13 @@ function EngagementCalender() {
                     </table>
                   </div> */}
                     {/* </div> */}
-                    <button
+                    {/* <button
                       type="button"
                       class="mb-2 btn btn-primary"
                       onClick={HandleAgenda}
                     >
                       View Event
-                    </button>
+                    </button> */}
                     <BigCalender fetchcalenderdata={fetchcalenderdata} />
                   </div>
                 </div>
