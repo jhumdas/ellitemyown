@@ -1,0 +1,226 @@
+.hallOfFrmeModal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: #00000069;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hallOfFrameInner {
+    max-width: 500px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    min-height: 200px;
+}
+
+.newBulleBrodHead {
+    color: #263238;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 27px;
+}
+
+.bulleBrodCloseBtn {
+    background-color: transparent;
+    border: 0;
+    color: red;
+    font-size: 25px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.emplListDiv {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.empListSubHead {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Plus Jakarta Sans';
+    margin: 0 0 5px 0;
+}
+
+.empListSelect {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Plus Jakarta Sans';
+    outline: none;
+    border: 1px solid #00000070;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.empListTextArea {
+    width: 100%;
+    resize: none;
+    border: 1px solid #00000070;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.viedetailsmain{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #00000069;
+    position: fixed;
+}
+.viewdetailscontent{
+    width: 100%;
+    max-width: 35%;
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px #ccc;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+
+}
+.closemarkdst{
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    z-index: 5;
+}
+.closemarkdst i{
+    font-size: 14px;
+    color: rgb(231, 0, 0);
+    cursor: pointer;
+}
+.askmodal{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: fixed;
+    background-color: #00000069;
+    z-index: 99;
+}
+.askmodalcontent{
+    width: 100%;
+    max-width: 35%;
+    background-color: #fff;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    /* padding: 20px; */
+}
+
+.askhdtxt h4{
+    font-size: 18px;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    border-bottom: 1px solid rgba(198, 198, 210, 0.48);
+}
+.closemarkivpnj{
+    position: absolute;
+    z-index: 99;
+    top: 10px;
+    right: 10px;
+}
+.closemarkivpnj i{
+    color: red;
+    font-size: 14px;
+}
+.askquestion{
+    /* border: 1px solid #000; */
+    /* border: 1px solid #00000078; */
+    padding: 10px 15px;
+    margin: 10px 11px;
+ 
+}
+.asktxtpop p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+.asktstxarea {
+    width: 100%;
+    padding-bottom: 15px;
+}
+.asktstxarea textarea{
+    padding: 10px;
+    width: 100%;
+    resize: none;
+    border: none;
+
+}
+.sbmtbtnsbmt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bec3c961;
+    padding: 10px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+}
+.flxdivbgth{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2%;
+}
+.connrtybhr{
+    width: 100%;
+    max-width: 13%;
+    min-width: 14%;
+    height: 59px;
+
+}
+.connrtybhr img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.asktstxarea ::placeholder {
+    color: #d3a145;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+@media (max-width: 575px) {
+    .hallOfFrmeModal {
+        padding: 0 15px;
+    }
+}

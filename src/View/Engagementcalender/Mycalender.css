@@ -1,0 +1,1208 @@
+/* #usrclndr {
+  margin-bottom: 40px;
+  margin-top: 100px;
+} */
+.engaghementmaindiv{
+  margin-bottom: 40px;
+  /* margin-top: 100px; */
+}
+#usrclndr .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#usrclndr .user_left {
+  max-width: 1203px;
+  width: 100%;
+  height: 125vh;
+  overflow-x: auto;
+}
+
+.engagementPlacecard h3 {
+  font-size: 22px;
+  padding-top: 17px;
+  line-height: 28px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#usrclndr .user_left::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#usrclndr .user_left {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+#usrclndr .user_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 2%;
+  padding-top: 15px;
+  position: relative;
+
+}
+
+#usrclndr .user_about {
+  max-width: 27%;
+  width: 100%;
+  padding-top: 65px;
+  /* margin-right: 7px; */
+  /* background: #FFFFFF;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.06); */
+  /* background-color: #fff; */
+  /* padding: 10px;
+  border-radius: 10px; */
+  /* display: flex;
+  flex-direction: column; */
+}
+
+
+#usrclndr .user_image {
+  width: 150px;
+  height: 150px;
+  margin: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: -55px;
+  /* position: absolute;
+  top: -48px; */
+}
+
+#usrclndr .user_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+#usrclndr .user_about h4 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 25px;
+  color: #0E24CC;
+  text-align: left;
+  padding-top: 6px;
+  margin: 0;
+  /* text-align: center; */
+}
+
+#usrclndr .user_about h5 {
+  font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 34px;
+    color: #263238;
+    text-align: left;
+    padding-top: 1px;
+    margin: 0;
+}
+
+#usrclndr .user_about h6 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  text-align: center;
+  color: #263238;
+  padding-top: 4px;
+  margin: 0;
+}
+
+#usrclndr .user_helpdesk {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  height: 145px;
+  padding: 14px;
+  width: 100%;
+}
+
+#usrclndr .user_helpdesk .top_desk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#usrclndr .user_helpdesk .desk_image {
+  width: 68px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#usrclndr .user_helpdesk .desk_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#usrclndr .user_helpdesk .help_text {
+  width: 100%;
+  padding-left: 14px;
+
+}
+
+#usrclndr .user_helpdesk .form input {
+  max-width: 603px;
+  width: 100%;
+  height: 73px;
+  box-shadow: none;
+  outline: 0;
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: rgba(38, 50, 56, 0.45);
+}
+
+#usrclndr .user_helpdesk .bottom_desk {
+  padding-top: 7px;
+  padding-left: 14px;
+  padding-right: 7px;
+  padding-bottom: 0px;
+}
+
+/* #usrclndr .user_helpdesk .helps {
+  display: flex;
+  justify-content: space-between;
+} */
+
+#usrclndr .user_helpdesk .helps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ask_hr {
+
+  display: flex;
+  justify-content: center;
+  padding-right: 9px;
+  align-items: center;
+
+}
+
+#usrclndr .user_helpdesk .ask_image img {
+  width: 26px;
+  height: 27px;
+  overflow: hidden;
+}
+
+#usrclndr .user_helpdesk .ask_text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #238EE5;
+  padding-left: 8px;
+}
+
+#usrclndr .user_helpdesk .card_image img {
+  width: 26px;
+  height: 28px;
+  overflow: hidden;
+}
+
+#usrclndr .user_helpdesk .elite_text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 275;
+  font-size: 16px;
+  line-height: 30px;
+  color: #CC051C;
+  padding-left: 7px;
+}
+
+#usrclndr .user_helpdesk .card_text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 275;
+  font-size: 16px;
+  line-height: 30px;
+  color: #0E24CC;
+}
+
+#usrclndr .post_card {
+  display: flex;
+  align-items: center;
+  padding-right: 9px;
+}
+
+#usrclndr .user_helpdesk .event_image img {
+  width: 28px;
+  height: 29px;
+  overflow: hidden;
+}
+
+#usrclndr .user_helpdesk .event_text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 275;
+  font-size: 16px;
+  line-height: 30px;
+  color: #0E24CC;
+  padding-left: 5px;
+  padding-right: 11px;
+}
+
+#usrclndr .user_helpdesk .post_btn {
+  width: 90px;
+  height: 36px;
+  background: #0E24CC;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#usrclndr .admin_calender {
+  padding-top: 18px;
+  max-width: 1083px;
+  width: 100%;
+}
+
+#usrclndr .admin_calender .calender_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  /* max-width: 1083px;
+    width: 100%; */
+  padding: 23px;
+}
+
+#usrclndr .admin_calender .calender_head .calender_date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#usrclndr .admin_calender .form {
+  position: relative;
+}
+
+#usrclndr .admin_calender .form input {
+  width: 376px;
+  height: 44px;
+  border: 1px solid #E2E2EA;
+  border-radius: 8px;
+  box-shadow: none;
+  outline: 0;
+  padding-left: 54px;
+}
+
+#usrclndr .admin_calender .form input::placeholder {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #949494;
+}
+
+#usrclndr .admin_calender .search_icon {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  right: 16px;
+  bottom: 15px;
+  width: 16px;
+  height: 16px;
+  color: #949494;
+  /* border: 1px solid #949494; */
+}
+
+#usrclndr .table-bordered th {
+  /* border:none; */
+}
+
+#usrclndr .month_name {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #263238;
+}
+
+#usrclndr .table td {
+  padding: 0 4px;
+  margin: 0;
+}
+
+#usrclndr .admin_calender .day_name {
+  max-width: 150px;
+  width: 100%;
+  height: 160px;
+  min-width: 134px;
+  border: 1px solid #cbcbcf;
+  text-align: center;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #404040;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#usrclndr .admin_calender .table_date {
+  max-width: 150px;
+  width: 100%;
+  height: 160px;
+  min-width: 134px;
+  border: 1px solid #cbcbcf;
+  text-align: center;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #303030;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+/* .day_name{
+  
+  } */
+
+#usrclndr .admin_calender .cell_image img {
+  width: 114px;
+  height: 76px;
+  overflow: hidden;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+#usrclndr .admin_calender .green_box .cell_image img {
+  width: 123px;
+  height: 70px;
+  overflow: hidden;
+  margin-top: 18px;
+  margin-bottom: 13px;
+}
+
+#usrclndr .admin_calender .table_icon img {
+  width: 24px;
+  height: 20px;
+  overflow: hidden;
+  margin-right: 23px;
+}
+
+#usrclndr .admin_calender .fb_icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-color: #3c579e;
+  color: #fff;
+}
+
+#usrclndr .admin_calender .twitter_icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-color: #55acef;
+  color: #fff;
+}
+
+#usrclndr .admin_calender .linkdin_icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-color: #0076b4;
+  color: #fff;
+}
+
+#usrclndr .admin_calender .blue_box {
+  max-width: 142px;
+  width: 100%;
+  height: 80px;
+  display: inline-block;
+  background: #138BFB;
+  border-radius: 4px;
+  padding: 6px 6px 6px 7px;
+  vertical-align: middle;
+  margin-top: 57px;
+}
+
+#usrclndr .admin_calender .yellow_box {
+  width: 100%;
+  height: 56px;
+  display: inline-block;
+  background: #FFAE00;
+  border-radius: 4px;
+  padding: 5px 6px 6px 7px;
+  vertical-align: middle;
+  margin-top: 78px;
+}
+
+#usrclndr .admin_calender .blue_box h5 {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  /* font-size: 14px; */
+  font-size: 12px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  -webkit-line-clamp: 3;
+  height: 44px;
+
+}
+
+#usrclndr .admin_calender .blue_box h6 {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  /* font-size: 10px; */
+  font-size: 8px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+#usrclndr .admin_calender .yellow_box h5 {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  /* font-size: 14px; */
+  font-size: 12px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+#usrclndr .admin_calender .yellow_box h6 {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  font-size: 8px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+#usrclndr .admin_calender .white_box {
+  width: 100%;
+  height: 130px;
+  background: #F4FBF8;
+  border-radius: 4px;
+  margin-top: 5px;
+
+}
+
+#usrclndr .admin_calender .white_box h5 {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+#usrclndr .admin_calender .green_box {
+  width: 100%;
+  height: 135px;
+  background: #037F4C;
+  border-radius: 4px;
+  margin-top: 26px;
+}
+
+#usrclndr .admin_calender .green_box p {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #F4F9FB;
+  margin: 0;
+  padding-top: 73px;
+  padding-left: 12px;
+  padding-right: 15px;
+  padding-bottom: 11px;
+
+}
+
+#usrclndr .prev_icon {
+  text-align: center;
+  padding-right: 20px;
+}
+
+#usrclndr .right_icon {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+#usrclndr .prev_icon i {
+  width: 26px;
+  height: 26px;
+  background: #FFFFFF;
+  border: 0.894447px solid #949494;
+  border-radius: 50%;
+  line-height: 25px;
+  color: #949494;
+}
+
+#usrclndr .right_icon i {
+  width: 26px;
+  height: 26px;
+  background: #FFFFFF;
+  border: 0.894447px solid #949494;
+  border-radius: 50%;
+  line-height: 25px;
+  color: #949494;
+}
+
+#engagementevent_card {
+  background-image: url(../../Images/event_background.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 213px;
+  border-radius: 12px;
+  padding: 0 20px;
+}
+
+#engagementevent_card .card_top {
+  display: flex;
+  justify-content: space-between;
+}
+
+#engagementevent_card h4 {
+  padding-top: 35px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+#engagementevent_card .card_top .circle {
+  width: 56px;
+  height: 56px;
+  background: #F0F0F0;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.11);
+  border-radius: 50%;
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.engageEvFig {
+  width: 35px;
+  height: 35px;
+  margin: 0;
+}
+
+.engageEvFig img {
+  width: 100%;
+  height: 100%;
+}
+
+#engagementevent_card .card_top .text_e {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 55px;
+  color: #3F3F3F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#engagementevent_card .progress {
+  height: 12px;
+  margin-top: 25px;
+}
+
+#engagementevent_card .progress-bar {
+  background: #263238;
+  border-radius: 29px;
+  height: 12px;
+}
+
+#engagementevent_card h6 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  color: #FFFFFF;
+  padding-top: 8px;
+}
+
+#engagementevent_card .card_bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#engagementevent_card .card_bottom .flag_icon img {
+  width: 11px;
+  height: 13px;
+  overflow: hidden;
+}
+
+#engagementevent_card .card_bottom h6 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  color: #FFFFFF;
+  padding-left: 10px;
+  padding-top: 0;
+}
+
+.engagementPlacecard {
+  background: url(../../Images/engagementplace.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 193px;
+  border-radius: 12px;
+  padding: 10px 20px;
+}
+
+.engagementPlacecard p {
+  color: #ADBDC6;
+  font-family: 'Plus Jakarta Sans';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.engagementPlacecard h4 {
+  color: #000;
+  font-family: 'Plus Jakarta Sans';
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 37px;
+  padding-top: 30px;
+}
+
+.rbc-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+  background-color: #fff !important;
+  padding: 12px !important;
+}
+
+.rbc-month-view {
+
+  border: 1px solid #0000002e !important;
+
+}
+
+.rbc-header {
+  border-bottom: 1px solid #0000002e !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  background-color: aliceblue !important;
+}
+
+.rbc-calendar {
+  width: 100%;
+  height: 100vh;
+}
+
+.rbc-toolbar button:active {
+  background-color: #0e24cc !important;
+  border-color: #adadad !important;
+  color: #fff !important;
+}
+
+.rbc-toolbar button.rbc-active {
+  background-color: #0e24cc !important;
+  border-color: #adadad !important;
+  color: #fff !important;
+}
+
+.rbc-toolbar button:focus {
+  background-color: #0e24cc !important;
+  border-color: #adadad !important;
+  color: #fff !important;
+}
+
+.rbc-header+.rbc-header {
+  border-left: 1px solid #0000002e !important;
+}
+
+.rbc-month-row+.rbc-month-row {
+  border-top: 1px solid #0000002e !important;
+}
+
+.rbc-day-bg+.rbc-day-bg {
+  border-left: 1px solid #0000002e !important;
+}
+
+.rbc-date-cell {
+  text-align: center !important;
+  padding-top: 4px;
+}
+
+.rbc-toolbar {
+  margin-bottom: 0px !important;
+}
+
+.user_right {
+  height: 125vh;
+  overflow-y: auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.user_right::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.user_right {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.rbc-month-view {
+  background-color: #fff !important;
+}
+
+.rbc-today {
+  background-color: #b2ddfd !important;
+}
+
+@media(max-width:1399px) {
+  #highlighted_events .top {
+    width: 100%;
+    height: auto;
+    padding: 10px 20px 10px 20px;
+    border-bottom: 1px solid rgba(198, 198, 210, 0.26);
+  }
+}
+
+
+@media(max-width:1199px) {
+  #usrclndr .user_about h4 {
+    font-size: 23px;
+    line-height: 28px;
+    /* text-align: center; */
+}
+#usrclndr .user_about h5 {
+  font-size: 20px;
+  line-height: 34px;
+
+}
+  .rbc-toolbar {
+    font-size: 14px;
+  }
+
+  #usrclndr .user_helpdesk .desk_image {
+    width: 55px;
+    height: 49px;
+
+  }
+
+  #usrclndr .user_helpdesk .form input {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  #usrclndr .user_helpdesk .ask_image img {
+    width: 22px;
+    height: 23px;
+
+  }
+
+  #usrclndr .user_helpdesk .ask_text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  #usrclndr .user_helpdesk .card_image img {
+    width: 22px;
+    height: 23px;
+  }
+
+  #usrclndr .user_helpdesk .elite_text {
+    font-size: 14px;
+
+  }
+
+  #usrclndr .user_helpdesk .card_text {
+    font-size: 14px;
+
+  }
+
+  #usrclndr .user_helpdesk .event_image img {
+    width: 22px;
+    height: 23px;
+
+  }
+
+  #usrclndr .user_helpdesk .event_text {
+    font-size: 14px;
+  }
+
+  #usrclndr .user_helpdesk .post_btn {
+    width: 68px;
+    height: 29px;
+    font-size: 15px;
+    line-height: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  #usrclndr .user_image {
+    width: 136px;
+    height: 138px;
+    margin: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: -55px;
+}
+}
+
+@media(max-width:991px) {
+  #usrclndr .user_image {
+    width: 136px;
+    height: 138px;
+    margin: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: -36px;
+}
+}
+
+@media(max-width:768px) {
+  #usrclndr .user_about {
+    max-width: 100%;
+    width: 100%;
+    margin-right: 4px;
+    flex-direction: row;
+  }
+
+  .prfl_all_txt {
+    /* display: flex; */
+    align-items: baseline;
+    padding-top: 6px;
+    width: 100%;
+    gap: 8%;
+    /* flex-wrap: wrap; */
+  }
+  #usrclndr .user_image {
+    width: 100px;
+    height: 103px;
+    margin: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: -36px;
+}
+
+  #usrclndr .user_about h4 {
+    font-size: 21px;
+    line-height: 28px;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+
+  #usrclndr .user_about h5 {
+    font-size: 21px;
+    line-height: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+  }
+  #usrclndr .user_about {
+    max-width: 100%;
+    width: 100%;
+    padding-top: 53px;
+    padding-bottom: 20px;
+    /* margin-right: 7px; */
+    /* background-color: #fff; */
+}
+
+  #usrclndr .user_about h6 {
+    font-size: 13px;
+    line-height: 18px;
+    margin-left: 5px;
+
+  }
+
+  /* #usrclndr .user_image {
+    width: 44px;
+    height: 43px;
+    margin: 0;
+  } */
+
+  #usrclndr .user_helpdesk .form input {
+    font-size: 16px;
+    line-height: 22px;
+    height: 43px;
+  }
+
+  /* #usrclndr .user_helpdesk .helps{
+  flex-wrap: wrap;
+} */
+  .ask_hr {
+    padding-right: 3px;
+  }
+
+  #usrclndr .user_helpdesk .bottom_desk {
+    padding-left: 8px;
+    padding-right: 5px;
+    padding-top: 25px;
+  }
+
+  #usrclndr .user_helpdesk .post_btn {
+    width: 48px;
+    height: 27px;
+    font-size: 13px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+    padding-top: 6px;
+  }
+
+  #usrclndr .user_helpdesk .desk_image {
+    width: 49px;
+    height: 41px;
+  }
+
+  .rbc-toolbar {
+    flex-wrap: wrap !important;
+    font-size: 13px !important;
+  }
+
+  .rbc-toolbar .rbc-toolbar-label {
+    text-align: center;
+  }
+
+  /* #usrclndr .user_wrap {
+  flex-wrap: wrap;
+} */
+  /* #usrclndr .user_helpdesk .helps{
+justify-content: space-around;
+    flex-wrap: wrap;
+} */
+  #usrclndr .user_helpdesk {
+    padding: 10px;
+    height: 132px;
+    margin-top: 10px;
+  }
+
+  #usrclndr .user_helpdesk .top_desk {
+    align-items: baseline;
+    padding-top: 10px;
+
+  }
+
+  #usrclndr .user_wrap {
+    flex-wrap: wrap;
+  }
+
+  .rbc-btn-group {
+    padding-top: 10px;
+  }
+
+}
+
+
+@media(max-width:577px) {
+  .prfl_all_txt {
+    gap: 3%;
+  }
+
+  /* #usrclndr .user_about h4 {
+    font-size: 13px;
+    line-height: 21px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #usrclndr .user_about h5 {
+    font-size: 12px;
+    line-height: 18px;
+    margin-left: 3px;
+    margin-right: 3px;
+  } */
+
+  #usrclndr .user_about h6 {
+    font-size: 12px;
+    line-height: 18px;
+    margin-left: 4px;
+  }
+
+  /* #usrclndr .user_image {
+    width: 39px;
+    height: 36px;
+    margin: 0;
+  } */
+
+  .prfl_all_txt {
+    padding-top: 1px;
+  }
+
+  #usrclndr .user_helpdesk .bottom_desk {
+    padding-top: 6px;
+  }
+
+  .ask_hr {
+    flex-wrap: wrap;
+  }
+
+  #usrclndr .post_card {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media(max-width:481px) {
+  .prfl_all_txt {
+    flex-wrap: wrap;
+  }
+/* 
+  #usrclndr .user_image {
+    width: 58px;
+    height: 48px;
+    margin: 5px 5px;
+  } */
+
+  #usrclndr .user_helpdesk .form input {
+    font-size: 15px;
+    line-height: 22px;
+    /* text-align: center; */
+  }
+
+  #usrclndr .user_helpdesk .top_desk {
+    flex-wrap: wrap;
+  }
+
+  #usrclndr .user_helpdesk .desk_image {
+    width: 51px;
+    height: 48px;
+  }
+
+  #usrclndr .user_helpdesk {
+    padding: 10px;
+    height: 191px;
+    margin-top: 10px;
+  }
+
+  #usrclndr .user_helpdesk .help_text {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  #usrclndr .user_helpdesk .helps {
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width:421px) {
+  .rbc-toolbar {
+    flex-wrap: wrap !important;
+    font-size: 11px !important;
+  }
+
+  .rbc-toolbar button {
+    padding: 4px !important;
+  }
+
+  #usrclndr .user_helpdesk .form input {
+    font-size: 12px;
+    line-height: 15px;
+    /* text-align: center; */
+  }
+
+  #usrclndr .user_helpdesk .ask_image img {
+    width: 18px;
+    height: 20px;
+  }
+
+  #usrclndr .user_helpdesk .ask_text {
+    font-size: 11px;
+    line-height: 24px;
+  }
+
+  #usrclndr .user_helpdesk .card_image img {
+    width: 18px;
+    height: 20px;
+  }
+
+  #usrclndr .user_helpdesk .elite_text {
+    font-size: 12px;
+  }
+
+  #usrclndr .user_helpdesk .card_text {
+    font-size: 12px;
+  }
+
+  #usrclndr .user_helpdesk .event_image img {
+    width: 18px;
+    height: 20px;
+  }
+
+  #usrclndr .user_helpdesk .event_text {
+    font-size: 12px;
+  }
+
+  #usrclndr .user_helpdesk .post_btn {
+    width: 67px;
+  }
+
+  .rbc-toolbar-label {
+    font-size: 12px;
+    padding-top: 10px !important;
+  }
+}

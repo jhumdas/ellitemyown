@@ -1,0 +1,663 @@
+.employTableSection {
+    padding-top: 120px;
+    margin-bottom: 30px;
+}
+
+.creEmpTeamDiv {
+    border-radius: 5px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.06);
+    padding: 22px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.creTeEmSpan {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 15px;
+}
+
+.creTeEmBtn {
+    background-color: #0E24CC;
+    border: 0;
+    font-size: 16px;
+    border-radius: 50%;
+    color: #fff;
+    width: 28px;
+    height: 28px;
+}
+
+.creEmpTeamMemberDiv {
+    margin-bottom: 30px;
+}
+
+.empCalenderDiv .react-calendar__tile--now {
+    background-color: #0E24CC !important;
+    border-radius: 5px;
+    color: #fff !important;
+}
+
+.empCalenderDiv .react-calendar__month-view__days__day--weekend {
+    color: #0E24CC;
+}
+
+.empCalenderDiv .react-calendar button:enabled {
+    font-weight: 500;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.react-calendar {
+    width: 100% !important;
+    border: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.06);
+}
+
+.addEmpTabBeforeDiv {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dyTimeMainDiv {
+    border-radius: 5px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    width: 21%;
+    height: 235px;
+}
+
+.dyTimeDiv i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.dyTimeDiv span {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.dyTimeDiv {
+    margin-bottom: 16px;
+}
+
+.timeOfBigText {
+    font-family: 'Inter';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.timeOfSmallText {
+    color: #707283;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.timeOfTextsDiv {
+    margin-bottom: 5px;
+}
+
+.semiLargeTimeHrs .semiBig {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.semiLargeTimeHrs .semiHrs {
+    color: #707283;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.semiLargeTimeHrs {
+    margin-bottom: 8px;
+}
+
+.smallTimeHrs .numText {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.smallTimeHrs .numHrText {
+    color: #707283;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.smallTimeHrs {
+    margin-bottom: 8px;
+}
+
+.dyMarkNmDiv {
+    width: 32%;
+    height: 235px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.06);
+}
+
+.dyMrkFig {
+    width: 90px;
+    height: 90px;
+    margin: 0;
+    border-radius: 50%;
+}
+
+.dyMrkFig img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.dyMrkFigDiv {
+    border: 2px solid #0E24CC;
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    display: flex;
+    padding: 7px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dyMrkName {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 12px;
+}
+
+.dyMrkNameSubMainDiv {
+    margin-left: 10px;
+}
+
+.dyAwyCoinFig {
+    width: 15px;
+    height: auto;
+    margin: 0;
+    border-radius: 50%;
+}
+
+.dyAwyCoinFig img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.dyMrkNameInnerDiv {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.dySeniText {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 7px 0;
+}
+
+.dyPondText {
+    width: 100%;
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 10px 0;
+}
+
+.dyMarkNmInnerDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.dyActiveBtn {
+    border-radius: 5px;
+    background-color: #D7FFEE;
+    border: 0;
+    color: #02975A;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 6px 20px;
+}
+
+.dyFullTimeBtn {
+    border-radius: 5px;
+    background-color: #DBDFFF;
+    border: 0;
+    color: #0E24CC;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 6px 18px;
+}
+
+.dyAcFullDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phnMailDySpan {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.phMainSpanVal {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 5px;
+}
+
+.dyNmPhnDiv {
+    text-align: right;
+    padding-right: 28px;
+    margin-bottom: 10px;
+}
+
+.dyNmMailDiv {
+    text-align: right;
+}
+
+@media (max-width: 1399px) {
+    .dyTimeDiv i {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .dyTimeDiv span {
+        font-size: 15px;
+    }
+
+    .timeOfBigText {
+        font-size: 35px;
+    }
+
+    .timeOfSmallText {
+        font-size: 12px;
+    }
+
+    .semiLargeTimeHrs .semiBig {
+        font-size: 18px;
+    }
+
+    .semiLargeTimeHrs .semiHrs {
+        font-size: 12px;
+    }
+
+    .smallTimeHrs .numHrText {
+        font-size: 12px;
+    }
+
+    .dyMrkFig {
+        width: 55px;
+        height: 55px;
+    }
+
+    .dyMrkFigDiv {
+        height: 71px;
+        width: 80px;
+    }
+
+    .dyMrkNameSubMainDiv {
+        margin-left: 8px;
+    }
+
+    .dyMrkName {
+        font-size: 17px;
+    }
+
+    .dyFullTimeBtn {
+        padding: 4px 15px;
+    }
+
+    .dyActiveBtn {
+        padding: 4px 12px;
+    }
+
+    .dyMarkNmInnerDiv {
+        margin-bottom: 15px;
+    }
+
+    .dyNmPhnDiv {
+        margin-bottom: 6px;
+    }
+
+    .dyTimeMainDiv {
+        height: 205px;
+    }
+
+    .dyMarkNmDiv {
+        height: 205px;
+    }
+
+    .phMainSpanVal {
+        font-size: 11px;
+    }
+
+    .phnMailDySpan {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .addEmpTabBeforeDiv {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 991px) {
+    .dyMarkNmDiv {
+        width: 49%;
+        margin-bottom: 15px;
+    }
+
+    .dyTimeMainDiv {
+        width: 49%;
+        margin-bottom: 15px;
+    }
+
+    .addEmpTabBeforeDiv {
+        flex-wrap: wrap;
+    }
+
+    .dyMrkFigDiv {
+        width: 71px;
+    }
+}
+
+@media (max-width: 767px) {
+    .creEmpTeamDiv {
+        margin-bottom: 12px;
+    }
+
+    #affinity_groups {
+        margin-bottom: 0;
+    }
+
+    .creEmpTeamMemberDiv {
+        margin-bottom: 12px;
+    }
+
+    .addEmpTabBeforeDiv {
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    .dyMrkName {
+        font-size: 16px;
+    }
+
+    .employTableSection {
+        padding-top: 12px;
+    }
+
+    .employees {
+        min-width: 768px;
+    }
+
+    .addEmployTable {
+        overflow-x: auto;
+    }
+
+    .addEmployTable::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .dyMrkFig {
+        width: 85%;
+        height: 85%;
+    }
+
+    .dyMrkFigDiv {
+        width: 60px;
+        height: 40px;
+        padding: 0;
+    }
+
+    .dyMrkName {
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    .dyMrkNameInnerDiv {
+        margin-bottom: 5px;
+    }
+
+    .dySeniText {
+        font-size: 13px;
+        margin: 0 0 4px 0;
+    }
+
+    .dyPondText {
+        font-size: 10px;
+        margin: 0 0 10px 0;
+    }
+
+    .dyActiveBtn {
+        padding: 4px 12px;
+        font-size: 10px;
+    }
+
+    .dyFullTimeBtn {
+        padding: 4px 12px;
+        font-size: 10px;
+    }
+
+    .dyAcFullDiv {
+        width: 130px;
+    }
+
+    .phnMailDySpan {
+        font-size: 10px;
+    }
+
+    .phnMailDySpan {
+        font-size: 10px;
+    }
+
+    .dyNmPhnDiv {
+        padding-right: 26px;
+        margin-bottom: 0;
+    }
+
+    .dyMarkNmDiv {
+        padding: 10px;
+    }
+
+    .dyTimeMainDiv {
+        padding: 15px;
+    }
+
+    .dyTimeDiv {
+        margin-bottom: 6px;
+    }
+
+    .timeOfBigText {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 479px) {
+    .creEmpTeamDiv {
+        padding: 10px 0;
+        margin-bottom: 7px;
+    }
+
+    .creTeEmBtn {
+        font-size: 13px;
+        width: 23px;
+        height: 23px;
+    }
+
+    .creTeEmSpan {
+        font-size: 15px;
+    }
+
+    .addEmpTabBeforeDiv {
+        display: block;
+    }
+
+    .dyTimeMainDiv {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .dyMarkNmDiv {
+        padding: 15px;
+        width: 100%;
+        margin-bottom: 12px;
+        height: 220px;
+    }
+
+    .dyMrkFigDiv {
+        width: 70px;
+        height: 70px;
+        padding: 7px;
+    }
+
+    .dyMrkFig {
+        width: 50px;
+        height: 50px;
+    }
+
+    .dyMrkName {
+        font-size: 20px;
+        margin-right: 12px;
+    }
+
+    .dySeniText {
+        font-size: 16px;
+        margin: 0 0 6px 0;
+    }
+
+    .dyPondText {
+        font-size: 12px;
+        margin: 0 0 12px 0;
+    }
+
+    .dyActiveBtn {
+        padding: 5px 14px;
+        font-size: 14px;
+    }
+
+    .dyFullTimeBtn {
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+
+    .dyAcFullDiv {
+        width: 170px;
+    }
+
+    .phnMailDySpan {
+        font-size: 14px;
+    }
+
+    .phMainSpanVal {
+        font-size: 14px;
+    }
+
+    .dyNmPhnDiv {
+        padding-right: 32px;
+        margin-bottom: 3px;
+    }
+
+    .dyTimeDiv span {
+        font-size: 20px;
+    }
+
+    .dyTimeDiv i {
+        font-size: 19px;
+        margin-right: 10px;
+    }
+
+    .timeOfSmallText {
+        font-size: 16px;
+    }
+
+    .timeOfBigText {
+        font-size: 35px;
+    }
+
+    .semiLargeTimeHrs .semiBig {
+        font-size: 22px;
+    }
+
+    .semiLargeTimeHrs .semiHrs {
+        font-size: 15px;
+    }
+
+    .smallTimeHrs .numText {
+        font-size: 17px;
+    }
+
+    .smallTimeHrs .numHrText {
+        font-size: 14px;
+    }
+
+    .empCalenderDiv .react-calendar button:enabled {
+        font-size: 12px;
+    }
+}

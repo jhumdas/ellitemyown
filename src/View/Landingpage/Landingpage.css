@@ -1,0 +1,3459 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+.header .navbar-brand {
+    width: 201px;
+    height: 51px;
+}
+
+.header .navbar-brand img {
+    width: 100%;
+    height: 100%;
+}
+
+.header .nav-item .nav-link {
+    color: #141E61;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 25px 40px;
+}
+
+.header .nav-item.active .nav-link {
+    color: #1D36AD;
+}
+
+.header .nav-item .nav-link:hover {
+    color: #1D36AD;
+}
+
+.loginbtn {
+    display: flex;
+    width: 142px;
+    height: 45px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #1D36AD;
+    margin-right: 30px;
+    background-color: transparent;
+    color: #1D36AD;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    outline: none;
+    padding: 5px 15px;
+    transition: 0.6s;
+    cursor: pointer;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.loginbtn:hover {
+    background: #1D36AD;
+    color: #FFF;
+}
+
+.signupbtn {
+    display: flex;
+    width: 142px;
+    height: 45px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: #1D36AD;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    outline: 0;
+    transition: 0.6s;
+    cursor: pointer;
+    box-shadow: none;
+    text-decoration: none;
+    border: none;
+}
+
+.signupbtn:hover {
+    border: 1px solid #1D36AD;
+    background-color: transparent;
+    color: #1D36AD;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    background: rgba(14, 36, 204, 0.08);
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+/* .banner_title_section {
+    padding: 100px 20px 100px 77px;
+} */
+
+.title p {
+    color: #222;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.title span {
+    color: #0E24CC;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.conten {
+    max-width: 473px;
+    margin-top: 15px;
+}
+
+.conten p {
+    color: #222;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    text-transform: lowercase;
+}
+
+.banner_btn {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.askforbtn {
+    display: flex;
+    width: 142px;
+    height: 45px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #1D36AD;
+    margin-right: 30px;
+    background-color: #1D36AD;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    outline: none;
+    padding: 5px 15px;
+    transition: 0.6s;
+    cursor: pointer;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.askforbtn:hover {
+    border: 1px solid #1D36AD;
+    background-color: transparent;
+    color: #1D36AD;
+}
+
+.viewplanbtn {
+    display: flex;
+    width: 142px;
+    height: 45px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #1D36AD;
+    background-color: transparent;
+    color: #1D36AD;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    outline: 0;
+    transition: 0.6s;
+    cursor: pointer;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.viewplanbtn:hover {
+    background: #1D36AD;
+    color: #FFF;
+}
+
+
+
+
+.banner_img {
+    max-width: 768px;
+    max-height: 374px;
+}
+
+.banner_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.about {
+    width: 100%;
+    height: auto;
+    padding: 130px 0 100px;
+}
+
+.about-dtls {
+    max-width: 611px;
+    padding-left: 12px;
+}
+
+.work {
+    width: 100%;
+    height: auto;
+    padding: 70px 0;
+}
+
+.work .margintop {
+    justify-content: space-around;
+    margin: 90px auto 0;
+}
+
+.work_title {
+    max-width: 581px;
+    margin: 0 auto;
+}
+
+.work_title p {
+    color: #222;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 0.225px;
+}
+
+.work_title span {
+    color: #0E24CC;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.225px;
+    text-transform: capitalize;
+}
+
+.work_sub_title {
+    max-width: 486px;
+    margin: 0 auto;
+    padding-top: 22px;
+}
+
+.work_sub_title p {
+    color: #222;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.1px;
+}
+
+.work_card {
+    max-width: 380px;
+    height: 345px;
+    text-align: center;
+    border-radius: 18px;
+    border: 1px solid #C0C7FC;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08);
+    margin-bottom: 40px;
+}
+
+.sub-card {
+    /* max-width: 178px; */
+    max-width: 100%;
+    height: 155px;
+    margin: 0 auto;
+    border-radius: 18px;
+    background: linear-gradient(180deg, #D7DBFF 0%, #FEFEFF 100%);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08);
+}
+
+.card_img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 29px 24px;
+}
+
+.card_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.card_title p {
+    color: #222;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.145px;
+    text-transform: capitalize;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card_dtls {
+    margin-top: 25px;
+}
+
+.card_dtls p {
+    max-width: 297px;
+    height: 85px;
+    color: #737373;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.08px;
+    text-transform: capitalize;
+    padding: 7px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/******/
+/* 21 sep */
+.Benefits {
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+}
+
+.benefit_section {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.benefit_dtls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.benefit_dtls p {
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+.myfastSwiper {
+    padding-bottom: 20px !important;
+}
+
+.myfastSwiper .swiper-horizontal {
+    touch-action: pan-y;
+    height: 220px;
+}
+
+.myfastSwiper .swiper-pagination-bullet-active {
+    background-color: #0E24CC;
+}
+
+.Associate {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+}
+
+.associate_section {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.associate_slider {
+    margin-top: 60px;
+}
+
+.associate_logo {
+    max-width: 85px;
+    height: auto;
+}
+
+.associate_logo img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+}
+
+/* .owl-item.active .associate_logo img {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}  */
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+    display: none;
+}
+
+.service {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+}
+
+.work_img {
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.work_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.roles {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+}
+
+/* ...........testimonial............... */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+#testimonial-area {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+}
+
+#testimonial-area .section-heading h5 {
+    color: #222;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+.star_img {
+    max-width: 88px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.star_img img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.testi-wrap {
+    position: relative;
+    height: 575px;
+    margin-top: -80px;
+}
+
+.client-single {
+    margin-top: 20px;
+    text-align: center;
+    position: absolute;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.client-info,
+.client-comment {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.client-single {
+    &.inactive {
+
+        .client-comment,
+        .client-info {
+            display: none;
+        }
+
+        .client-comment,
+        .client-info {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    &.position-1 {
+        -webkit-transform: scale(0.65);
+        transform: scale(0.65);
+    }
+
+    &.position-2 {
+        left: -40px;
+        top: 105px;
+    }
+
+    &.position-3 {
+        left: -60px;
+        top: 240px;
+        -webkit-transform: scale(0.4) !important;
+        transform: scale(0.4) !important;
+    }
+
+    &.position-4 {
+        left: 55px;
+        top: 380px;
+    }
+
+    &.position-5 {
+        top: 30px;
+        right: 55px;
+    }
+
+    &.position-6 {
+        top: 225px;
+        right: -40px;
+    }
+
+    &.position-7 {
+        top: 400px;
+        right: 45px;
+        -webkit-transform: scale(0.4) !important;
+        transform: scale(0.4) !important;
+    }
+
+    &.active {
+        top: 10%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        z-index: 10;
+        width: 70%;
+
+        .client-comment,
+        .client-info {
+            -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+        }
+    }
+
+    &:not(.active) {
+        -webkit-transform: scale(0.55);
+        transform: scale(0.55);
+        z-index: 99;
+    }
+
+    &.active .client-img {
+        width: 160px;
+        height: 160px;
+        margin: 0 auto 24px;
+        position: relative;
+
+
+    }
+
+    .client-img img {
+        width: 150px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    &.active .client-img img {
+        max-width: 160px;
+        margin: 0 auto 24px;
+        border: 0;
+    }
+}
+
+.client-reting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.client-reting a i {
+    text-align: center;
+    font-size: 20px;
+    color: #ECB904A1;
+    padding-right: 5px;
+}
+
+.client-comment {
+    max-width: 652px;
+    margin: 0 auto;
+}
+
+.client-comment p {
+    color: #787A91;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 138%;
+}
+
+.client-comment {
+    padding: 0 30px;
+
+    span i {
+        font-size: 60px;
+        color: #0084ff;
+        margin: 40px 0 24px;
+        display: inline-block;
+    }
+}
+
+.client-info {
+    h3 {
+        color: #000;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+
+    p {
+        color: #0084ff;
+        text-transform: uppercase;
+    }
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #1D36AD;
+}
+
+.footer_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.footer_logo {
+    width: 200px;
+    height: auto;
+}
+
+.footer_logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.followers p {
+    color: #FFF;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: normal;
+}
+
+.footer_conten {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.footer_conten a {
+    text-decoration: none;
+    color: #fff;
+    padding-right: 20px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.socal_media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.socal_media a i {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding-right: 20px;
+
+}
+
+/* New Landing Page --> Riju */
+.landBannerSection {
+    width: 100%;
+    height: 630px;
+    position: relative;
+}
+
+.landBanFig {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.landBanFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.banTextsDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0;
+    width: 50%;
+}
+
+.aBettText {
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    word-spacing: 15px;
+    letter-spacing: 5px;
+    text-align: right;
+    width: 73%;
+    margin: 0 0 7px 0;
+}
+
+.atThecenText {
+    color: #fff;
+    font-weight: 400;
+    font-size: 26px;
+    text-align: right;
+    margin: 0 0 5px 0;
+}
+
+.weHelpText {
+    /* border: 2px solid red; */
+    color: #fff;
+    font-size: 13px;
+    margin: 0 0 22px 0;
+    text-align: right;
+    width: 61%;
+}
+
+.getStartBtn {
+    background-color: #fff;
+    border: 0;
+    padding: 10px 12px;
+    font-size: 17px;
+    border-radius: 7px;
+    color: #000;
+    font-weight: 500;
+    box-shadow: 0 0 10px 0 #4c4949;
+}
+
+.getStartBtn span i {
+    transform: rotate(35deg);
+}
+
+.manageBySection {
+    width: 100%;
+    height: 630px;
+    position: relative;
+}
+
+.manageFigDiv {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.manageFig {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.manageFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.manageTextsDiv {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    width: 55%;
+}
+
+.manageByExpText {
+    font-size: 45px;
+    font-weight: 600;
+    color: #000;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    margin: 0 0 15px 0;
+}
+
+.empExpText {
+    width: 77%;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+}
+
+.empExpText span {
+    font-weight: 700;
+}
+
+.hpyEmpText {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0;
+    width: 71%;
+}
+
+/* ***************** */
+.containerPageLand {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.landLogoFig {
+    width: 75px;
+    min-width: 75px;
+    height: 65px;
+    margin: 0 5px 0 0;
+}
+
+.landLogoFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.navLandHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.landLogoDiv {
+    display: flex;
+    align-items: center;
+}
+
+.landLogoText {
+    font-size: 17px;
+    color: #000;
+    font-weight: 500;
+}
+
+.landLogoDivAn:hover {
+    text-decoration: none;
+}
+
+.landHeadUl {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.landHeadLi {
+    margin-right: 15px;
+}
+
+.landHeadLi:last-child {
+    margin-right: 0;
+}
+
+.landHeadLiAn {
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.landHeadLiAn:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.landHeadBtns {
+    background-color: rgb(31, 78, 121);
+    color: #fff;
+    padding: 8px 15px;
+    border: 0;
+    margin-right: 10px;
+    text-transform: capitalize;
+}
+
+.landHeadBtns:last-child {
+    margin-right: 0;
+}
+
+.landHeadSection {
+    padding: 14px 0;
+    box-shadow: 0 0 5px 0 #3b3b3be8;
+    background-color: #fff;
+    border: 1px solid #3838382c;
+}
+
+.blackLandHeadSection {
+    background-color: #201d1e;
+    padding: 9px 0;
+}
+
+.blackLandHeadUl {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+}
+
+.blackLandHeadLi {
+    margin-right: 12px;
+}
+
+.blackLandHeadLi:last-child {
+    margin-right: 0;
+}
+
+.blackLandHeadLiAn {
+    color: #ffffff9d;
+    font-size: 16px;
+    transition-property: all;
+    transition-duration: 200ms;
+}
+
+.blackLandHeadLiAn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.landBannerTextBackDiv {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.banLeftFigDiv {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.landBanInFig {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.landBanInFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.employEngageSection {
+    width: 100%;
+    height: 630px;
+    background-color: #262626;
+}
+
+.employBgImgFigDiv {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.employBgImgFig {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.employBgImgFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.employEngText {
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    word-spacing: 15px;
+    letter-spacing: 5px;
+    text-align: right;
+    margin: 0 0 40px 0;
+    line-height: normal;
+}
+
+.employHigherText {
+    color: #fff;
+    font-size: 19px;
+    margin: 0 0 40px 0;
+    line-height: normal;
+}
+
+.emploOurText {
+    color: #fff;
+    font-size: 19px;
+    margin: 0;
+    text-align: right;
+    line-height: normal;
+}
+
+.employAllTextsDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0;
+}
+
+.compreHenSection {
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.compreHenTextLeft {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    width: 35%;
+}
+
+.firstCompreText {
+    font-size: 22px;
+    color: #000;
+    margin: 0 0 20px 0;
+    padding-left: 30px;
+}
+
+.firstCompreText .firstCompFSpan {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.firstCompreText .firstCompSSpan {
+    font-size: 30px;
+}
+
+.compreTextFig {
+    width: 90%;
+    height: auto;
+    margin: 0 0 20px 0;
+}
+
+.compreTextFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.compreNationText {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 1px 0;
+    line-height: normal;
+}
+
+.compreNatioSmallText {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 1px 0;
+}
+
+.compreNatioSmallText:last-child {
+    margin: 0;
+}
+
+.compreAllNatioTextsDiv {
+    padding-left: 30px;
+}
+
+.compreDeskFig {
+    width: 50%;
+    height: 88%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0;
+}
+
+.compreDeskFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.labdChartImgSection {
+    width: 100%;
+    height: 700px;
+    background-color: #262626;
+    position: relative;
+}
+
+.landChartFig {
+    width: 80%;
+    height: 70%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.landChartFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.employAdvoSection {
+    width: 100%;
+    height: 630px;
+    position: relative;
+}
+
+.advocacyInFig {
+    width: auto;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.advocacyInFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.advocacyTextsDiv {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+}
+
+.advoTextHead {
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0 0 25px 0;
+    line-height: normal;
+}
+
+.advoTextPara {
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0 0 60px 0;
+}
+
+.advoTextPara:last-child {
+    margin: 0;
+}
+
+.networkLandSection {
+    width: 100%;
+    height: 630px;
+    position: relative;
+}
+
+.netWrkBackFig {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.netWrkBackFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.netWorkBackTextsDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.networkInFig {
+    width: auto;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.networkInFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.networkAllTextsDiv {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0;
+}
+
+.netWrkTextHead {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: right;
+    color: #fff;
+    margin: 0 0 20px 0;
+    line-height: normal;
+}
+
+.netWrkSmallTexts {
+    font-size: 20px;
+    color: #fff;
+    margin: 0 0 80px 0;
+    text-align: right;
+}
+
+.netWrkSmallTexts:last-child {
+    margin: 0;
+}
+
+.onboardLandSection {
+    width: 100%;
+    height: 630px;
+    position: relative;
+}
+
+.onboardFig {
+    width: auto;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.onboardFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.onboardTextsDiv {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+}
+
+.onbrdHireHead {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 20px 0;
+}
+
+.onbrdHireTexts {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 60px 0;
+}
+
+.onbrdHireTexts:last-child {
+    margin: 0;
+}
+
+.employVoiceSection {
+    width: 100%;
+    height: 630px;
+    position: relative;
+    background-color: #10273c;
+}
+
+.personTabSection {
+    padding: 40px 0;
+}
+
+.landFtLeftFig {
+    width: 80%;
+    height: auto;
+    margin: 0;
+}
+
+.landFtLeftFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.landFtRightFig {
+    width: 220px;
+    min-width: 220px;
+    height: auto;
+    margin: 0 15px 0 0;
+}
+
+.landFtRightFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.landRightFtTextDiv {
+    display: flex;
+    align-items: center;
+    padding: 50px 30px;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 #555454d5;
+}
+
+.strLandFigDiv {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.landFtName {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 10px 0;
+    line-height: normal;
+}
+
+.landFtPost {
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    line-height: normal;
+}
+
+.landFtCmpny {
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: normal;
+}
+
+.strcmntFig {
+    width: 125px;
+    min-width: 125px;
+    height: 125px;
+    margin: 0 0 0 30px;
+}
+
+.strcmntFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.mainLandFtTextDiv {
+    display: flex;
+    justify-content: center;
+}
+
+/* .footerLanding {
+    border: 2px solid red;
+} */
+
+.firstFooterPart {
+    display: flex;
+    justify-content: center;
+}
+
+.conctStrt {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.ftprtcCntcText {
+    text-align: center;
+    line-height: normal;
+    font-size: 28px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+
+.strtJrnyText {
+    font-size: 18px;
+    text-align: center;
+    line-height: normal;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+
+.iagreePart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.iagreePart label {
+    margin-bottom: 0;
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.iagreePart label a {
+    color: rgb(255, 192, 0);
+}
+
+.iagreePart label a:hover {
+    color: rgb(255, 192, 0);
+    text-decoration: none;
+}
+
+.footLndBtnDiv input {
+    width: 90%;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(31, 78, 121);
+}
+
+.footLndBtnDiv button {
+    background-color: rgb(246, 174, 30);
+    padding: 5px 0;
+    border-radius: 5px;
+    width: 8%;
+    font-size: 20px;
+    color: #000;
+    border: 0;
+}
+
+.footLndBtnDiv button i {
+    transform: rotate(50deg);
+}
+
+.footLndBtnDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.secondFooterPart {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.sndFtPrtFig {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.sndFtPrtFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.secondInnerFtDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+}
+
+.footerLandInDiv {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    margin-bottom: 40px;
+}
+
+.footerLandInDiv>div {
+    width: 20%;
+}
+
+.footLeftInIconsAn {
+    color: #ffffffa9;
+    font-size: 30px;
+    transition-duration: 300ms;
+    transition-property: all;
+}
+
+.footLeftInIconsAn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footerLfticonUl {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.footerLfticonLi {
+    margin-right: 15px;
+    list-style-type: none;
+}
+
+.footerLfticonLi:last-child {
+    margin-right: 0;
+}
+
+.ftLandFig {
+    width: 200px;
+    height: auto;
+    margin: 0 0 40px 0;
+}
+
+.ftLandFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.allFootLandHead {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.footLndOtherUl {
+    padding: 0;
+    margin: 0;
+}
+
+.footLndOtherLi {
+    list-style-type: none;
+    margin-bottom: 8px;
+}
+
+.footLndOtherLi:last-child {
+    margin-bottom: 0;
+}
+
+.footLndOtherLiAn {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffffbd;
+    transition-property: all;
+    transition-duration: 300ms;
+}
+
+.footLndOtherLiAn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ftrUl {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ftrLi {
+    margin-right: 15px;
+}
+
+.ftrLi:last-child {
+    margin-right: 0;
+}
+
+.ftrLiAn {
+    color: #ffffffbd;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition-property: all;
+    transition-duration: 300ms;
+}
+
+.ftrLiAn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.rescLandHeadBtn {
+    background-color: rgb(31, 78, 121);
+    border: 0;
+    color: #fff;
+    font-size: 17px;
+    padding: 6px 10px;
+    display: none;
+}
+
+.sidebarSection {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    z-index: 99;
+    background-color: rgb(31, 78, 121);
+    padding: 20px 0;
+    transform: translate(-350px, 0);
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.sideHeadLogo {
+    width: 50px;
+    height: 45px;
+    margin: 0;
+}
+
+.sideHeadLogo img {
+    width: 100%;
+    height: 100%;
+}
+
+.sideHeadDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: 25px;
+}
+
+.sideHeadCnclBtn {
+    background-color: transparent;
+    border: 0;
+    font-size: 25px;
+    color: #fff;
+}
+
+.sideBarUl {
+    padding: 0;
+    margin: 0;
+}
+
+.sideBarLi {
+    padding: 10px;
+    border-top: 1px solid #fff;
+}
+
+.sideBarLi:last-child {
+    border-bottom: 1px solid #fff;
+}
+
+.sideBarLiAn {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+}
+
+.sideBarLiAn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/****Responsive******/
+@media (max-width:1399px) {
+    .aBettText {
+        font-size: 40px;
+        word-spacing: 7px;
+        width: 100%;
+    }
+
+    .atThecenText {
+        font-size: 23px;
+    }
+
+    .manageByExpText {
+        font-size: 40px;
+        word-spacing: 7px;
+    }
+
+    .employEngText {
+        font-size: 40px;
+        word-spacing: 7px;
+        margin: 0 0 22px 0;
+    }
+
+    .compreDeskFig {
+        width: 55%;
+        height: 60%;
+    }
+
+    .labdChartImgSection {
+        height: 625px;
+    }
+
+    .advoTextHead {
+        font-size: 40px;
+    }
+
+    .netWrkTextHead {
+        font-size: 40px;
+    }
+
+    .advoTextPara {
+        font-size: 18px;
+    }
+
+    .netWrkSmallTexts {
+        font-size: 18px;
+    }
+
+    .onbrdHireHead {
+        font-size: 40px;
+    }
+
+    .onbrdHireTexts {
+        font-size: 18px;
+    }
+
+    .employHigherText {
+        font-size: 18px;
+    }
+
+    .emploOurText {
+        font-size: 18px;
+    }
+
+    .landRightFtTextDiv {
+        width: 100%;
+    }
+
+    .landFtRightFig {
+        width: 190px;
+        min-width: 190px;
+    }
+
+    .strcmntFig {
+        margin: 0 0 0 40px;
+    }
+
+    .ftLandFig {
+        width: 160px;
+    }
+
+    .secondFooterPart {
+        height: 360px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .landBannerSection {
+        height: 500px;
+    }
+
+    .aBettText {
+        font-size: 30px;
+        word-spacing: 4px;
+        line-height: normal;
+    }
+
+    .atThecenText {
+        font-size: 20px;
+    }
+
+    .weHelpText {
+        width: 100%;
+    }
+
+    .getStartBtn {
+        padding: 8px 12px;
+        font-size: 15px;
+    }
+
+    .manageBySection {
+        height: 500px;
+    }
+
+    .manageByExpText {
+        font-size: 30px;
+        line-height: normal;
+        word-spacing: 4px;
+    }
+
+    .empExpText {
+        width: 80%;
+        font-size: 15px;
+    }
+
+    .hpyEmpText {
+        font-size: 15px;
+        width: 80%;
+    }
+
+    .employEngageSection {
+        height: 500px;
+    }
+
+    .employEngText {
+        font-size: 30px;
+        word-spacing: 4px;
+    }
+
+    .employHigherText {
+        font-size: 15px;
+    }
+
+    .emploOurText {
+        font-size: 15px;
+    }
+
+    .compreHenSection {
+        height: 600px;
+    }
+
+    .firstCompreText {
+        padding-left: 20px;
+        font-size: 18px;
+    }
+
+    .compreTextFig {
+        width: 85%;
+    }
+
+    .compreAllNatioTextsDiv {
+        padding-left: 20px;
+    }
+
+    .compreNationText {
+        font-size: 16px;
+    }
+
+    .compreNatioSmallText {
+        font-size: 15px;
+    }
+
+    .firstCompreText .firstCompFSpan {
+        font-size: 30px;
+    }
+
+    .labdChartImgSection {
+        height: 500px;
+    }
+
+    .employAdvoSection {
+        height: 500px;
+    }
+
+    .advoTextHead {
+        font-size: 30px;
+    }
+
+    .advoTextPara {
+        font-size: 15px;
+    }
+
+    .networkLandSection {
+        height: 500px;
+    }
+
+    .netWrkTextHead {
+        font-size: 30px;
+    }
+
+    .netWrkSmallTexts {
+        font-size: 15px;
+    }
+
+    .onbrdHireHead {
+        font-size: 30px;
+    }
+
+    .onbrdHireTexts {
+        font-size: 15px;
+    }
+
+    .netWrkTextHead {
+        font-size: 30px;
+    }
+
+    .netWrkSmallTexts {
+        font-size: 15px;
+    }
+
+    .onbrdHireHead {
+        font-size: 30px;
+    }
+
+    .onbrdHireTexts {
+        font-size: 15px;
+    }
+
+    .landFtRightFig {
+        width: 155px;
+        min-width: 155px;
+    }
+
+    .landFtName {
+        font-size: 17px;
+    }
+
+    .landFtPost {
+        font-size: 19px;
+    }
+
+    .landFtCmpny {
+        font-size: 19px;
+    }
+
+    .strcmntFig {
+        width: 110px;
+        min-width: 110px;
+        height: 105px;
+    }
+
+    .landPrevFtText {
+        font-size: 13px;
+    }
+
+    .landRightFtTextDiv {
+        padding: 30px;
+    }
+
+    .ftprtcCntcText {
+        font-size: 20px;
+    }
+
+    .strtJrnyText {
+        font-size: 16px;
+    }
+
+    .iagreePart label {
+        font-size: 14px;
+    }
+
+    .footLndBtnDiv input {
+        width: 88%;
+    }
+
+    .footLndBtnDiv button {
+        width: 10%;
+        font-size: 18px;
+    }
+
+    .ftLandFig {
+        width: 150px;
+    }
+
+    .allFootLandHead {
+        font-size: 18px;
+    }
+
+    .footLeftInIconsAn {
+        font-size: 25px;
+    }
+
+    .footLndOtherLi {
+        line-height: normal;
+        margin-bottom: 5px;
+    }
+
+    .footLndOtherLiAn {
+        font-size: 16px;
+    }
+
+    .ftrUl {
+        justify-content: center;
+    }
+
+    .ftrLiAn {
+        font-size: 16px;
+    }
+
+    .footerLfticonLi {
+        margin-right: 12px;
+    }
+
+    .landLogoFig {
+        width: 60px;
+        min-width: 60px;
+        height: 60px;
+    }
+
+    .landLogoText {
+        font-size: 15px;
+    }
+
+    .landHeadLiAn {
+        font-size: 14px;
+    }
+
+    .landHeadBtns {
+        padding: 7px 15px;
+        margin-right: 8px;
+    }
+
+    .onboardLandSection {
+        height: 500px;
+    }
+
+    .employVoiceSection {
+        height: 500px;
+    }
+}
+
+@media(max-width:1050px) {
+    .about {
+        padding: 100px 0;
+    }
+
+    .about-dtls {
+        padding: 0px;
+    }
+
+    .conten {
+        margin-top: 5px;
+    }
+
+    .banner_btn {
+        margin-top: 13px;
+    }
+
+    .title span {
+        font-size: 30px;
+    }
+
+    .title p {
+        font-size: 30px;
+    }
+
+    .banner_btn .button1 {
+        width: 150px;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .banner_btn .button2 {
+        width: 150px;
+        height: 50px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width:991px) {
+    .work {
+        padding: 70px 0;
+    }
+
+    .sub-card {
+        max-width: 138px;
+        height: 120px;
+    }
+
+    .card_img {
+        width: 117px;
+        height: 122px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 22px 16px;
+    }
+
+    .card_title p {
+        color: #222;
+        padding: 0px 10px;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 17px;
+    }
+
+    .card_dtls {
+        margin-top: 15px;
+    }
+
+    .card_dtls p {
+        font-size: 13px;
+    }
+
+    .work_card {
+        max-width: 380px;
+        height: 295px;
+    }
+
+    .about {
+        padding: 75px 0;
+    }
+
+    .banner {
+        padding: 75px 0;
+    }
+
+    .title span {
+        font-size: 30px;
+    }
+
+    .title p {
+        font-size: 30px;
+    }
+
+    .banner_btn .button1 {
+        width: 130px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .banner_btn .button2 {
+        width: 130px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .conten p {
+        font-size: 12px;
+    }
+
+    .banner_btn {
+        margin-top: 10px;
+    }
+
+    .loginbtn {
+        margin-bottom: 10px;
+    }
+
+    .header .nav-item .nav-link {
+        padding: 10px 15px;
+    }
+
+    .banner_img {
+        max-width: 400px;
+        height: 231px;
+        margin: 0 auto;
+    }
+
+    .share_event {
+        padding: 40px 50px;
+    }
+
+    .Associate {
+        padding: 40px 0;
+    }
+
+    .benefit_dtls p {
+        font-size: 14px;
+    }
+
+    .service {
+        padding: 40px 0;
+    }
+
+    .work {
+        padding: 40px 0;
+    }
+
+    .roles {
+        padding: 40px 0;
+    }
+
+    .recognition {
+        padding: 40px 50px;
+    }
+
+    /* 21 sep */
+    .service {
+        padding: 40px 0;
+    }
+
+    .roles {
+        padding: 40px 0;
+    }
+
+    .benefit_dtls p {
+        font-size: 14px;
+    }
+
+    .work_title span {
+        font-size: 30px;
+    }
+
+    .work_title p {
+        font-size: 30px;
+    }
+
+    .containerPageLand {
+        width: 90%;
+    }
+
+    .landBannerSection {
+        height: 400px;
+    }
+
+    .aBettText {
+        font-size: 25px;
+    }
+
+    .atThecenText {
+        font-size: 17px;
+    }
+
+    .weHelpText {
+        font-size: 11px;
+    }
+
+    .manageBySection {
+        height: 400px;
+    }
+
+    .manageByExpText {
+        font-size: 25px;
+    }
+
+    .empExpText {
+        font-size: 12px;
+    }
+
+    .hpyEmpText {
+        font-size: 12px;
+    }
+
+    .employEngText {
+        font-size: 25px;
+    }
+
+    .employHigherText {
+        font-size: 13px;
+    }
+
+    .emploOurText {
+        font-size: 13px;
+    }
+
+    .firstCompreText .firstCompSSpan {
+        font-size: 20px;
+    }
+
+    .firstCompreText {
+        padding-left: 10px;
+        font-size: 15px;
+    }
+
+    .compreAllNatioTextsDiv {
+        padding-left: 10px;
+    }
+
+    .advoTextHead {
+        font-size: 25px;
+    }
+
+    .advoTextPara {
+        font-size: 13px;
+    }
+
+    .netWrkTextHead {
+        font-size: 25px;
+    }
+
+    .netWrkSmallTexts {
+        font-size: 13px;
+    }
+
+    .onbrdHireHead {
+        font-size: 25px;
+    }
+
+    .onbrdHireTexts {
+        font-size: 13px;
+    }
+
+    .employEngageSection {
+        height: 400px;
+    }
+
+    .compreHenSection {
+        height: 500px;
+    }
+
+    .labdChartImgSection {
+        height: 400px;
+    }
+
+    .employAdvoSection {
+        height: 400px;
+    }
+
+    .networkLandSection {
+        height: 400px;
+    }
+
+    .onboardLandSection {
+        height: 400px;
+    }
+
+    .employVoiceSection {
+        height: 400px;
+    }
+
+    .landFtRightFig {
+        width: 105px;
+        min-width: 105px;
+    }
+
+    .landFtName {
+        font-size: 15px;
+        margin: 0 0 5px 0;
+    }
+
+    .landFtPost {
+        font-size: 17px;
+        margin: 0 0 5px 0;
+    }
+
+    .landFtCmpny {
+        font-size: 17px;
+    }
+
+    .strcmntFig {
+        width: 100px;
+        min-width: 100px;
+        height: 95px;
+    }
+
+    .conctStrt {
+        width: 60%;
+    }
+
+    .ftprtcCntcText {
+        font-size: 18px;
+    }
+
+    .strtJrnyText {
+        font-size: 14px;
+    }
+
+    .iagreePart label {
+        font-size: 12px;
+    }
+
+    .footLndBtnDiv input {
+        font-size: 13px;
+    }
+
+    .footLndBtnDiv button {
+        padding: 4px 0;
+    }
+
+    .footLeftInIconsAn {
+        font-size: 23px;
+    }
+
+    .ftrLiAn {
+        font-size: 15px;
+    }
+
+    .landHeadUl {
+        display: none;
+    }
+
+    .rescLandHeadBtn {
+        display: inline-block;
+    }
+
+    .sidebarSection {
+        display: block;
+    }
+
+    .landHeadBtns {
+        display: none;
+    }
+}
+
+@media(max-width:767px) {
+    .work {
+        padding: 60px 0;
+    }
+
+    .banner {
+        padding: 60px 0;
+    }
+
+    .about {
+        padding: 60px 0;
+    }
+
+    .banner_img {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .banner_img_section {
+        margin-top: 30px;
+    }
+
+    .title p {
+        font-size: 30px;
+    }
+
+    .title span {
+        font-size: 30px;
+    }
+
+    .conten {
+        max-width: 100%;
+    }
+
+    .conten p {
+        font-size: 15px;
+    }
+
+    .about-dtls {
+        margin-top: 30px;
+    }
+
+    .responsive {
+        flex-direction: column-reverse;
+    }
+
+    .share_event {
+        padding: 30px 40px;
+    }
+
+    .Associate {
+        padding: 30px 0;
+    }
+
+    .work {
+        padding: 30px 0;
+    }
+
+    .service {
+        padding: 30px 0;
+    }
+
+    .roles {
+        padding: 30px 0;
+    }
+
+    .recognition {
+        padding: 40px;
+    }
+
+    .Dialoguein_section {
+        width: 100%;
+        height: auto;
+        padding: 30px 77px;
+    }
+
+    /* 21 sep */
+    .associate_slider {
+        margin-top: 35px;
+    }
+
+    .footer_head {
+        flex-wrap: wrap;
+    }
+
+    .footer_main_conten {
+        margin-bottom: 20px;
+    }
+
+    .footer_conten {
+        margin-top: 15px;
+    }
+
+    .responsive {
+        flex-direction: column-reverse;
+    }
+
+    .service {
+        padding: 30px 0;
+    }
+
+    .banTextsDiv {
+        width: 64%;
+    }
+
+    .manageTextsDiv {
+        width: 80%;
+    }
+
+    .employAllTextsDiv {
+        width: 70%;
+    }
+
+    .advocacyTextsDiv {
+        width: 56%;
+    }
+
+    .landBannerSection {
+        height: 300px;
+    }
+
+    .aBettText {
+        font-size: 20px;
+        word-spacing: 0px;
+    }
+
+    .atThecenText {
+        font-size: 15px;
+    }
+
+    .getStartBtn {
+        font-size: 12px;
+    }
+
+    .manageBySection {
+        height: 300px;
+    }
+
+    .manageByExpText {
+        font-size: 20px;
+        word-spacing: 0px;
+        margin: 0 0 15px 0;
+    }
+
+    .employEngageSection {
+        height: 300px;
+    }
+
+    .employEngText {
+        font-size: 20px;
+        word-spacing: 0;
+        margin: 0 0 22px 0;
+    }
+
+    .employHigherText {
+        font-size: 13px;
+    }
+
+    .compreHenSection {
+        height: 400px;
+        padding: 10px 0;
+    }
+
+    .compreNationText {
+        font-size: 14px;
+    }
+
+    .compreNatioSmallText {
+        font-size: 13px;
+    }
+
+    .compreAllNatioTextsDiv {
+        padding-left: 10px;
+    }
+
+    .firstCompreText {
+        padding-left: 10px;
+        font-size: 15px;
+    }
+
+    .labdChartImgSection {
+        height: 300px;
+    }
+
+    .labdChartImgSection {
+        height: 300px;
+    }
+
+    .landFtLeftFig {
+        width: 25%;
+    }
+
+    .conctStrt {
+        width: 80%;
+    }
+
+    .footerLandInDiv>div {
+        width: 40%;
+        margin-bottom: 25px;
+    }
+
+    .secondFooterPart {
+        height: 445px;
+    }
+
+    .footerLandInDiv {
+        padding-top: 30px;
+        margin-bottom: 25px;
+    }
+
+    .ftrLiAn {
+        font-size: 13px;
+    }
+
+    .landRightFtTextDiv {
+        padding: 20px 25px;
+    }
+
+    .landHeadBtns {
+        padding: 5px 11px;
+        margin-right: 4px;
+        font-size: 15px;
+    }
+
+    .landLogoText {
+        font-size: 13px;
+    }
+
+    .landHeadSection {
+        padding: 10px 0;
+    }
+
+    .rescLandHeadBtn {
+        font-size: 14px;
+    }
+}
+
+
+@media(max-width:579px) {
+    .work {
+        padding: 60px 0;
+    }
+
+    .banner {
+        padding: 50px 0;
+    }
+
+    .about {
+        padding: 50px 0;
+    }
+
+    .share_event {
+        padding: 30px;
+    }
+
+    .Associate {
+        padding: 30px 0;
+    }
+
+    .service {
+        padding: 30px 0;
+    }
+
+    .roles {
+        padding: 30px;
+    }
+
+    .Benefits {
+        padding: 30px;
+    }
+
+    .Dialoguein_section {
+        padding: 30px;
+    }
+
+    .recognition {
+        padding: 30px;
+    }
+
+    /* 21 sep */
+    .followers p {
+        font-size: 20px;
+    }
+
+    .footer_conten a {
+        font-size: 13px;
+    }
+
+    .socal_media a i {
+        font-size: 16px;
+    }
+
+    .footer_logo {
+        width: 150px;
+    }
+
+    .Benefits {
+        padding: 30px;
+    }
+
+    .advoTextHead {
+        font-size: 20px;
+        margin: 0 0 20px 0;
+    }
+
+    .employAdvoSection {
+        height: 300px;
+    }
+
+    .networkLandSection {
+        height: 300px;
+    }
+
+    .netWrkTextHead {
+        font-size: 20px;
+        margin: 0 0 15px 0;
+    }
+
+    .netWrkSmallTexts {
+        margin: 0 0 20px 0;
+    }
+
+    .onboardLandSection {
+        height: 300px;
+    }
+
+    .onbrdHireHead {
+        font-size: 20px;
+        margin: 0 0 15px 0;
+    }
+
+    .onbrdHireTexts {
+        margin: 0 0 20px 0;
+    }
+
+    .employVoiceSection {
+        height: 300px;
+    }
+}
+
+@media (max-width: 575px) {
+    .margintop {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-left: 65px;
+    }
+
+    .margintop::-webkit-scrollbar {
+        display: none;
+    }
+
+    .work_title span {
+        font-size: 20px;
+    }
+
+    .work_title p {
+        font-size: 20px;
+    }
+
+    .ftrLiAn {
+        font-size: 11px;
+    }
+
+    .ftrLi {
+        margin-right: 10px;
+    }
+}
+
+
+@media(max-width:480px) {
+    .work {
+        padding: 30px 0;
+    }
+
+    .sub-card {
+        max-width: 110px;
+        height: 85px;
+    }
+
+    .card_img {
+        width: 90px;
+        height: 86px;
+    }
+
+    .card_title p {
+        font-size: 14px;
+    }
+
+    .work_card {
+        max-width: 380px;
+        height: 258px;
+    }
+
+    .card_dtls {
+        margin-top: 5px;
+    }
+
+    .card_dtls p {
+        font-size: 11px;
+    }
+
+    .about {
+        padding: 30px 0;
+    }
+
+    .banner {
+        padding: 30px 0;
+    }
+
+    .title p {
+        font-size: 20px;
+    }
+
+    .title span {
+        font-size: 20px;
+    }
+
+    .banner_btn .button1 {
+        width: 109px;
+        height: 38px;
+        font-size: 12px;
+        margin-right: 20px;
+    }
+
+    .banner_btn .button2 {
+        width: 109px;
+        height: 38px;
+        font-size: 12px;
+    }
+
+    .conten p {
+        font-size: 13px;
+    }
+
+    .service {
+        padding: 15px 0;
+    }
+
+    .title {
+        margin-bottom: 11px;
+    }
+
+    .share_event {
+        padding: 15px;
+    }
+
+    .Associate {
+        padding: 15px 0;
+    }
+
+    .roles {
+        padding: 15px 0;
+    }
+
+    .roles_point {
+        padding: 0px 30px;
+    }
+
+    .Dialoguein_section {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .recognition {
+        padding: 15px;
+    }
+
+    .about-dtls {
+        margin-top: 10px;
+    }
+
+    .recognition {
+        padding: 20px 15px;
+    }
+
+    /* 21 sep */
+    .swiper-horizontal {
+        touch-action: pan-y;
+        height: 175px;
+    }
+
+    .footer_conten a {
+        padding-right: 10px;
+    }
+
+    .title {
+        margin-bottom: 11px;
+    }
+
+    .share_event {
+        padding: 15px;
+    }
+
+    .roles_point {
+        padding: 0px 30px;
+    }
+}
+
+@media (max-width: 479px) {
+    .margintop {
+        padding-left: 50px;
+    }
+
+    .landHeadBtns {
+        padding: 5px 6px;
+        margin-right: 3px;
+        font-size: 10px;
+    }
+
+    .landLogoFig {
+        width: 45px;
+        min-width: 45px;
+        height: 43px;
+    }
+
+    .landLogoText {
+        font-size: 11px;
+    }
+
+    .banTextsDiv {
+        width: 100%;
+    }
+
+    .aBettText {
+        font-size: 19px;
+    }
+
+    .weHelpText {
+        margin: 0px 0 10px 0;
+    }
+
+    .landBannerSection {
+        height: 250px;
+    }
+
+    .manageTextsDiv {
+        width: 100%;
+    }
+
+    .manageBySection {
+        height: 280px;
+    }
+
+    .manageByExpText {
+        font-size: 14px;
+        letter-spacing: 3px;
+        margin: 0 0 15px 0;
+    }
+
+    .empExpText {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .hpyEmpText {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .employEngText {
+        font-size: 18px;
+        margin: 0 0 13px 0;
+    }
+
+    .employAllTextsDiv {
+        width: 100%;
+    }
+
+    .employHigherText {
+        font-size: 12px;
+        margin: 0 0 15px 0;
+    }
+
+    .emploOurText {
+        font-size: 12px;
+    }
+
+    .employEngageSection {
+        height: 250px;
+    }
+
+    .compreHenTextLeft {
+        position: relative;
+        top: 0;
+        transform: translate(0, 0);
+        width: 100%;
+    }
+
+    .compreHenSection {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .compreDeskFig {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        transform: translate(0, 0);
+        margin-top: 15px;
+    }
+
+    .labdChartImgSection {
+        height: 225px;
+    }
+
+    .landChartFig {
+        width: 85%;
+    }
+
+    .advocacyTextsDiv {
+        width: 100%;
+    }
+
+    .advoTextPara {
+        margin: 0 0 20px 0;
+    }
+
+    .employAdvoSection {
+        height: 250px;
+    }
+
+    .networkLandSection {
+        height: 250px;
+    }
+
+    .networkAllTextsDiv {
+        width: 100%;
+    }
+
+    .onboardTextsDiv {
+        width: 100%;
+    }
+
+    .onboardLandSection {
+        height: 250px;
+    }
+
+    .employVoiceSection {
+        height: 250px;
+    }
+
+    .landRightFtTextDiv {
+        padding: 15px 12px;
+    }
+
+    .landRightFtTextDiv {
+        flex-direction: column;
+    }
+
+    .conctStrt {
+        width: 92%;
+    }
+
+    .conctStrt {
+        width: 92%;
+    }
+
+    .ftprtcCntcText {
+        font-size: 15px;
+    }
+
+    .strtJrnyText {
+        font-size: 13px;
+    }
+
+    .iagreePart label {
+        font-size: 11px;
+    }
+
+    .footLndBtnDiv button {
+        font-size: 15px;
+    }
+
+    .footLndBtnDiv input {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    /* 21 sep */
+    .associate_logo {
+        max-width: 60px;
+    }
+
+    .footer_conten a {
+        font-size: 11px;
+        padding-right: 6px;
+    }
+
+    .followers p {
+        font-size: 16px;
+    }
+
+    .footer_logo {
+        width: 130px;
+    }
+
+    .socal_media {
+        margin-top: 7px;
+    }
+
+    .footer_conten {
+        margin-top: 9px;
+    }
+
+    .askforbtn {
+        font-size: 14px;
+    }
+
+    .viewplanbtn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 359px) {
+    .header .navbar-brand {
+        width: 165px;
+        height: 45px;
+    }
+
+    .custContain .navbar-toggler-icon {
+        width: 1.1em;
+        height: 1.3em;
+    }
+}
+
+/* Testimonial Javascript Testimonial */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #testimonial-area .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .client-comment h3 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .client-single.active {
+        width: 60%;
+    }
+
+    .client-single:not(.active) {
+        -webkit-transform: scale(0.55);
+        transform: scale(0.35);
+    }
+
+    .client-single.position-3,
+    .client-single.position-7 {
+        -webkit-transform: scale(.30) !important;
+        transform: scale(.30) !important;
+    }
+
+    .client-single.active .client-img img {
+        max-width: 100px;
+    }
+
+    .client-single.active .client-img::before {
+        padding: 5px;
+        width: 108px;
+        height: 108px;
+        top: -4px;
+        left: 6px;
+    }
+
+    .client-single.active .client-img {
+        width: 120px;
+        height: 100px;
+    }
+
+    .testi-wrap {
+        height: 580px;
+    }
+
+    #testimonial-area {
+        padding: 40px 0 0;
+    }
+
+    #testimonial-area .section-heading h5 {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    #testimonial-area .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .client-comment h3 {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .client-single.active {
+        width: 60%;
+    }
+
+    .client-comment p {
+        font-size: 15px;
+    }
+
+    &.active {
+        top: 18%;
+    }
+
+    .star_img {
+        max-width: 60px;
+    }
+
+    #testimonial-area .section-heading h5 {
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+
+    #testimonial-area {
+        padding: 30px 20px;
+    }
+
+    .client-comment span i {
+        font-size: 40px;
+    }
+
+    .client-single:not(.active) {
+        -webkit-transform: scale(0.55);
+        transform: scale(0.35);
+    }
+
+    .client-single.position-5,
+    .client-single.position-7 {
+        right: 0;
+    }
+
+    .client-single.position-4 {
+        left: 0;
+    }
+
+    .client-single.position-3,
+    .client-single.position-7 {
+        -webkit-transform: scale(.30) !important;
+        transform: scale(.30) !important;
+    }
+
+    .client-single.active .client-img img {
+        max-width: 80px;
+    }
+
+    .client-single.active .client-img::before {
+        padding: 5px;
+        width: 88px;
+        height: 88px;
+        top: -4px;
+        left: 16px;
+    }
+
+    .client-single.active .client-img {
+        width: 120px;
+        height: 100px;
+    }
+
+    .testi-wrap {
+        height: 630px;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+
+    #testimonial-area {
+        padding: 20px 15px;
+    }
+
+    #testimonial-area .section-heading h5 {
+        font-size: 27px;
+        margin-bottom: 15px;
+    }
+
+    .star_img {
+        max-width: 50px;
+    }
+
+    .client-comment h3 {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .client-comment p {
+        font-size: 16px;
+    }
+
+    &.active {
+        top: 20%;
+    }
+
+    .client-single.active {
+        width: 100%;
+    }
+
+    .client-comment span i {
+        font-size: 40px;
+    }
+
+    .client-single:not(.active) {
+        -webkit-transform: scale(0.25);
+        transform: scale(0.25);
+    }
+
+    .client-single.position-5,
+    .client-single.position-7,
+    .client-single.position-6 {
+        right: -70px;
+    }
+
+    .client-single.position-4 {
+        left: -60px;
+    }
+
+    .client-single.position-3 {
+        left: -75px;
+    }
+
+    .client-single.position-3,
+    .client-single.position-7 {
+        -webkit-transform: scale(.25) !important;
+        transform: scale(.25) !important;
+    }
+
+    .client-single.active .client-img img {
+        max-width: 80px;
+    }
+
+    .client-single.active .client-img::before {
+        padding: 5px;
+        width: 88px;
+        height: 88px;
+        top: -4px;
+        left: 16px;
+    }
+
+    .client-single.active .client-img {
+        width: 120px;
+        height: 100px;
+    }
+
+    .testi-wrap {
+        height: 600px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+    #testimonial-area {
+        padding: 40px 15px;
+    }
+
+    #testimonial-area .section-heading h5 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .star_img {
+        max-width: 50px;
+    }
+
+    .client-comment h3 {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .client-comment p {
+        font-size: 16px;
+    }
+
+    &.active {
+        top: 20%;
+    }
+
+    &.position-2 {
+        left: -76px;
+    }
+
+    .client-reting a i {
+        font-size: 14px;
+    }
+
+    .client-comment h3 {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .client-single.active {
+        width: 100%;
+    }
+
+    .client-comment span i {
+        font-size: 40px;
+    }
+
+    .client-single:not(.active) {
+        -webkit-transform: scale(0.25);
+        transform: scale(0.25);
+    }
+
+    .client-single.position-5,
+    .client-single.position-7,
+    .client-single.position-6 {
+        right: -70px;
+    }
+
+    .client-single.position-4 {
+        left: -60px;
+    }
+
+    .client-single.position-3 {
+        left: -75px;
+    }
+
+    .client-single.position-3,
+    .client-single.position-7 {
+        -webkit-transform: scale(.25) !important;
+        transform: scale(.25) !important;
+    }
+
+    .client-single.active .client-img img {
+        max-width: 80px;
+    }
+
+    .client-single.active .client-img::before {
+        padding: 5px;
+        width: 88px;
+        height: 88px;
+        top: -4px;
+        left: 16px;
+    }
+
+    .client-single.active .client-img {
+        width: 120px;
+        height: 100px;
+    }
+
+    .testi-wrap {
+        height: 550px;
+    }
+}

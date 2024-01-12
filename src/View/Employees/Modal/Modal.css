@@ -1,0 +1,38 @@
+.create_modal,
+.Create_overlay{
+    width: 100vw;
+    min-height: 120vh;
+    top:0;
+    left: 0;
+    z-index: 99;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    overflow-y: scroll;
+}
+.Create_overlay {
+    background: rgba(49,49,49,0.8);
+}
+.create_modal_content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: #f1f1f1;
+    border-radius: 5px;
+    max-width: 400px;
+    min-width: 350px;
+    z-index: 999;
+    overflow-y: auto;
+    /* height: 10rem; */
+    height: 1rem;
+}
+.close_icon {
+    position: absolute;
+    top:5px;
+    right: 10px;
+    z-index: 99;
+}
+.frm_own {
+    padding: 20px;
+}

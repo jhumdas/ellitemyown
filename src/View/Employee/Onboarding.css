@@ -1,0 +1,315 @@
+.Onboarding_page {
+    width: 100%;
+    height: 100%;
+    background: #EFEFEF;
+}
+
+.growimgtogether {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
+    background: #FFF;
+    padding: 35px 90px;
+    margin-bottom: 25px;
+}
+
+.growimgtogether .head h2 {
+    color: #0E24CC;
+    font-family: Inter;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.growimgtogether .text p {
+    color: #263238;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0;
+    margin-bottom: 20px;
+    max-width: 780px;
+}
+
+/****Profileactivity_sec***/
+
+.Profileactivity_sec {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.Profileactivity_sec .profilebox {
+    width: 100%;
+    max-width: 245px;
+    min-width: 245px;
+    height: auto;
+}
+
+.Profileactivity_sec .profilebox .profilepic {
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 4px;
+}
+
+.Profileactivity_sec .profilebox .profilepic img {
+    width: 100%;
+    height: 100%;
+}
+
+.Profileactivity_sec .profilebox .name {
+    color: #0E24CC;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.Profileactivity_sec .profilebox .post {
+    color: #263238;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 0;
+    margin-bottom: 14px;
+}
+
+.Profileactivity_sec .profilebox .employe {
+    color: #263238;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.profilepost_card {
+    width: 100%;
+    height: auto;
+    padding: 30px 30px 20px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.06);
+}
+
+.profilepost_card .top_area {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.profilepost_card .profile {
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 27px;
+}
+
+.profilepost_card .profile img {
+    width: 100%;
+    height: 100%;
+}
+
+.profilepost_card .typing {
+    width: 100%;
+    max-width: 603px;
+    height: auto;
+}
+
+.profilepost_card .typing input {
+    color: rgba(38, 50, 56, 0.45);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    box-shadow: none;
+    outline: 0;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 45px;
+}
+
+
+.profilepost_card .bottom_area {
+    width: 100%;
+    height: auto;
+    padding: 25px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profilepost_card .attach_btn {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.profilepost_card .file_upload {
+    position: relative;
+    width: 28px;
+    height: 30px;
+    overflow: hidden;
+    margin: 0 15px 0 0;
+}
+
+.profilepost_card .file_upload .input_img {
+    width: 100%;
+    height: 100%;
+}
+
+.profilepost_card .file_upload .input_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.profilepost_card .file_upload input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    opacity: 0;
+}
+
+.profilepost_card .attach p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #238EE5;
+    padding: 0;
+    margin: 0;
+}
+
+.profilepost_card .request_credits {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.profilepost_card .request_credits .btn {
+    width: 100%;
+    max-width: 200px;
+    height: 32px;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+    background-color: transparent;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #E5237B;
+}
+
+.profilepost_card .request_credits .btn img {
+    width: 35px;
+    height: 28px;
+    margin-right: 15px;
+}
+
+.profilepost_card .Post_Card {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.profilepost_card .Post_Card .btn {
+    width: 39px;
+    height: 30px;
+    margin-right: 14px;
+    text-decoration: none;
+    box-shadow: none;
+    cursor: pointer;
+    outline: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 0;
+    margin: 0 10px 0 0;
+}
+
+.profilepost_card .Post_Card .btn img {
+    width: 24px;
+    height: 30px;
+}
+
+.profilepost_card .Post_Card p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #AD3EE8;
+    padding: 0;
+    margin: 0;
+}
+
+.profilepost_card .Post_Card span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 275;
+    font-size: 20px;
+    line-height: 30px;
+    color: #CC051C;
+    padding: 0;
+    margin: 0;
+}
+
+.profilepost_card .post_btn .btn {
+    width: 100%;
+    max-width: 106px;
+    height: 41px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    margin: 0;
+    background: #0E24CC;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: none;
+    outline: 0;
+}

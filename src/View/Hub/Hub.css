@@ -1,0 +1,3533 @@
+.headFirstPart {
+    background-color: #fff;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    padding: 120px 0 30px 0;
+}
+
+.hubGrowHead {
+    color: #0E24CC;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 0 20px 0;
+}
+
+.profile_pic img {
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.hubGrowPara {
+    color: #263238;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 804px;
+    margin: 0 0 30px 0;
+}
+
+.hubWelDiv {
+    position: relative;
+}
+
+.hubWelHead {
+    color: #000;
+    font-family: Inter;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.hubWelFig {
+    width: 28px;
+    height: 24px;
+    margin: 0 10px 0 0;
+}
+
+.hubWelFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.hubWelPara {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+.hubSubWelDiv {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+/* Hub Second Part */
+.hubSecPrat {
+    padding: 20px 0;
+}
+
+.mrkHubFig {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: -70px;
+}
+
+.mrkHubFig img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.mrkHubFigDiv {
+    border: 15px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: -100px;
+}
+
+.mrkHubFigDiv .mrkHubFig {
+    position: static;
+}
+
+.mrkInpFigDiv {
+    width: 12px;
+    height: 10px;
+    margin: 0;
+    position: absolute;
+    bottom: 25px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.mrkInpFigDiv .dropdown-item:focus,
+.mrkInpFigDiv .dropdown-item:hover {
+    background-color: transparent;
+}
+
+.profile_details .dropdown-item:focus,
+.profile_details .dropdown-item:hover {
+    background-color: #27252548;
+    color: #000;
+}
+
+.mrkInpFigFile {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+    opacity: 0;
+}
+
+.mrkCamFig {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.mrkCamFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.mrkCamFig i {
+    color: #a97c2d;
+}
+
+.leftMrkDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.mrkHbHead {
+    color: #0E24CC;
+    font-family: 'Inter';
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 10px 0;
+}
+
+.mrkHbName {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 10px 0 0;
+}
+
+.mrkPenBtn {
+    background-color: transparent;
+    border: 0;
+    font-size: 10px;
+    color: #263238;
+    cursor: pointer;
+}
+
+.mrkPenBtn:focus {
+    outline: none;
+    border: 0;
+}
+
+.mrkPenBtn::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: #263238;
+}
+
+.mrkNmBtnDiv {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 13px;
+}
+
+.mrkHubEmpText {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+.hubHallHd {
+    color: #263238;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+.hubAddBtn {
+    background-color: transparent;
+    border: 0;
+    font-size: 15px;
+    color: rgba(38, 50, 56, 0.90);
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hubHallAddDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #C6C6D242;
+    margin-bottom: 10px;
+}
+
+.addTypeBtn {
+    background-color: transparent;
+    border: 1px dotted #787A91;
+    font-size: 22px;
+    color: #787A91;
+    padding: 6px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.addTypeBtn:focus {
+    outline: none;
+}
+
+.addTypeInp {
+    color: #787A91;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 0;
+    outline: none;
+    padding: 3px 0;
+    background-color: transparent;
+}
+
+.sampTypeNmDiv {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sampTypeFig {
+    width: 48px;
+    height: 48px;
+    margin: 0 20px 0 0;
+    border-radius: 50%;
+}
+
+.sampTypeFig img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.sampTypeName {
+    color: #263238;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 4px 0;
+}
+
+.sampTypePosi {
+    color: #7C7979;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.sampTypeCrypFig {
+    width: 15px;
+    height: 15px;
+    margin: -6px 15px 0 0;
+    border-radius: 50%;
+}
+
+.sampTypeCrypFig img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.questionflx {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.questionbrdr {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.textareasubmitflx {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 11px;
+}
+
+.textarediv {
+    width: 100%;
+}
+
+.textarediv textarea {
+    width: 95%;
+    padding: 10px 12px;
+    resize: none;
+    border: 1px solid #000000bf;
+}
+
+.sbmtbtn {
+    background-color: #138BFB;
+    padding: 5px 20px;
+    color: #fff;
+    border: 1px solid #000;
+    outline: 0;
+    border-radius: 10px;
+}
+
+.sampTypeDotsBtn {
+    font-size: 22px;
+    background-color: transparent;
+    border: 0;
+    color: #263238;
+}
+
+.sampTypeDotsBtn:focus {
+    outline: none;
+}
+
+.sampTypeNmLeftInnerDiv {
+    display: flex;
+    align-items: center;
+}
+
+.leftHubHallDiv {
+    margin-top: 10px;
+}
+
+.addTypeNmBtnDiv {
+    display: flex;
+}
+
+.champFig {
+    width: 57px;
+    height: 48px;
+    margin: 0 13px 0 0;
+    border-radius: 50%;
+}
+
+.champFig img {
+    object-fit: cover;
+}
+
+.champMainDivParent {
+    height: 400px;
+    overflow-y: auto;
+}
+
+.mycarddiv {
+    background-color: rgb(237, 240, 255);
+    margin-top: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.champFig img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.champFigTextDiv {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.champHead {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 20px;
+}
+
+.champDate {
+    color: #323232;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.champMainDiv {
+    margin-top: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.champFig2 {
+    width: 40px;
+    height: 40px;
+    margin: 0 21px 0 0;
+}
+
+.champFig2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.chmpThisText {
+    color: #000;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 40PX);
+}
+
+.svCoShBtnDiv {
+    border-radius: 5px;
+    background: #0E24CC;
+    display: inline-block;
+    width: 78px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.svMsgFig {
+    width: 16px;
+    height: 16px;
+    margin: -6px 0 0 0;
+}
+
+.svMsgFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.chmpMsgSpan {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.svCosMainDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mrkMiddleInnerDivsAn {
+    display: inline-block;
+    width: 48%;
+}
+
+.mrkMiddleInnerDivsAn:hover {
+    text-decoration: none;
+}
+
+.mrkMiddleInnerDivs {
+    width: 100%;
+    padding: 25px;
+    height: 200px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.middleMrkHeads {
+    /* color: #FFF; */
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 166px;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 51px;
+}
+
+.midMrhHeadDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.midleLogoHead {
+    color: #3F3F3F;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.midleLogoHeadDiv {
+    background-color: #F0F0F0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.11));
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.onboardIconFig {
+    width: 22px;
+    height: 22px;
+    margin: 0;
+}
+
+.onboardIconFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.engageMeLogoFig {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+}
+
+.engageMeLogoFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.mrkMidRoundDivs {
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+}
+
+.mrkMidMainRoundDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.mrkMiddleMainDiv {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.myMrkProgress {
+    height: 10px;
+    /* background-color: #D9D9D9; */
+    background-color: #ededed;
+    margin-top: 40px;
+}
+
+.myMrkProgress .progress-bar {
+    background-color: #263238;
+}
+
+.mrkMidProText {
+    /* color: #FFF; */
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.penFlagTextDiv {
+    text-align: right;
+}
+
+.penFlagTextDiv span {
+    /* color: #FFF; */
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 9px;
+}
+
+.penFlagTextDiv i {
+    font-size: 15px;
+    /* color: #fff; */
+    color: #263238;
+}
+
+.notoFig {
+    width: 41px;
+    height: 41px;
+    margin: 0 11px 0 0;
+    border-radius: 50%;
+}
+
+.notoFig img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.notoSpan {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.notoInnerDiv {
+    display: flex;
+    align-items: center;
+}
+
+.notoFig2 {
+    width: 32px;
+    height: 32px;
+    margin: 0 12px 0 0;
+}
+
+.notoFig2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.notoMainDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.eliteFig {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+}
+
+.eliteFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.eliteFigDiv {
+    position: relative;
+}
+
+.goldCardText {
+    color: #263238;
+    font-family: 'Merriweather Sans';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    right: 15px;
+    top: 65px;
+}
+
+.coinExpDiv {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px 15px 40px 15px;
+    margin-top: 30px;
+}
+
+.coinBalHead {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.coinFigInnerDiv {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.goldCoinFig {
+    width: 38px;
+    height: 38px;
+    margin: 0 0 0 18px;
+    border-radius: 50%;
+}
+
+.goldCoinFig img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.coinBalAmnt {
+    color: #FFAC33;
+    font-family: 'Inter';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 15px 0;
+}
+
+.expiOnText {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.expiOnTextDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.reedmDiv {
+    width: 100%;
+    padding: 13px 0;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgba(198, 142, 0, 0.29) 0%, #FFBD14 100%);
+    padding-left: 23px;
+    margin-bottom: 10px;
+}
+
+.redmText {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.redmText:focus {
+    outline: none;
+}
+
+.vsiStrDiv {
+    width: 125px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #D9D9D9 0%, #FFBD14 100%);
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    cursor: pointer;
+
+}
+
+.vstText {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 5px;
+}
+
+.vstIconFig {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+}
+
+.vstIconFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.vstDnteBtn {
+    background-color: transparent;
+    border: 0;
+    color: #263238;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.vstDntDiv {
+    display: flex;
+    align-items: center;
+}
+
+.myAffitiDiv {
+    width: 100%;
+    padding: 15px 15px 15px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.06);
+    margin-top: 15px;
+}
+
+/* .evetCresParentDiv {
+    max-height: 320px;
+    overflow-y: auto;
+} */
+
+.evetCresParentDiv::-webkit-scrollbar {
+    display: none;
+}
+
+.sfiSeeGrpDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myAfitiText {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.seeAllAfiBtn {
+    background-color: transparent;
+    border: 0;
+    color: rgba(38, 50, 56, 0.90);
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.seeAllAfiBtn:focus {
+    outline: none;
+}
+
+.evntMarLedMainDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+
+.evntMarLedDiv {
+    width: 95%;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    padding: 12px 15px;
+}
+
+.evtSmHead {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.afiFigsDiv {
+    width: 67px;
+    position: relative;
+    height: 22px;
+}
+
+.afiEvntDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.afiPicFig {
+    width: 21px;
+    height: 21px;
+    margin: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+}
+
+.afiPicFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.afiPicFig1 {
+    left: 0;
+    z-index: 1;
+}
+
+.afiPicFig2 {
+    left: 14px;
+    z-index: 2;
+}
+
+.afiPicFig3 {
+    left: 28px;
+    z-index: 3;
+}
+
+.afiPicFig4 {
+    left: 42px;
+    z-index: 4;
+}
+
+.creChtPicDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.creSubHead {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.chatCreIconFig {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+}
+
+.chatCreIconFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.typeMeBtnCreDiv input {
+    width: 78%;
+    padding: 9px 12px;
+    font-family: 'Inter';
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #fff;
+    border: 0;
+    border-radius: 4px;
+}
+
+.typeMeBtnCreDiv button {
+    font-size: 16px;
+    background-color: #FFD2B5;
+    border-radius: 5px;
+    padding: 3px 13px;
+    color: #263238;
+    border: 0;
+    cursor: pointer;
+}
+
+.typeMeBtnCreDiv button:focus {
+    outline: none;
+}
+
+.typeMeBtnCreDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #FFD9C0;
+}
+
+.mrkMidInnBackFig {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.mrkMidInnBackFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.midMrkMainInDiv {
+    position: relative;
+    z-index: 2;
+}
+
+/* Networking Page */
+.leftNtrkDiv {
+    width: 20%;
+    padding-top: 90px;
+}
+
+.rightNtrkDiv {
+    width: 78%;
+}
+
+.ntrkLeftStartDiv {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.ntrkLeftStartDiv .rightNtrkDiv #share_thoughts {
+    margin-bottom: 0;
+}
+
+.networkSecPart {
+    margin-top: 35px;
+}
+
+.ntrkLSInnerDiv {
+    width: 32%;
+    height: 180px;
+    border-radius: 20px;
+    border: 1px solid #E2E2EA;
+    background: #FFF;
+    padding: 25px;
+}
+
+.perComText {
+    color: #92929D;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+    margin: 0 0 16px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 40px;
+}
+
+.perNumHead {
+    color: #171725;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.perCirBarDiv {
+    width: 68px;
+    height: 68px;
+}
+
+.perNumCirDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.perCirBarDiv .CircularProgressbar .CircularProgressbar-path {
+    stroke: #138BFB;
+}
+
+.batteFig {
+    width: 56px;
+    height: 56px;
+    margin: 0;
+}
+
+.batteFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.TropFig {
+    width: 60px;
+    height: 60px;
+    margin: 0;
+}
+
+.TropFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.ntrkLeftSectDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.joinChrtTabDiv {
+    margin-top: 35px;
+    position: relative;
+}
+
+.joinChrtTab .react-tabs__tab-list {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #fff;
+    padding: 55px 0 0 0;
+    border: 0;
+    width: 100%;
+    min-width: 300px;
+    overflow-y: hidden;
+
+}
+
+.joinChrtTab .react-tabs__tab {
+    color: #656579;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 20px;
+    white-space: nowrap;
+}
+
+.joinChrtTab .react-tabs__tab--selected {
+    color: #44444F;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 4px solid #138BFB;
+    padding-bottom: 5px;
+}
+
+.joinChrtTab .react-tabs__tab:focus:after {
+    background-color: transparent;
+}
+
+.chlTabpanelDiv {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 40px 0 20px 0;
+    border-radius: 20px;
+}
+
+.chlTabpanelDiv::-webkit-scrollbar {
+    display: none;
+}
+
+.checkListTable {
+    width: 100%;
+}
+
+.chckLeftTd {
+    width: 70%;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+.chckLeftTd span {
+    color: #171725;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.chckRightTd {
+    width: 15%;
+    position: relative;
+    text-align: center;
+}
+
+.chckRightTd span {
+    color: #171725;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.myOwnChckListAccrBtn {
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    border: 0;
+}
+
+.myOwnChckListAccr>.card>.card-header {
+    padding-right: 0;
+    padding-left: 0;
+    background-color: transparent;
+    border: 0;
+}
+
+.myOwnChckListAccrBtn .spanOne {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-right: 16px;
+    display: inline-block;
+    max-width: 72%;
+    width: 100%;
+}
+
+.myOwnChckListAccrBtn .spanTwo {
+    color: #92929D;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-right: 10px;
+}
+
+.myOwnChckListAccrBtn .spanThree {
+    color: #92929D;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-right: 20px;
+}
+
+.myOwnChckListAccrBtn .spanFour {
+    font-size: 15px;
+    color: #92929D;
+}
+
+.myOwnChckListAccr {
+    border: 0 !important;
+}
+
+.myOwnChckListAccr .card {
+    border: 0;
+}
+
+.clsListChatBtn {
+    background-color: transparent;
+    border: 0;
+    font-size: 22px;
+    color: #787A91;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.myChckListProgress {
+    width: 80%;
+    margin: 0 auto;
+    height: 14px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.myChckListProgress .progress-bar {
+    background-color: #0E24CC;
+}
+
+.onBoardCheckDiv {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px 23px;
+    border-radius: 20px;
+    max-height: 190px;
+    overflow-y: auto;
+    border: 1px solid #615e5e;
+}
+
+.chckLeftTd .card-body {
+    padding-left: 0;
+}
+
+.onBoardCheckDiv::-webkit-scrollbar {
+    display: none;
+}
+
+.onBoaSpan {
+    color: #171725;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tkSuBtn {
+    background-color: #0E24CC;
+    border: 0;
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.onBoTkDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.onBoardAccDiv {
+    margin-top: 25px;
+}
+
+.howSaText {
+    color: #171725;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: inline-block;
+    width: 80%;
+}
+
+.howSaStarDiv i {
+    font-size: 20px;
+    color: #EAAA07;
+    margin-left: 6px;
+}
+
+.howSatAccDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.myOnBoardAcc .accordion__button {
+    padding: 15px 40px 15px 0;
+    position: relative;
+    background-color: transparent;
+}
+
+.myOnBoardAcc .accordion__button:hover {
+    background-color: transparent;
+}
+
+.myOnBoardAcc .accordion__button:before {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    height: 9px;
+    width: 9px;
+}
+
+.myOnBoardAcc .accordion__item+.accordion__item {
+    border: 0;
+}
+
+.impLinkDiv {
+    background-color: #fff;
+    box-shadow: 1px 0px 0px 0px #E2E2EA inset;
+}
+
+.impLiSpanDiv {
+    padding: 20px 30px;
+    box-shadow: 0px -1px 0px 0px #92929D inset;
+}
+
+.impLiSpan {
+    color: #171725;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.impSecAccr .accordion__button {
+    padding: 12px 0;
+    background-color: transparent;
+    position: relative;
+}
+
+.impSecAccr .accordion__button:hover {
+    background-color: transparent;
+}
+
+.impSecAccr .accordion__button:before {
+    height: 9px;
+    width: 9px;
+    position: absolute;
+    right: 0;
+    top: 19px;
+}
+
+.impSecHead {
+    color: #44444F;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.impSecHead::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #44444F;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.impSecHeadDiv {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 12px;
+}
+
+.impSecTimeDiv {
+    color: #656579;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 19px;
+}
+
+.impSecOutOfVidSpan {
+    margin-right: 12px;
+}
+
+.impSecInnerMainDiv {
+    padding: 5px;
+}
+
+.heyVidChkDivParent {
+    margin-bottom: 15px;
+}
+
+.heyVidChkDiv {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+}
+
+.heyVidChkBox {
+    margin-top: 3px;
+    margin-right: 8px;
+    accent-color: #0DD85E;
+    width: 21px;
+    height: 15px;
+    display: inline-block;
+}
+
+.heyVidChkLabel {
+    color: #44444F;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+.impSecAccr .accordion__panel {
+    padding: 10px 20px 10px 0;
+}
+
+.myMentorDiv {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px 15px;
+    margin-top: 20px;
+}
+
+.myMentPara {
+    color: #0E24CC;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+.mentAddBtn {
+    background-color: transparent;
+    border: 0;
+    color: #0E24CC;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.myMentBtnDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myMentorLi {
+    margin-top: 22px;
+}
+
+.myMentorLiAn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.myMentorLiAn:hover {
+    text-decoration: none;
+}
+
+.myMentFig {
+    width: 68px;
+    height: 52px;
+    margin: 0 15px 0 0;
+}
+
+.myMentFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.mentorName {
+    color: #0F044C;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0;
+    margin: 0 0 15px 0;
+}
+
+.mentorDesignation {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+.mentConnecDiv {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 15px;
+    margin-top: 20px;
+}
+
+.mentConnecFigInnerDiv {
+    width: 23%;
+    margin-bottom: 20px;
+}
+
+.mentConnecFig {
+    width: 100%;
+    height: 51px;
+    margin: 0;
+}
+
+.mentConnecFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.mentConnText {
+    color: #0F044C;
+    font-family: 'Roboto';
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 5px 0 0 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 14px;
+}
+
+.mentConnecFigsDiv {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 7px;
+    margin-top: 21px;
+    height: 217px;
+    overflow-y: auto;
+}
+
+.mentConnecFigsDiv::-webkit-scrollbar {
+    display: none;
+}
+
+.impSectionsDiv {
+    max-height: 390px;
+    overflow-y: auto;
+}
+
+.impSectionsDiv::-webkit-scrollbar {
+    display: none;
+}
+
+.myMentorUl {
+    max-height: 230px;
+    overflow-y: auto;
+}
+
+.myMentorUl::-webkit-scrollbar {
+    display: none;
+}
+
+.comActDiv {
+    color: #FDF8F8;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 4px 0;
+    border-radius: 15px;
+    position: absolute;
+    top: -36px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 70px;
+    text-align: center;
+}
+
+.videoPlayDuration {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 25px;
+}
+
+.videoPlayDuration i {
+    font-size: 16px;
+    color: #44444F;
+    margin-right: 8px;
+}
+
+.vidPlayDurSpan {
+    color: #000;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hubNetWorkingSection {
+    margin-bottom: 40px;
+}
+
+.joinChrtTab::-webkit-scrollbar {
+    display: none;
+}
+
+.allSampTypeNmDivPar {
+    height: 140px;
+    overflow-y: auto;
+}
+
+.allSampTypeNmDivPar::-webkit-scrollbar {
+    display: none;
+}
+
+.myAffityHead {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.myAffSeeAllBtn {
+    background-color: transparent;
+    border: 0;
+    color: rgba(38, 50, 56, 0.90);
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.myAffSeeAllBtn:hover {
+    color: rgba(38, 50, 56, 0.90);
+    text-decoration: none;
+}
+
+.myAffSeeAllBtnInnerDiv {
+    min-width: 60px;
+    text-align: end;
+}
+
+.myAffSeeAllBtnDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(198, 198, 210, 0.26);
+    margin-bottom: 16px;
+    padding: 7px 15px;
+
+}
+
+.hubEvCrePara {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 10px;
+}
+
+.hubMyAfFig {
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+}
+
+.hubMyAfFig img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.jnbtn {
+    box-shadow: 0px 0px 5px 0px #ccc;
+    padding: 2px 11px;
+    color: #000;
+    background-color: #fff;
+    font-weight: 600;
+    font-family: 'Inter';
+    font-size: 11px;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+
+.hubMyAfFigsDiv {
+    position: relative;
+    height: 23px;
+    width: 24px;
+    width: 60px;
+}
+
+.hubMyAfFig1 {
+    left: 0;
+    z-index: 1;
+}
+
+.hubMyAfFig2 {
+    left: 13px;
+    z-index: 2;
+}
+
+.hubMyAfFig3 {
+    left: 25px;
+    z-index: 3;
+}
+
+.hubMyAfFig4 {
+    left: 37px;
+    z-index: 4;
+}
+
+.eveCreAfisDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+
+.evetCresParentDiv {
+    width: 100%;
+    max-height: 32rem;
+    padding: 20px 20px 0px;
+    overflow-y: hidden;
+    padding: 20px 10px 0px;
+}
+
+.btnacpt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+
+}
+
+.pusrpseflex {
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    gap: 1%
+}
+
+
+.myAffCrePara {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.myAffCreChatBtn {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #263238;
+}
+
+.myAffCreBtnsDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.myAffChatTypeInp {
+    max-width: 100%;
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    outline: none;
+    border: 0;
+    margin-right: 7px;
+}
+
+.myAffChatTypeBtn {
+    font-size: 14px;
+    background-color: #FFD2B5;
+    border: 0;
+    border-radius: 5px;
+    padding: 4px 8px;
+}
+
+.myAffChatTypeBtn img {
+    width: 25px;
+    height: 25px;
+}
+
+.myAffTypeBtnInpDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px 0 15px;
+    margin-top: 16px;
+    border-top: 1px solid #FFD9C0;
+}
+
+.evetCreMainDiv {
+    padding: 12px 0;
+    border-radius: 6px;
+    /* margin-bottom: 12px; */
+}
+
+.hubDevelopmentPart {
+    padding-top: 145px;
+}
+
+.proDeWrapDiv {
+    width: 32%;
+    min-width: 230px;
+}
+
+.proDesignCard {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.proDesiFig {
+    width: 73px;
+    height: 55px;
+    margin: 0 18px 0 0;
+}
+
+.proDesiFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.proDeHead {
+    color: #171725;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 15px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 21px;
+    max-width: 235px;
+}
+
+.proRedDiv {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #FF5E60;
+    margin-right: 10px;
+}
+
+.proNewNotiSpan {
+    color: #92929D;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 19px;
+    max-width: 200px;
+}
+
+.proNewRedDiv {
+    display: flex;
+    align-items: center;
+}
+
+.proDesFigHeDiv {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.proSevFiPer {
+    color: #171725;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 10px 0;
+}
+
+.proHubProgress {
+    height: 7px;
+    border-radius: 10px;
+}
+
+.proDeWrapDivsParent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    overflow-x: auto;
+}
+
+.proDeWrapDivsParent::-webkit-scrollbar {
+    display: none;
+}
+
+.mastVidHead {
+    color: #171725;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 25px;
+}
+
+.fromCourPara {
+    color: #70707C;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    text-transform: uppercase;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 40px;
+}
+
+.mastVidFig {
+    width: 101px;
+    height: 70px;
+    margin: 0;
+    border-radius: 4px;
+}
+
+.mastVidFig img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.mandoHubDiv {
+    background-color: #fff;
+    padding: 26px 42px;
+    border-radius: 25px;
+    width: 48%;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.mandoHubDiv::-webkit-scrollbar {
+    display: none;
+}
+
+.mandoHead {
+    color: #171725;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    margin: 0 0 20px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 27px;
+}
+
+.mastFroFigDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.proEleHrsPara {
+    color: #44444F;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.mastFroFiggrdr {
+    border-bottom: 1px solid #E2E2ED;
+    margin-bottom: 20px;
+}
+
+.mastLeftVidDiv {
+    width: 60%;
+}
+
+.skillRecoDiv {
+    width: 48%;
+}
+
+.madoSkillMainDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skillMandoDivs {
+    background-color: #fff;
+    padding: 26px 42px;
+    border-radius: 25px;
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.skillMandoDivs::-webkit-scrollbar {
+    display: none;
+}
+
+.recoCourseManDiv {
+    background-color: #fff;
+    padding: 26px 42px;
+    border-radius: 25px;
+    height: 280px;
+    overflow-y: auto;
+}
+
+.recoCourseManDiv::-webkit-scrollbar {
+    display: none;
+}
+
+.getFifLoyalCard {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.getFifLoyalFig {
+    width: 100%;
+    height: 218px;
+    margin: 0 0 15px 0;
+    position: relative;
+    border-radius: 10px;
+}
+
+.getFifLoyalFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.getFifFigText {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    display: inline-block;
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    padding: 2px 8px;
+}
+
+.getFifFigText span {
+    color: #FFF;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.getFifHeartDiv {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.getFifHeartDiv i {
+    font-size: 18px;
+    color: #fff;
+}
+
+.proGetDeHead {
+    color: #171725;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 51px;
+    margin: 0 0 15px 0;
+}
+
+.starGetRateDiv i {
+    font-size: 18px;
+    color: #FFC700;
+    margin-right: 6px;
+}
+
+.watchGetRateDiv i {
+    font-size: 18px;
+    color: #038890;
+    margin-right: 10px;
+}
+
+.onCustGetRateDiv i {
+    font-size: 18px;
+    color: #AF214C;
+    margin-right: 10px;
+}
+
+.starWatchOnCustGetSpan {
+    color: #44444F;
+    text-align: center;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.16px;
+}
+
+.statWatchCustGetMainDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.hannaGetFig {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+}
+
+.hannaGetFig img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.hannaSepText {
+    color: #44444F;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hannaFigTextDiv {
+    display: flex;
+    align-items: center;
+}
+
+.hannaDollText {
+    color: #171725;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hannaFigCardDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.myHubDevMentorDiv {
+    margin-bottom: 20px;
+}
+
+.chatIconFig {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.chatIconFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.myAffinityGrpsDiv .react-tabs__tab-list {
+    border-bottom: 1px solid #aaa;
+    display: flex;
+    justify-content: space-between;
+}
+
+.myAffinityGrpsDiv .react-tabs__tab {
+    width: 49%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.myAffinityGrpsDiv .react-tabs__tab--selected {
+    background: transparent;
+    border: 0;
+    font-weight: 600;
+    border-bottom: 4px solid rgb(235 111 28);
+}
+
+.myAffinityGrpsDiv .react-tabs__tab:focus:after {
+    background: transparent;
+}
+
+.myevetCresParentDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* align-items: center; */
+    padding: 10px 15px 10px 24px;
+    gap: 1%;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.myevetCresParentDiv::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.myevetCresParentDiv {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.myafinitydtls {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    /* padding: 15px; */
+    padding: 10px 0px;
+}
+
+.evetCreMainDivdtls {
+    background-color: #F1E5DD;
+    width: 100%;
+    max-width: 24%;
+    padding: 12px 0;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.myallgrpdtlsv {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #fff;
+}
+
+.divctrtparadiv {
+    padding: 15px;
+}
+
+.myimgdiv {
+    width: 108px;
+    height: 105px;
+
+}
+
+.myimgdiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.evetCreMainDivmain {
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (max-width: 1399px) {
+    .leftNtrkDiv {
+        width: 25%;
+    }
+
+    .rightNtrkDiv {
+        width: 73%;
+    }
+
+    .chckLeftTd {
+        width: 70%;
+    }
+
+    .myOwnChckListAccrBtn .spanOne {
+        font-size: 12px;
+    }
+
+    .chckRightTd {
+        width: 12%;
+    }
+
+    .mentConnecFigsDiv {
+        column-gap: 5px;
+    }
+
+    .myAffityHead {
+        font-size: 15px;
+    }
+
+    .proDeHead {
+        max-width: 200px;
+    }
+
+    .proNewNotiSpan {
+        max-width: 140px;
+    }
+
+    .proAboutSelf {
+        font-size: 15px;
+    }
+
+    .myAffinityGrpsDiv .react-tabs__tab {
+        font-size: 14px;
+    }
+
+    .profile_pic img {
+        width: 44px;
+        min-width: 44px;
+        height: 44px;
+    }
+
+    .hubEvCrePara {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1365px) {
+    .mrkMiddleInnerDivsAn {
+        width: 49%;
+    }
+
+    .mrkMidRoundDivs {
+        width: 47px;
+        height: 47px;
+    }
+
+    .middleMrkHeads {
+        font-size: 18px;
+        width: 160px;
+    }
+
+    /* .midleLogoHeadDiv {
+        padding: 6px 12px;
+    } */
+
+    .midleLogoHead {
+        font-size: 20px;
+    }
+
+    .notoFig {
+        width: 33px;
+        height: 35px;
+        margin: 0 8px 0 0;
+    }
+
+    .notoFig2 {
+        width: 30px;
+        height: 30px;
+        margin: 0 8px 0 0;
+    }
+
+    .mrkMidProText {
+        font-size: 16px;
+    }
+
+    .penFlagTextDiv span {
+        font-size: 15px;
+    }
+
+    .penFlagTextDiv i {
+        font-size: 13px;
+    }
+
+    .svCoShBtnDiv {
+        width: 68px;
+    }
+
+    .svMsgFig {
+        width: 14px;
+        height: 14px;
+        margin: -7px 0px 0 0;
+    }
+
+    .chmpMsgSpan {
+        font-size: 11px;
+    }
+
+    .champFig {
+        width: 45px;
+        height: 38px;
+        margin: 0 6px 0 0;
+    }
+
+    .champHead {
+        font-size: 12px;
+        margin-right: 15px;
+    }
+
+    .champMainDiv {
+        margin-top: 20px;
+        padding: 15px 17px;
+    }
+
+    .champFig2 {
+        margin: 0 13px 0 0;
+        height: 35px;
+    }
+
+    .sampTypeFig {
+        width: 40px;
+        height: 40px;
+    }
+
+    .hubHallHd {
+        font-size: 17px;
+    }
+
+    .hubAddBtn {
+        font-size: 11px;
+    }
+
+    .addTypeBtn {
+        font-size: 18px;
+        padding: 4px 9px;
+    }
+
+    .goldCardText {
+        font-size: 23px;
+    }
+
+    .coinBalHead {
+        font-size: 20px;
+    }
+
+    .goldCoinFig {
+        width: 35px;
+        height: 35px;
+        margin: 0 0 0 15px;
+    }
+
+    .coinFigInnerDiv {
+        margin-bottom: 8px;
+    }
+
+    .coinBalAmnt {
+        font-size: 22px;
+        margin: 0 0 10px 0;
+    }
+
+    .expiOnText {
+        font-size: 14px;
+    }
+
+    .reedmDiv {
+        padding: 8px 15px;
+    }
+
+    .redmText {
+        font-size: 17px;
+    }
+
+    .vstDnteBtn {
+        font-size: 17px;
+    }
+
+    .myAfitiText {
+        font-size: 15px;
+    }
+
+    .seeAllAfiBtn {
+        font-size: 10px;
+    }
+
+    .evntMarLedDiv {
+        width: 98%;
+        padding: 12px 10px;
+    }
+
+    .evtSmHead {
+        font-size: 14px;
+    }
+
+    .creSubHead {
+        font-size: 12px;
+    }
+
+    .typeMeBtnCreDiv input {
+        width: 75%;
+    }
+
+    .hubWelHead {
+        font-size: 28px;
+    }
+
+    .hubWelFig {
+        width: 25px;
+        height: 21px;
+    }
+
+    .hubWelPara {
+        font-size: 13px;
+    }
+
+    .hubGrowHead {
+        font-size: 26px;
+        margin: 0 0 15px 0;
+    }
+
+    .hubGrowPara {
+        font-size: 15px;
+    }
+
+    .perNumCirDiv {
+        padding-right: 20px;
+    }
+
+    .myAffityHead {
+        font-size: 14px;
+    }
+
+    .myAffSeeAllBtn {
+        font-size: 11px;
+    }
+
+    .mandoHubDiv {
+        border-radius: 15px;
+    }
+
+    .skillMandoDivs {
+        border-radius: 15px;
+    }
+
+    .recoCourseManDiv {
+        border-radius: 15px;
+    }
+
+    .getFifLoyalFig {
+        height: 190px;
+    }
+
+    .getFifLoyalCard {
+        padding: 13px;
+        border-radius: 15px;
+    }
+
+    .proGetDeHead {
+        font-size: 16px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .mrkMiddleInnerDivsAn {
+        width: 32%;
+        margin-right: 11px !important;
+    }
+
+    .mrkMiddleMainDiv {
+        justify-content: flex-start;
+    }
+
+    .champMainDiv {
+        width: 32%;
+        margin-right: 10px;
+    }
+
+    .champMainDivParent {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .leftMrkDiv {
+        align-items: flex-start;
+        padding-top: 35px;
+    }
+
+    /* .eliteFigDiv {
+        width: 49%;
+    } */
+
+    .eliteFig {
+        height: 245px;
+    }
+
+    .coinExpDiv {
+        width: 49%;
+        margin-top: 0;
+        padding: 15px 15px 28px 15px;
+    }
+
+    .eliiteAllMainDiv {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .goldCardText {
+        font-size: 26px;
+        top: 79px;
+    }
+
+    .myAfitiText {
+        font-size: 18px;
+    }
+
+    .seeAllAfiBtn {
+        font-size: 12px;
+    }
+
+    .evtSmHead {
+        font-size: 16px;
+    }
+
+    .creSubHead {
+        font-size: 14px;
+    }
+
+    .typeMeBtnCreDiv input {
+        width: 78%;
+    }
+
+    .evntMarLedDiv {
+        width: 95%;
+        padding: 14px 15px;
+    }
+
+    .empDegId {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .rightNtrkDiv {
+        width: 100%;
+    }
+
+    .leftNtrkDiv {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .ntrkLeftStartDiv {
+        display: block;
+    }
+
+    .empDegNetworkId {
+        margin-left: 25px;
+    }
+
+    .mrkMidInnBackFig {
+        height: 150px;
+    }
+
+    .middleMrkHeads {
+        font-size: 20px;
+        width: auto;
+    }
+
+    .mentConnecFig {
+        height: 55px;
+    }
+
+    .heyVidChkDiv {
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .perNumCirDiv {
+        padding-right: 0;
+    }
+
+    .perComText {
+        font-size: 12px;
+    }
+
+    .perNumHead {
+        font-size: 35px;
+        margin: 0;
+    }
+
+    .perCirBarDiv {
+        width: 55px;
+        height: 55px;
+    }
+
+    .ntrkLSInnerDiv {
+        height: 160px;
+        border-radius: 12px;
+    }
+
+    .chckRightTd span {
+        font-size: 16px;
+    }
+
+    .chckLeftTd span {
+        font-size: 16px;
+    }
+
+    .chckLeftTd {
+        width: 60%;
+    }
+
+    .chckRightTd {
+        width: 18%;
+    }
+
+    .chckLeftTd span {
+        font-size: 13px;
+    }
+
+    .tkSuBtn {
+        font-size: 12px;
+        padding: 7px;
+    }
+
+    .onBoardCheckDiv {
+        padding: 15px;
+    }
+
+    .onBoardAccDiv {
+        margin-top: 15px;
+    }
+
+    .howSaStarDiv i {
+        font-size: 12px;
+        margin-left: 2px;
+    }
+
+    .mrkHubFig {
+        width: 105px;
+        height: 105px;
+    }
+
+    .perComText {
+        height: 33px;
+    }
+
+    .mandoHubDiv {
+        padding: 22px 25px;
+        border-radius: 10px;
+    }
+
+    .skillMandoDivs {
+        padding: 22px 25px;
+        border-radius: 10px;
+    }
+
+    .recoCourseManDiv {
+        padding: 22px 25px;
+        border-radius: 10px;
+    }
+
+    .mastVidFig {
+        width: 75px;
+        height: 58px;
+    }
+
+    .mandoHead {
+        font-size: 16px;
+        height: 21px;
+    }
+
+    .proRedDiv {
+        margin-right: 5px;
+    }
+
+    .proNewNotiSpan {
+        font-size: 11px;
+        height: 14px;
+        max-width: 95px;
+    }
+
+    .proDesiFig {
+        width: 50px;
+        height: 48px;
+        margin: 0 8px 0 0;
+    }
+
+    .proDeHead {
+        max-width: 126px;
+        margin: 0 0 10px 0;
+    }
+
+    .mastVidHead {
+        font-size: 13px;
+        height: 18px;
+    }
+
+    .fromCourPara {
+        font-size: 10px;
+        height: 33px;
+    }
+
+    .leftNtrkDiv {
+        padding-top: 0;
+    }
+
+    .mrkHubFig {
+        position: static;
+    }
+
+    .myAffinityGrpsDiv .react-tabs__tab {
+        font-size: 12px;
+        padding: 6px 7px;
+    }
+
+    .profile_pic img {
+        width: 36px;
+        min-width: 36px;
+        height: 36px;
+    }
+
+    .hubEvCrePara {
+        font-size: 12px;
+    }
+
+    .share .shareIconImg {
+        width: 17px;
+        height: 17px;
+    }
+}
+
+@media (max-width: 991px) {
+    .champMainDiv {
+        width: 48%;
+    }
+
+    .mrkMiddleInnerDivsAn {
+        width: 48%;
+        margin-right: 10px !important;
+    }
+
+    .eliteFig {
+        height: 220px;
+    }
+
+    .coinExpDiv {
+        padding: 15px 15px 25px 15px;
+    }
+
+    .coinBalHead {
+        font-size: 18px;
+    }
+
+    .coinBalAmnt {
+        font-size: 18px;
+        margin: 0 0 5px 0;
+    }
+
+    .expiOnTextDiv {
+        margin-bottom: 9px;
+    }
+
+    .reedmDiv {
+        padding: 7px 15px;
+    }
+
+    .mrkHubFigDiv {
+        border: 12px solid #fff;
+        top: -90px;
+    }
+
+    .mrkCamFig {
+        right: 0;
+    }
+
+    .hubWelHead {
+        font-size: 22px;
+    }
+
+    .hubGrowHead {
+        font-size: 22px;
+        margin: 0 0 10px 0;
+    }
+
+    .headFirstPart {
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .hubGrowPara {
+        font-size: 13px;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .hubSubWelDiv {
+        position: static;
+        justify-content: flex-end;
+        transform: translate(0, 0);
+        margin-top: 8px;
+    }
+
+    .mrkHbHead {
+        font-size: 23px;
+        margin: 0;
+    }
+
+    .mrkHbName {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .mrkHbName {
+        font-size: 16px;
+        margin: 0 5px 0 0;
+    }
+
+    .mrkHubEmpText {
+        font-size: 14px;
+    }
+
+    .perNumHead {
+        font-size: 30px;
+    }
+
+    .perCirBarDiv {
+        width: 48px;
+        height: 60px;
+    }
+
+    .ntrkLSInnerDiv {
+        height: 145px;
+    }
+
+    .joinChrtTab .react-tabs__tab {
+        font-size: 11px;
+    }
+
+    .comActDiv {
+        font-size: 9px;
+        width: 60px;
+    }
+
+    .chckLeftTd span {
+        font-size: 16px;
+    }
+
+    .chckRightTd span {
+        font-size: 16px;
+    }
+
+    .howSaText {
+        font-size: 13px;
+    }
+
+    .howSaStarDiv i {
+        font-size: 16px;
+    }
+
+    .leftNtrkDiv {
+        margin-bottom: 12px;
+    }
+
+    .mrkMiddleInnerDivs {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .mentConnecFigInnerDiv {
+        width: 16%;
+    }
+
+    .mentConnecFig {
+        height: 70px;
+    }
+
+    .networkSecPart {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .networkSecPart {
+        margin-top: 20px;
+    }
+
+    .joinChrtTab .react-tabs__tab-list {
+        padding: 40px 0 0 0;
+        min-width: 850px;
+    }
+
+    .chlTabpanelDiv {
+        min-width: 853px;
+    }
+
+    .onBoaSpan {
+        font-size: 16px;
+    }
+
+    .tkSuBtn {
+        font-size: 14px;
+    }
+
+    .howSaText {
+        font-size: 12px;
+        width: 75%;
+    }
+
+    .howSaStarDiv i {
+        font-size: 15px;
+    }
+
+    .perComText {
+        font-size: 10px;
+        margin: 0 0 10px 0;
+    }
+
+    .perNumHead {
+        font-size: 20px;
+    }
+
+    .perCirBarDiv {
+        width: 35px;
+        height: 35px;
+    }
+
+    .batteFig {
+        width: 45px;
+        height: 45px;
+    }
+
+    .TropFig {
+        width: 45px;
+        height: 45px;
+    }
+
+    .ntrkLSInnerDiv {
+        height: 130px;
+    }
+
+    .joinChrtTab {
+        overflow-x: auto;
+    }
+
+    .joinChrtTabDiv {
+        margin-top: 15px;
+    }
+
+    .mentConnecFigInnerDiv {
+        width: 23%;
+    }
+
+    .mentConnecFigsDiv {
+        column-gap: 10px;
+    }
+
+    .perComText {
+        height: 26px;
+    }
+
+    .mrkHubFigDiv {
+        top: -75px;
+    }
+
+    .empDegId {
+        margin-top: 28px;
+    }
+
+    .proDeWrapDivsParent>div {
+        margin-right: 20px;
+    }
+
+    .madoSkillMainDiv {
+        display: block;
+    }
+
+    .mandoHubDiv {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .skillRecoDiv {
+        width: 100%;
+    }
+
+    .hubDevelopmentPart {
+        padding-top: 115px;
+    }
+
+    .proDeWrapDivsParent {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .mrkMiddleInnerDivs {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .champMainDiv {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .eliiteAllMainDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coinExpDiv {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .eliteFigDiv {
+        width: 320px;
+    }
+
+    .eliteFig {
+        height: 220px;
+    }
+
+    .hubWelHead {
+        font-size: 19px;
+    }
+
+    .hubWelFig {
+        width: 23px;
+        height: 19px;
+        margin: 0 4px 0 0;
+    }
+
+    .mrkHbHead {
+        font-size: 20px;
+    }
+
+    .mrkMiddleInnerDivsAn {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+
+    .howSaText {
+        width: 72%;
+    }
+}
+
+@media (max-width: 479px) {
+    .evntMarLedDiv {
+        width: 100%;
+    }
+
+    .hubGrowHead {
+        font-size: 18px;
+    }
+
+    .mrkHbHead {
+        font-size: 17px;
+    }
+
+    .mrkHbName {
+        font-size: 14px;
+        margin: 0 3px 0 0;
+    }
+
+    .mrkPenBtn::after {
+        width: 8px;
+    }
+
+    .mrkPenBtn {
+        font-size: 7px;
+    }
+
+    .mrkHubEmpText {
+        font-size: 11px;
+    }
+
+    .hubWelHead {
+        font-size: 15px;
+    }
+
+    .ntrkLSInnerDiv {
+        width: 230px;
+        margin: 0 auto 15px auto;
+    }
+
+    .ntrkLeftSectDiv {
+        display: block;
+        margin: 0;
+    }
+
+    .joinChrtTabDiv {
+        margin-top: 0;
+    }
+
+    .onBoardCheckDiv {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .howSaText {
+        width: 65%;
+        font-size: 11px;
+    }
+
+    .howSaStarDiv i {
+        font-size: 12px;
+    }
+
+    .onBoaSpan {
+        font-size: 12px;
+    }
+
+    .tkSuBtn {
+        font-size: 10px;
+        padding: 6px 7px;
+    }
+
+    .onBoardAccDiv {
+        margin-top: 5px;
+    }
+
+    .mentConnecFig {
+        height: 60px;
+    }
+
+    .mentConnecFigsDiv {
+        column-gap: 6px;
+    }
+
+    .mrkHubFigDiv {
+        top: 0;
+        position: relative;
+    }
+
+    .leftMrkDiv {
+        padding-top: 0px;
+    }
+
+    .leftMrkDiv {
+        align-items: center;
+        padding-top: 0px;
+    }
+
+    .empDegId {
+        margin-top: 6px;
+        margin-bottom: 5px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mrkNmBtnDiv {
+        margin-bottom: 3px;
+    }
+
+    .hubSecPrat {
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 399px) {
+    .mrkHbHead {
+        font-size: 21px;
+        margin: 0 0 5px 0;
+    }
+
+    .mrkHbName {
+        font-size: 16px;
+        margin: 0 8px 0 0;
+    }
+
+    .mrkPenBtn {
+        font-size: 8px;
+    }
+
+    .mrkPenBtn::after {
+        width: 10px;
+    }
+
+    .mrkHubEmpText {
+        font-size: 13px;
+    }
+
+    .mrkNmBtnDiv {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 359px) {
+    .eliteFigDiv {
+        width: 285px;
+    }
+
+    .eliteFig {
+        height: 190px;
+    }
+
+    .goldCardText {
+        font-size: 22px;
+        top: 62px;
+    }
+}

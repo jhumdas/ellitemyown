@@ -1,0 +1,2046 @@
+.profileCvrPicDiv {
+    width: 98.5%;
+    margin-top: 101px;
+    height: 280px;
+    /* background-image: url('../../Images/profileCvrPic.png'); */
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 20px;
+}
+
+.profileBackFigure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.profileBackFigure img {
+    width: 100%;
+    height: 100%;
+}
+
+.proEditCamFig {
+    width: 30px;
+    height: 25px;
+    margin: 0;
+}
+
+.proEditCamFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.proEditText {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.proEditFigText {
+    width: 215px;
+    border-radius: 5px;
+    background-color: #FFFDFD;
+    position: absolute;
+    right: 56px;
+    bottom: 14px;
+    cursor: pointer;
+    padding: 7px 10px;
+}
+
+.proEditFigInp {
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+}
+
+.proEditFigInnerText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 7px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.proCvrTagLine {
+    color: #0E24CC;
+    font-family: 'Inter';
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    bottom: 28px;
+    left: 300px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hobbyPersoDiv {
+    margin-top: 30px;
+}
+
+.aspiringProDiv {
+    margin-top: 20px;
+}
+
+.hobbyAspiMainDiv {
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px 22px;
+}
+
+.hobbyAspHead {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+.aspHobClrDivs {
+    width: 100%;
+    padding: 25px 20px;
+    border-radius: 7px;
+}
+
+.wrkHobbyText {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hobbyAspLi {
+    margin-top: 16px;
+}
+
+.mySocalProAllBtnDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(198, 198, 210, 0.26);
+    margin-bottom: 16px;
+}
+
+.mySocalCmtHead {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mySocialAllBtn {
+    background-color: transparent;
+    border: 0;
+    color: rgba(38, 50, 56, 0.90);
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.mySocialAllBtnDiv {
+    min-width: 40px;
+}
+
+.proSocialCmtDiv {
+    width: 100%;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.06);
+    margin-top: 25px;
+}
+
+.proDateText {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.proMemText {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 20px;
+}
+
+.proMemDateChtBtn {
+    background-color: transparent;
+    border: 0;
+    font-size: 18px;
+    color: #263238;
+}
+
+.proMemDateChtDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 15px;
+}
+
+.proPartiText {
+    color: rgba(38, 50, 56, 0.66);
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.proPartiTextDiv {
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.proAllThreeBtnsDiv {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.proRedLinkBtn {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #263238;
+    margin-right: 20px;
+}
+
+.proRedChatBtn {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #263238;
+    margin-right: 20px;
+}
+
+.proRedShareBtn {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #263238;
+}
+
+.proAboutSelf {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 0 30px 0;
+}
+
+.rateMySkillDiv {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 25px;
+}
+
+.rateMyFig {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    margin: 0 25px 0 0;
+    border-radius: 50%;
+}
+
+.rateMyFig img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.rateMyFigInpDiv {
+    display: flex;
+    align-items: center;
+    margin-bottom: 39px;
+}
+
+.rateMyInp {
+    font-family: 'Inter';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #000;
+    border: 0;
+    outline: none;
+    width: 100%;
+}
+
+.rateMyInp::placeholder {
+    color: rgba(38, 50, 56, 0.45);
+}
+
+.rateSkillFig {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px 0 0;
+}
+
+.rateSkillFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.rateSkillText {
+    color: #238EE5;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rateSkillDiv {
+    display: flex;
+    align-items: center;
+}
+
+.giveCoinFig {
+    width: 21px;
+    height: 21px;
+    margin: 0 5px 0 0;
+}
+
+.giveCoinFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.giveCoinText {
+    color: #E5237B;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.writeTestFig {
+    width: 25px;
+    height: 30px;
+    margin: 0 5px 0 0;
+}
+
+.writeTestFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.writeTestText {
+    color: #A730E6;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wrGiRaBtn {
+    background-color: #0E24CC;
+    border-radius: 5px;
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 10px 50px;
+    border: 0;
+}
+
+.rateGiveWritePostDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rateMyInnerDiv {
+    width: 31%;
+    height: 180px;
+    border-radius: 20px;
+    border: 1px solid #E2E2EA;
+    background: #FFF;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.rateMyNtrkInnerDiv {
+    width: 33%;
+    height: 180px;
+    border-radius: 20px;
+    border: 1px solid #E2E2EA;
+    background: #FFF;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.rateMyComText {
+    color: #92929D;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+    margin: 0 0 16px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 40px;
+}
+
+.rateMyNumHead {
+    color: #171725;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.rateMybatteFig {
+    width: 56px;
+    height: 56px;
+    margin: 0;
+}
+
+.rateMyTropFig {
+    width: 60px;
+    height: 60px;
+    margin: 0;
+}
+
+.rateMyNumCirDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rateMyInnerDivParent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.myVegsDiv {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.myVetFig {
+    width: 30px;
+    min-width: 30px;
+    height: 32px;
+    margin: 0 7px 0 0;
+}
+
+.myVetFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.myVetTestHead {
+    color: #0B0C0C;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tabListPartDiv {
+    width: 83%;
+    overflow-x: auto;
+}
+
+.tabListPartDiv::-webkit-scrollbar {
+    width: 0;
+    height: 5px;
+}
+
+.tabListPartDiv .react-tabs__tab-list {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+    margin-bottom: 0;
+    border: 0;
+}
+
+.addSkillsTabBtn {
+    width: 14%;
+    background-color: #0E24CC;
+    border: 0;
+    border-radius: 10px;
+    color: #FFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    padding: 5px 12px;
+}
+
+.addSkillsTabBtn span {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: normal;
+    font-size: 12px;
+}
+
+.tabListPartDiv .react-tabs__tab {
+    color: #656579;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 6px 12px 25px 12px;
+    text-wrap: nowrap;
+}
+
+.tabListPartDiv .react-tabs__tab--selected {
+    background-color: transparent;
+    border: 0;
+    padding: 6px 12px 25px 12px;
+    border-bottom: 5px solid #138BFB;
+}
+
+.tabListPartDiv .react-tabs__tab:focus:after {
+    background-color: transparent;
+}
+
+.tabListAddBtnDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 20px 20px 0 20px;
+    box-shadow: 0px -1px 0px 0px #E2E2EA inset;
+}
+
+.tabPanelPartDiv {
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+/* Rating */
+
+#rating {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    border-radius: 20px;
+    margin-top: 5px;
+    padding: 26px 59px 69px 50px;
+}
+
+#rating .rating_text {
+    padding-top: 43px;
+}
+
+#rating .rating_text h2 {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 51.3333px;
+    line-height: 65px;
+    color: #171725;
+    margin: 0;
+    padding: 0;
+}
+
+#rating .rating_text p {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #92929d;
+    margin: 0;
+    padding-top: 10px;
+}
+
+#rating .rating_text h3 {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 38px;
+    color: #171725;
+    margin: 0;
+    padding-top: 17px;
+}
+
+#rating .progress_wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#rating .progress {
+    max-width: 394px;
+    width: 100%;
+    height: 15px;
+    /* background-color: #e9ecef; */
+    background-color: #fff;
+}
+
+#rating .progress-bar {
+    background: #ffa927;
+}
+
+#rating .number {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #171725;
+    padding-right: 9px;
+}
+
+#rating .icon {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 27px;
+    color: #ffc700;
+    padding-right: 13px;
+}
+
+#rating .amount {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #44444f;
+    padding-left: 59px;
+}
+
+#rating .comment_section {
+    display: flex;
+    padding-top: 95px;
+    width: 100%;
+}
+
+#rating .comment_section .comment_right {
+    padding-left: 22px;
+    width: 100%;
+}
+
+#rating .comment_section .comment_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#rating .comment_section .comment_top_left {
+    display: flex;
+}
+
+#rating .comment_section .comment_person {
+    width: 54px;
+    height: 54px;
+    overflow: hidden;
+}
+
+#rating .comment_section .comment_person img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#rating .comment_right h5 {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #171725;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+#rating .comment_right .star {
+    margin-left: 36px;
+    white-space: nowrap;
+}
+
+#rating .comment_right i {
+    color: #ffc700;
+    font-size: 14px;
+}
+
+#rating .comment_right p {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #92929d;
+    /* margin-left: 130px; */
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#rating .person_description {
+    padding-top: 12px;
+}
+
+#rating .person_description p {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #44444F;
+    padding: 0;
+    margin: 0;
+}
+
+#rating .rating_btn {
+    margin: 0 auto;
+    padding-top: 75px;
+}
+
+#rating .rating_btn .review_btn {
+    width: 319px;
+    height: 59px;
+    background: #FFFFFF;
+    border: 1px solid #E2E2EA;
+    border-radius: 12px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 138%;
+    color: #171725;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    outline: 0;
+}
+
+#rating .comment_icon {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: auto;
+}
+#rating .cmnticnk{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    margin-right: 0px;
+}
+
+#rating .comment_icon img {
+    width: 18px;
+    height: 15px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.rateJavaHead {
+    color: #171725;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.rateLinkedinBtn {
+    background-color: transparent;
+    border: 0;
+    font-size: 23px;
+    color: #0A66C2;
+}
+
+.tabRateIconFig {
+    width: 18px;
+    height: 18px;
+    margin: 5px 0 0 12px;
+}
+
+.tabRateIconFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.rateLinkShareDiv {
+    display: flex;
+    align-items: flex-start;
+}
+
+.rateJavaHeadDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cmntLinkBtn {
+    background-color: transparent;
+    border: 0;
+    margin-right: 8px;
+}
+
+.cmntLinkBtn i {
+    font-size: 21px !important;
+    color: #0A66C2 !important;
+}
+
+.myTestRatingDiv {
+    margin-bottom: 15px;
+}
+
+.myJourTabListDiv {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.myJourTabListDiv .react-tabs__tab-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 0; */
+}
+
+.myJourTabListDiv .react-tabs__tab {
+    color: #656579;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.myJourTabListDiv .react-tabs__tab--selected {
+    color: #44444F;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 5px solid #138BFB;
+}
+
+.myJourTabListDiv .react-tabs__tab:focus:after {
+    background-color: transparent;
+}
+
+.jourExpText {
+    color: #000;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.jourAddInfoBtn {
+    background-color: #0E24CC;
+    border: 0;
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.expAddInfoDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.founder-lft {
+    width: 58px;
+    min-width: 58px;
+    height: 58px;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+}
+
+.founder-lft img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.foundCeoHead {
+    color: #263238;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 0 5px 0;
+}
+
+.fractFullText {
+    color: #263238;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 0 8px 0;
+}
+
+.jourDecText {
+    color: #7B7B7B;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 0 12px 0;
+}
+
+.jourDescription {
+    color: #636363;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.jourSeeMore {
+    color: #263238;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.founder-ceo {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.jourEliteCardFig {
+    width: 100%;
+    height: auto;
+    margin: 0 0 25px 0;
+}
+
+.jourEliteCardFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.profilePageSection {
+    margin-bottom: 30px;
+}
+
+.proMentConnecDiv {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 15px;
+    margin-top: 20px;
+}
+
+.myProMentBtnDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myProMentPara {
+    color: #0E24CC;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+.mentProAddBtn {
+    background-color: transparent;
+    border: 0;
+    color: #0E24CC;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.mentProConnecFigsDiv {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 7px;
+    margin-top: 21px;
+    max-height: 217px;
+    overflow-y: auto;
+}
+
+.mentProConnecFigsDiv::-webkit-scrollbar {
+    display: none;
+}
+
+.mentProConnecFigInnerDiv {
+    width: 23%;
+    margin-bottom: 20px;
+}
+
+.mentProConnecFig {
+    width: 100%;
+    height: 51px;
+    margin: 0;
+}
+
+.mentProConnecFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.mentProConnText {
+    color: #0F044C;
+    font-family: 'Roboto';
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 5px 0 0 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 14px;
+}
+
+.chatIconFig {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+.chatIconFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.lkShCmIconDiv {
+    width: 20px;
+    height: 20px;
+    margin: 0 20px 0 0;
+}
+
+.lkShCmIconDiv:last-child {
+    margin: 0;
+}
+
+.lkShCmIconDiv img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1399px) {
+    .mySocalCmtHead {
+        font-size: 15px;
+    }
+
+    .hobbyAspHead {
+        font-size: 18px;
+    }
+
+    .wrkHobbyText {
+        font-size: 14px;
+    }
+
+    .aspHobClrDivs {
+        padding: 15px 18px;
+        border-radius: 7px;
+    }
+
+    .rateMyInp {
+        font-size: 22px;
+    }
+
+    .rateMyFig {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+        margin: 0 20px 0 0;
+    }
+
+    .rateMyFigInpDiv {
+        margin-bottom: 30px;
+    }
+
+    .rateSkillFig {
+        width: 25px;
+        height: 25px;
+    }
+
+    .rateSkillText {
+        font-size: 14px;
+    }
+
+    .giveCoinFig {
+        width: 21px;
+        height: 26px;
+    }
+
+    .giveCoinText {
+        font-size: 14px;
+    }
+
+    .writeTestFig {
+        width: 21px;
+        height: 27px;
+    }
+
+    .writeTestText {
+        font-size: 14px;
+    }
+
+    .wrGiRaBtn {
+        font-size: 16px;
+        padding: 6px 30px;
+    }
+
+    .rateMyInnerDiv {
+        width: 48%;
+    }
+
+    .rateMyNtrkInnerDiv {
+        width: 48%;
+    }
+
+    .rateMyInnerDivParent {
+        column-gap: 0;
+        justify-content: space-between;
+    }
+
+    .tabListPartDiv .react-tabs__tab {
+        font-size: 13px;
+    }
+
+    .rateJavaHead {
+        font-size: 18px;
+    }
+
+    .rateLinkedinBtn {
+        font-size: 21px;
+    }
+
+    .tabRateIconFig {
+        width: 16px;
+        height: 16px;
+        margin: 3px 0 0 12px;
+    }
+
+    #rating .rating_text {
+        padding-top: 10px;
+    }
+
+    #rating .rating_text h2 {
+        font-size: 40px;
+    }
+
+    #rating .comment_section {
+        padding-top: 25px;
+    }
+
+    #rating .rating_btn {
+        padding-top: 25px;
+    }
+
+    .myJourTabListDiv .react-tabs__tab {
+        font-size: 13px;
+    }
+
+    .myVetTestHead {
+        font-size: 21px;
+    }
+
+    .founder-lft {
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+    }
+
+    .mentProConnecFigsDiv {
+        column-gap: 6px;
+    }
+}
+
+@media (max-width: 1365px) {
+    .mySocalCmtHead {
+        font-size: 14px;
+    }
+
+    .mySocialAllBtn {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .empDegId {
+        justify-content: flex-start;
+        column-gap: 20px;
+    }
+
+    .wrkHobbyText {
+        font-size: 16px;
+    }
+
+    .hobbyAspHead {
+        font-size: 20px;
+    }
+
+    .myAffityHead {
+        font-size: 18px;
+    }
+
+    .myAffSeeAllBtn {
+        font-size: 13px;
+    }
+
+    .mySocalCmtHead {
+        font-size: 18px;
+    }
+
+    .mySocialAllBtn {
+        font-size: 13px;
+    }
+
+    .rateMyFig {
+        width: 70px;
+        height: 70px;
+        min-width: 70px;
+    }
+
+    .rateMyInp {
+        font-size: 26px;
+    }
+
+    .rateSkillFig {
+        width: 30px;
+        height: 30px;
+    }
+
+    .rateSkillText {
+        font-size: 16px;
+    }
+
+    .giveCoinFig {
+        width: 26px;
+        height: 32px;
+    }
+
+    .giveCoinText {
+        font-size: 16px;
+    }
+
+    .writeTestFig {
+        width: 25px;
+        height: 30px;
+    }
+
+    .writeTestText {
+        font-size: 16px;
+    }
+
+    .wrGiRaBtn {
+        font-size: 21px;
+        padding: 8px 35px;
+    }
+
+    .rateMyInnerDiv {
+        width: 31%;
+    }
+
+    .rateMyNtrkInnerDiv {
+        width: 31%;
+    }
+
+    .rateMyInnerDivParent {
+        column-gap: 10px;
+        justify-content: flex-start;
+    }
+
+    .myVetTestHead {
+        font-size: 24px;
+    }
+
+    .tabListPartDiv .react-tabs__tab {
+        font-size: 15px;
+    }
+
+    .rateJavaHead {
+        font-size: 20px;
+    }
+
+    .rateJavaHead {
+        font-size: 20px;
+    }
+
+    .rateLinkedinBtn {
+        font-size: 23px;
+    }
+
+    .tabRateIconFig {
+        width: 18px;
+        height: 18px;
+        margin: 5px 0 0 12px;
+    }
+
+    #rating .comment_section {
+        padding-top: 35px;
+    }
+
+    .jourEliteCardFig {
+        width: 48%;
+        height: 304px;
+        margin: 16px auto 0 auto;
+        order: 1;
+    }
+
+    .champMainDivParent {
+        width: 100%;
+        order: 3;
+    }
+
+    .mentConnecDivWrap {
+        width: 48%;
+        order: 2;
+    }
+
+    .jourChampDiv {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 25px;
+    }
+
+    .mentProConnecFigsDiv {
+        column-gap: 10px;
+    }
+
+    .mentProConnecFigInnerDiv {
+        width: 18%;
+    }
+
+    .myJourDiv {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .mentProConnecFigsDiv {
+        max-height: 150px;
+    }
+
+    .jourEliteCardFig {
+        height: 235px;
+    }
+
+    .mentProConnecFigInnerDiv {
+        width: 22%;
+    }
+
+    #rating {
+        padding: 26px 40px 35px 40px;
+    }
+
+    .proCvrTagLine {
+        bottom: auto;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -49%);
+    }
+
+    .profileCvrPicDiv {
+        width: 100%;
+        height: 250px;
+    }
+
+    .tabListPartDiv::-webkit-scrollbar {
+        display: none;
+    }
+
+    #rating .comment_right p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    #rating .comment_right .star {
+        margin-left: 14px;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 767px) {
+    .rateMyFig {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+        margin: 0 15px 0 0;
+    }
+
+    .proCvrTagLine {
+        font-size: 40px;
+    }
+
+    .rateMyInp {
+        font-size: 20px;
+    }
+
+    .rateMyInnerDiv {
+        width: 48%;
+    }
+
+    .rateMyNtrkInnerDiv {
+        width: 48%;
+    }
+
+    .rateMyInnerDivParent {
+        column-gap: 0;
+        justify-content: space-between;
+    }
+
+    .myVetTestHead {
+        font-size: 21px;
+    }
+
+    .tabListPartDiv .react-tabs__tab {
+        font-size: 13px;
+    }
+
+    #rating .rating_text {
+        padding-top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    #rating .rating_text h3 {
+        padding-top: 0;
+    }
+
+    #rating .comment_right p {
+        margin-left: 0px;
+    }
+
+    #rating .person_description p {
+        margin: 0 0 5px 0;
+    }
+
+    .jourEliteCardFig {
+        height: 185px;
+    }
+
+    .mentProConnecFigsDiv {
+        height: 98px;
+        column-gap: 8px;
+    }
+
+    .jourChampDiv {
+        column-gap: 21px;
+    }
+
+    #rating .progress {
+        height: 10px;
+    }
+
+    .jourDescription {
+        font-size: 14px;
+    }
+
+    .foundCeoHead {
+        font-size: 16px;
+    }
+
+    .jourDecText {
+        margin: 0 0 5px 0;
+    }
+
+    #rating .rating_btn .review_btn {
+        width: 290px;
+        height: 50px;
+        font-size: 17px;
+        line-height: normal;
+    }
+
+    .myJourTabListDiv .react-tabs__tab-list {
+        overflow-x: auto;
+    }
+
+    .myJourTabListDiv .react-tabs__tab-list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .myJourTabListDiv .react-tabs__tab {
+        text-wrap: nowrap;
+    }
+
+    #rating .comment_section .comment_top {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+
+    #rating {
+        padding: 22px 28px 20px 22px;
+    }
+}
+
+@media (max-width: 575px) {
+    .proCvrTagLine {
+        font-size: 32px;
+    }
+
+    .profileCvrPicDiv {
+        height: 225px;
+    }
+
+    .proEditFigText {
+        width: 182px;
+    }
+
+    .proEditCamFig {
+        width: 28px;
+        height: 22px;
+    }
+
+    .proEditText {
+        font-size: 12px;
+    }
+
+    .hobbyPersoDiv {
+        margin-top: 12px;
+    }
+
+    .hobbyAspHead {
+        font-size: 18px;
+    }
+
+    .wrkHobbyText {
+        font-size: 14px;
+    }
+
+    .rateSkillFig {
+        width: 22px;
+        height: 24px;
+    }
+
+    .rateSkillText {
+        font-size: 11px;
+    }
+
+    .giveCoinFig {
+        width: 19px;
+        height: 26px;
+    }
+
+    .giveCoinText {
+        font-size: 11px;
+    }
+
+    .writeTestFig {
+        width: 20px;
+        height: 26px;
+    }
+
+    .writeTestText {
+        font-size: 11px;
+    }
+
+    .wrGiRaBtn {
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+
+    #rating {
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+
+    .rateJavaHead {
+        font-size: 17px;
+    }
+
+    .rateLinkedinBtn {
+        font-size: 21px;
+    }
+
+    .tabRateIconFig {
+        width: 16px;
+        height: 16px;
+        margin: 3px 0 0 12px;
+    }
+
+    #rating .rating_text h2 {
+        font-size: 35px;
+    }
+
+    #rating .rating_text p {
+        font-size: 17px;
+        line-height: normal;
+        padding-top: 0;
+    }
+
+    #rating .rating_text h2 {
+        font-size: 35px;
+    }
+
+    #rating .rating_text h3 {
+        padding-top: 0;
+    }
+
+    .totalFiveText {
+        margin-bottom: 5px;
+    }
+
+    #rating .comment_section {
+        padding-top: 30px;
+    }
+
+    #rating .comment_section .comment_person {
+        width: 40px;
+        height: 40px;
+    }
+
+    #rating .comment_right h5 {
+        font-size: 13px;
+    }
+
+    #rating .comment_right .star {
+        margin-left: 15px;
+    }
+
+    #rating .comment_right i {
+        font-size: 12px;
+    }
+
+    #rating .comment_right p {
+        font-size: 12px;
+    }
+
+    #rating .comment_section .comment_right {
+        padding-left: 10px;
+    }
+
+    #rating .rating_btn {
+        padding-top: 15px;
+    }
+
+    #rating .rating_btn .review_btn {
+        width: 230px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .myJourTabListDiv .react-tabs__tab {
+        font-size: 11px;
+    }
+
+    .jourAddInfoBtn {
+        font-size: 14px;
+        padding: 9px 18px;
+    }
+
+    .jourEliteCardFig {
+        width: 99%;
+        height: auto;
+        margin: 0px auto 0 auto;
+    }
+
+    .mentConnecDivWrap {
+        width: 100%;
+        order: 3;
+    }
+
+    .champMainDivParent {
+        order: 2;
+    }
+
+    .mentProConnecFigInnerDiv {
+        width: 18%;
+    }
+
+    .mentProConnecFigsDiv {
+        max-height: 217px;
+        height: auto;
+        column-gap: 10px;
+    }
+
+    .champFig2 {
+        width: 105px;
+        margin: 0 7px 0 0;
+    }
+
+    .founder-lft {
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+    }
+
+    /* .tabListPartDiv {
+        padding-left: 101px;
+    } */
+}
+
+@media (max-width: 479px) {
+    .rateMyFig {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        margin: 0 7px 0 0;
+    }
+
+    .rateMyInp {
+        font-size: 16px;
+    }
+
+    .rateMySkillDiv {
+        padding: 25px 18px;
+    }
+
+    .rateSkillFig {
+        margin-bottom: 2px;
+    }
+
+    .rateSkillText {
+        text-align: center;
+    }
+
+    .giveCoinFig {
+        margin-bottom: 2px;
+    }
+
+    .giveCoinText {
+        text-align: center;
+    }
+
+    .writeTestFig {
+        margin-bottom: 2px;
+    }
+
+    .writeTestText {
+        text-align: center;
+    }
+
+    .rateSkillDiv {
+        flex-direction: column;
+    }
+
+    .wrGiRaBtn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .rateMyInnerDiv {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .rateMyNtrkInnerDiv {
+        width: 100%;
+    }
+
+    .rateMySkillDiv {
+        margin-bottom: 12px;
+    }
+
+    .myVetTestHead {
+        font-size: 18px;
+    }
+
+    .mentProConnecFigInnerDiv {
+        width: 22%;
+    }
+
+    .proCvrTagLine {
+        font-size: 22px;
+    }
+
+    .profileCvrPicDiv {
+        height: 175px;
+        margin-bottom: 12px;
+    }
+
+    .proEditCamFig {
+        width: 20px;
+        height: 17px;
+        margin-top: -7px;
+    }
+
+    .proEditText {
+        font-size: 11px;
+    }
+
+    #rating .comment_section .comment_person {
+        width: 30px;
+        height: 30px;
+    }
+
+    #rating .comment_section .comment_left {
+        width: 12%;
+    }
+
+    #rating .comment_section .comment_right {
+        width: 86%;
+        padding-left: 5px;
+    }
+
+    #rating .comment_right i {
+        font-size: 9px;
+    }
+
+    #rating .comment_right .star {
+        margin-left: 15px;
+    }
+
+
+    #rating .comment_right h5 {
+        font-size: 11px;
+        margin-top: 1px;
+    }
+
+    #rating .comment_right p {
+        font-size: 9px;
+        margin-left: 15px;
+    }
+
+    #rating .comment_section {
+        width: 100%;
+    }
+
+    #rating .person_description p {
+        margin-left: 0;
+        font-size: 10px;
+    }
+
+    .proEditFigText {
+        width: 162px;
+        right: 8px;
+        bottom: 10px;
+    }
+
+    .tabListAddBtnDiv {
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 12px 12px 0 12px;
+    }
+
+    .tabListPartDiv {
+        width: 75%;
+        padding-left: 177px;
+    }
+
+    .addSkillsTabBtn {
+        width: 20%;
+        padding: 5px 8px;
+    }
+
+    .addSkillsTabBtn span {
+        font-size: 10px;
+    }
+
+    .tabListPartDiv .react-tabs__tab {
+        font-size: 12px;
+        text-wrap: nowrap;
+    }
+
+    #rating .rating_text h2 {
+        font-size: 27px;
+    }
+
+    #rating .rating_text h3 {
+        font-size: 25px;
+        line-height: normal;
+    }
+
+    .rateJavaHead {
+        font-size: 15px;
+    }
+
+    .foundCeoHead {
+        font-size: 14px;
+    }
+
+    .fractFullText {
+        font-size: 12px;
+    }
+
+    .jourDecText {
+        font-size: 12px;
+    }
+
+    .jourDescription {
+        font-size: 11px;
+        margin-bottom: 3px;
+    }
+
+    .jourSeeMore {
+        font-size: 13px;
+    }
+
+    #rating .rating_btn .review_btn {
+        width: 175px;
+        height: 35px;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+
+    .champFig {
+        width: 37px;
+        height: 35px;
+    }
+
+    .hobbyAspHead {
+        font-size: 15px;
+    }
+
+    .wrkHobbyText {
+        font-size: 12px;
+    }
+
+    .myAffityHead {
+        font-size: 15px;
+    }
+
+    .myAffSeeAllBtn {
+        font-size: 12px;
+    }
+
+    .hubEvCrePara {
+        font-size: 13px;
+    }
+
+    .mySocalCmtHead {
+        font-size: 15px;
+    }
+
+    .mySocialAllBtn {
+        font-size: 12px;
+    }
+
+    .proAboutSelf {
+        font-size: 13px;
+        margin: 0 0 17px 0;
+    }
+}
+
+@media (max-width: 359px) {
+    .tabListPartDiv {
+        padding-left: 208px;
+    }
+}

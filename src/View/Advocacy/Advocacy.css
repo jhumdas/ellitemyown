@@ -1,0 +1,1075 @@
+/* .advocacySection {
+    padding-top: 125px;
+    margin-bottom: 25px;
+} */
+
+.nameFigAdvo {
+    width: 100%;
+    max-width: 25%;
+    /* background-color: #fff; */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom: 25px; */
+    /* height: 172px; */
+}
+.advocayskilldiv{
+    width: 100%;
+    max-width: 74%;
+    padding-top: 20px;
+
+}
+.advocayskillengage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.advoProFig {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: -55px;
+}
+.advbhdivmaingh{
+    padding-top: 90px;
+}
+
+.advoProFig img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.proAdvoName {
+    color: #0E24CC;
+    font-family: 'Inter';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 4px 0;
+}
+
+.proAdvoDesig {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 10px 0;
+}
+
+.proAdvoEmpId {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.nameTextAdvo {
+    text-align: center;
+}
+
+.topPicAdvoDiv {
+    width: 100%;
+    background-color: #fff;
+    padding: 19px 0;
+}
+
+.topPicHead {
+    color: #0E24CC;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 0 19px 16px 19px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.topPicUl {
+    padding: 0 20px;
+    max-height: 290px;
+}
+
+.turnTopText {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 67%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.turnTopFig {
+    width: 100px;
+    height: 64px;
+    margin: 0;
+    border-radius: 7px;
+}
+
+.turnTopFig img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.topPicLi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.unAdvoDiv {
+    background-color: #fff;
+    padding: 19px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.unAdvLi {
+    background-color: #E9E9E9;
+    border-radius: 8px;
+    padding: 10px 25px;
+    margin-top: 10px;
+}
+
+.unAdvLi span {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.unAdvLiActive {
+    background-color: #0E24CC;
+}
+
+.unAdvLiActive span {
+    color: #fff;
+}
+
+.advoRateSkillDiv {
+    width: 70%;
+}
+
+.advoAdvocyDiv {
+    width: 100%;
+    max-width: 100%;
+}
+
+.advocySkillMainDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myAdvoProTab .react-tabs__tab-list {
+    display: flex;
+    justify-content: space-around;
+    border: 0;
+    background-color: #fff;
+    padding: 0px 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.myAdvoProTab .react-tabs__tab {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+.myAdvoProTab .react-tabs__tab--selected {
+    background-color: transparent;
+    border: 0;
+    color: #0E24CC;
+}
+
+.myAdvoPanelDiv {
+    width: 100%;
+    background-color: #fff;
+    padding: 15px 25px 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.resNavHeader .myAdvoSwiper{
+    padding-top: 10px;
+}
+
+.myAdvoLeftPan {
+    width: 70%;
+    height: 270px;
+    position: relative;
+}
+
+.myAdvLFig {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.myAdvLFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.myAdvInnerTextDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 43, 43, 0.71);
+    padding: 30px 50px;
+}
+
+.advLorWhit {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+.advLorPicFig {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px 0 0;
+    border-radius: 50%;
+}
+
+.advLorPicFig img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.advLorNm {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 1px 0;
+}
+
+.advLorDt {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.advLorMainDiv {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+
+}
+
+.whitAdvFigDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.advLorPara {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 0 10px 0;
+}
+
+.advLorSmallPara {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 0 20px 0;
+}
+
+.advLearnText {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 8px;
+}
+
+.advLearnIcon {
+    font-size: 18px;
+    color: #FFB906;
+}
+
+.advLearnMainDiv {
+    display: flex;
+    align-items: center;
+}
+
+.myAdvoRightPan {
+    width: 29%;
+    height: 270px;
+    position: relative;
+}
+
+.myRghtFig {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.myRghtFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.myAdvoPanDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.myAdvoRightText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43, 43, 43, 0.71);
+    padding: 30px 20px;
+}
+
+.engHead {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 0 40px 0;
+}
+
+.csrText {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 0 50px 0;
+}
+
+.advoSlides {
+    width: 100%;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 5px 0px #ccc;
+    padding: 15px;
+    /* box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15); */
+}
+.advoSwiperDiv{
+    padding-top: 20px;
+}
+
+.advoSliFig {
+    width: 100%;
+    height: 300px;
+    margin: 0 0 14px 0;
+}
+.advcydiv{
+    width: 100%;
+    height: 200px;   
+}
+.advcydiv img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+.advoSliFig img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.advSliLoHeadtxt {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 38px;
+    /* height: 38px; */
+    /* margin: 0 0 30px 0; */
+}
+
+.advoSlideText {
+    padding: 0 10px 18px 10px;
+}
+
+.advSliLoHead {
+    color: #263238;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* height: 38px; */
+    margin: 0 0 30px 0;
+}
+
+.advBlkLorNm {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 1px 0;
+}
+
+.advLorBlkDt {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.myAdvoSwiper .swiper-wrapper {
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-top: 10px;
+}
+
+.advoLoreTwoDiv {
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 38px;
+    border-radius: 12px;
+}
+
+.advShareFig {
+    width: 19px;
+    height: 19px;
+    margin: 0 10px 0 0;
+}
+
+.advShareFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.advShrText {
+    color: #3D3D3D;
+    font-family: 'Inter';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.advShrMainDiv {
+    display: flex;
+    align-items: center;
+}
+
+.advShrMainDivAn:hover {
+    text-decoration: none;
+}
+
+.hrsAgoText {
+    color: #3D3D3D;
+    font-family: 'Inter';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.loreTwoDiv {
+    width: 48%;
+    background-color: #EFEFEF;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loreTwoInText {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 53px;
+}
+
+.adcLorPicFig {
+    width: 100px;
+    height: 89px;
+    margin: 0;
+    border-radius: 7px;
+}
+
+.adcLorPicFig img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.shrAdvDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.loreTwoTextMainDiv {
+    width: 70%;
+}
+
+.loreTwoDivParent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testiDiv {
+    padding: 0 40px;
+}
+
+.testiDivLi {
+    margin-bottom: 2px;
+}
+
+.testiDivLi span {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.testiDivUl {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 30px;
+}
+
+.cmntAdvText {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 20px 0 0;
+}
+
+.likeAdFig {
+    width: 35px;
+    height: 34px;
+    margin: 0;
+}
+
+.likeAdFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.cmntFigDiv {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.cmntFigAfterDiv {
+    width: 100%;
+    height: 90px;
+    background-color: #D9D9D9;
+    margin-bottom: 80px;
+}
+
+.advChtTwoFig {
+    width: 574px;
+    height: 324px;
+    margin: 0;
+}
+
+.advChtTwoFig img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Advocard part */
+.advoCardDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.advoCard {
+    /* width: 33%; */
+    border-radius: 10px;
+    height: auto;
+    display: grid;
+    gap: 10px;
+    background-color: #FFF;
+}
+
+.advoCardTop {
+    padding: 5px;
+}
+
+.advocardTxt {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8px;
+}
+
+.advoCardtxtLeft {
+    width: 70%;
+}
+
+.advocardhead {
+    color: #263238;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    height: 32px;
+}
+
+.advocardpara {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 45px;
+}
+
+.advoCardbtn {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #0E24CC;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+}
+
+.advoimgwrap {
+    width: 100%;
+}
+
+.advoimgwrap img {
+    width: 100%;
+    height: 100%;
+}
+
+.advoimgwrap1 {
+    grid-area: one;
+    height: 75px;
+}
+
+.advoimgwrap2 {
+    grid-area: two;
+    height: 75px;
+}
+
+.advoimgwrap3 {
+    grid-area: three;
+    height: 150px;
+}
+
+.advoimgwrap4 {
+    grid-area: four;
+    height: 150px;
+}
+
+.advoimgwrap5 {
+    grid-area: five;
+    height: 75px;
+}
+
+.advorow {
+    display: grid;
+    /* grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto; */
+    grid-template-areas: "one two three"
+        "four four three"
+        "four four five";
+    grid-gap: 10px;
+}
+
+.advoSwipeDetailDiv {
+    height: auto;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.advoSwp {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    padding-top: 15px;
+}
+
+.advoSwipeLeftFig {
+    min-width: 230px;
+    max-width: 230px;
+    width: 100%;
+    height: 230px;
+    margin: 0;
+}
+
+.advoSwipeLeftFig img {
+    width: 100%;
+    height: 100%;
+}
+
+.advoSwipeRightDiv {
+    /* padding-left: 25px;
+    padding-top: 15px; */
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.icndivbg {
+    align-items: center;
+    background-color: #01579b;
+    border-radius: 50%;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    margin: 10px;
+    width: 30px;
+}
+
+.icndivbg i {
+    color: #fff;
+    font-size: 14px;
+}
+
+.advoSwipeHead {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 7px 0;
+    font-family: 'Inter';
+}
+
+.advoSwipeText {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    text-align: justify;
+    font-family: 'Inter';
+}
+
+.advSwipRightTextDiv {
+    max-height: 83%;
+    height: 100%;
+    overflow-y: auto;
+    margin-bottom: 12px;
+    overflow-y: auto;
+}
+
+.advoBackBtn {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    background-color: transparent;
+    border: 0;
+    font-size: 17px;
+    font-weight: 700;
+    color: #0E24CC;
+    font-family: 'Inter';
+    text-transform: uppercase;
+}
+
+.advoBackBtn i {
+    color: #000;
+    font-size: 18px;
+}
+
+.advoBackBtnDiv {
+    text-align: right;
+}
+
+.advoSwiperHideDiv {
+    display: none;
+}
+
+.imgdivmain {
+    width: 940px;
+    margin: 0 auto;
+    height: 400px;
+    max-width: 890px;
+    min-width: 880px;
+}
+
+.shareimggghhj {
+    box-shadow: 0px 0px 5px 0px #ccc;
+    width: 100%;
+    max-width: 3%;
+    min-width: 5%;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.sharetdiv {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.shareimggghhj img {
+    width: 25px;
+    height: 25px;
+}
+
+.imgdivmain img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.advocacySection .swiper-button-prev{
+    position: absolute !important;
+    left: -1% !important;
+    top: 40% !important;
+    background-color: #fff;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 0px #ccc;
+}
+.advocacySection .swiper-button-prev:after{
+    content: 'prev';
+    font-size: 22px !important;
+    color: red;
+    font-weight: 800;
+}
+.advocacySection .swiper-button-next{
+    position: absolute !important;
+    right: -1% !important;
+    top: 40% !important;
+    background-color: #fff;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 0px #ccc;
+}
+.advocacySection .swiper-button-next:after{
+    content: 'next';
+    font-size: 22px !important;
+    color: red;
+    font-weight: 800;
+}
+.advocacySection  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+    overflow: hidden;
+    overflow: clip;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+}
+.advocacySection  .advoSwiperDiv {
+    padding-top: 20px;
+    position: relative;
+}
+.advocacySection .swiper-wrapper {
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+@media (max-width: 1399px) {
+    .advocardhead {
+        font-size: 20px;
+        height: 25px;
+    }
+
+    .advoCardbtn {
+        padding: 5px 10px;
+    }
+
+    .advorow {
+        gap: 8px;
+    }
+
+    .advoCard {
+        gap: 5px;
+    }
+
+    .advoCardDiv {
+        gap: 40px;
+    }
+
+    .advoimgwrap1,
+    .advoimgwrap2,
+    .advoimgwrap5 {
+        height: 55px;
+    }
+
+    .advoimgwrap4,
+    .advoimgwrap3 {
+        height: 110px;
+    }
+}
+
+@media (max-width: 991px) {
+    .advocardhead {
+        font-size: 18px;
+        height: 22px;
+    }
+
+    .advoCard {
+        gap: 0px;
+    }
+
+    .advoSwp {
+        flex-direction: column;
+    }
+
+    .advoSwipeLeftFig {
+        margin: 0px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .advoSwipeText {
+        font-size: 13px;
+    }
+    .advocacySection .swiper-button-prev {
+        position: absolute !important;
+        left: -1% !important;
+        top: 60% !important;
+        background-color: #fff;
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 50%;
+        box-shadow: 0px 0px 5px 0px #ccc;
+    }
+    .advocacySection .swiper-button-next {
+        position: absolute !important;
+        right: -1% !important;
+        top: 60% !important;
+        background-color: #fff;
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 50%;
+        box-shadow: 0px 0px 5px 0px #ccc;
+    }
+}
