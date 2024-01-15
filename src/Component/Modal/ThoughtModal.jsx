@@ -108,10 +108,10 @@ export default function ThoughtModal({
       toast?.error("Please enter description!");
       return;
     }
-    if (post.image === "") {
-      toast?.error("Please enter image!");
-      return;
-    }
+    // if (post.image === "") {
+    //   toast?.error("Please enter image!");
+    //   return;
+    // }
     if (userData?.userType !== "Admin") {
       if (!sharePublicly) {
         toast?.error("Please check 'Share publicly' checkbox to post!");
@@ -122,8 +122,8 @@ export default function ThoughtModal({
     setUploading(true);
 
     let data = {
-      description: post.description,
-      image: post.image,
+      description: post?.description,
+      image: post?.image,
     };
 
     let response = await ApiHelperFunction({
@@ -173,7 +173,7 @@ export default function ThoughtModal({
                     className="profile_img"
                     style={{ borderRadius: "50%", overflow: "hidden" }}
                   >
-                    {userData?.image === "image" ? (
+                    {(userData?.image === "image" || "" || undefined) ? (
                       // <img
                       //   src={userData?.image}
                       //   className="img-fluid"

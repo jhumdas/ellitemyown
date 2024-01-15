@@ -572,7 +572,7 @@ export default function SaraTylor({
 
             }
 
-            <span style={{ color: "blue", marginLeft: "2px" }}>Reaction</span>
+            <span style={{ color: "black", marginLeft: "2px" }}>Reaction</span>
 
 
             {/* emoji modal */}

@@ -93,7 +93,7 @@ export const AdvocacyPostSlice = createSlice({
                 state.status = "success";
                 state.isSuccess = true;
                 // console.log('payload', payload);
-                state.posts = payload.data;
+                state.posts = payload?.data;
                 state.isLoading = false;
             })
             .addCase(getAdvocacyPosts.rejected, (state) => {
