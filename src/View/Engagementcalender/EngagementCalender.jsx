@@ -9,6 +9,8 @@ import table_icon from "../../Images/table_icon.png";
 import world_day from "../../Images/world_day.png";
 import earth_day from "../../Images/earth_day.png";
 import eventimg1 from "../../Images/eventimg1.png";
+import bgprfldiv from "../../Images/bgprfldiv.png";
+import prfl from "../../Images/Ellipse _8.png"
 // import eventimg2 from "../../Images/eventimg2.png";
 import "../Engagementcalender/Mycalender.css";
 import EngagementeventCard from "../../Component/EngagementeventCard";
@@ -249,6 +251,23 @@ function EngagementCalender() {
                             </div>
                           </div>
                       </div> */}
+                      <div className="user_about">
+                         <div className="bg-userdtwht" style={{ backgroundImage: `url(${bgprfldiv})` }}>
+                            <div className="bg-txtppp">
+                               <p className="bghhkpp">PLATINUM</p>
+                               <p>Club</p>
+                            </div>
+                            <div className="prflimgbrdr">
+                              <div className="prflimgfh">
+                                <img src={prfl} alt="..." />
+                              </div>
+
+                            </div>
+                            <div className="">
+                              <p>Irine Adler</p>
+                            </div>
+                         </div>
+                      </div>
                       <ShareThoughts getAffinityPosts={getAffinityPosts} />
                       {/* <div className="user_helpdesk">
                     <div className="top_desk">
