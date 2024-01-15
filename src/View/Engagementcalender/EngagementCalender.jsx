@@ -219,9 +219,7 @@ function EngagementCalender() {
 
         <section id="usrclndr">
           <div className="headFirstPart">
-
             <GrowWel />
-
           </div>
           <div className="">
             <div className="custContain">
@@ -652,28 +650,28 @@ function EngagementCalender() {
             <img src={eliteCard} alt="..." />
           </figure>
           <span className="goldCardText">GOLD CLUB</span> */}
-                      <div className="">
-                        {/* <div className="goldInnerDiv">
+                      <div className="goldClubDiv">
+                      <div className="goldInnerDiv">
                           <div>
-                            <p className="eliteSubHead">Status</p>
+                            {/* <p className="eliteSubHead">Status</p> */}
                             <p className="goldClHead">Gold</p>
                           </div>
                           <figure className="goldIconFig">
                             <img src={eliteExp} alt="..." />
                           </figure>
-                        </div> */}
-                        {/* <div className="cardNameDiv">
+                        </div>
+                      <div className="cardNameDiv">
                           <div>
                             <p className="cardNumbText">{goldCard?.goldClubNo}</p>
                             <p className="sanjNameText">
                               {goldCard?.firstName} {goldCard?.lastName}
                             </p>
                           </div>
-                          <p className="goldSmClub">Gold Club</p>
+                          {/* <p className="goldSmClub">Gold Club</p> */}
                           <figure className="goldIcoFigDiv">
                             <img src={goldIcon} alt="..." />
                           </figure>
-                        </div> */}
+                        </div>
                       </div>
                     </div>
 

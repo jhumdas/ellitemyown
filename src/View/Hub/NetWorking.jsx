@@ -14,6 +14,7 @@ import trophy from "../../Images/trophy.png";
 import mrkInPic1 from "../../Images/mrkInPic1.png";
 import onboadNetIcon from "../../Images/Icons/PNG/Onboarding.png";
 import ImportantLinks from "./ImportantLinks";
+import bgprfldiv from "../../Images/bgprfldiv.png";
 import MyMentor from "./MyMentor";
 import MentConnection from "./MentConnection";
 import { ApiHelperFunction } from "../../services/api/apiHelpers";
@@ -37,7 +38,7 @@ function NetWorking() {
   const [viewProgressBarData, setProgressBarData] = useState({});
   const [status, setStatus] = useState("");
   const [goldCard, setGoldCard] = useState([]);
-  const [question,setQuestion]=useState("");
+  const [question, setQuestion] = useState("");
   const [questionInputs, setQuestionInputs] = useState({});
   // console.log("viewProgressBarData", viewProgressBarData);
 
@@ -87,9 +88,9 @@ function NetWorking() {
   };
 
 
-  const handleSubmitQuestion = async (id,index) => {
-    if(questionInputs===""){
-    return toast.error("All fields are required");
+  const handleSubmitQuestion = async (id, index) => {
+    if (questionInputs === "") {
+      return toast.error("All fields are required");
     }
     // console.log("ooooop", checklistDayID)
     let data = {
@@ -97,7 +98,7 @@ function NetWorking() {
       // question: question,
       question: questionInputs[index],
     };
-    console.log("questiondata",data)
+    console.log("questiondata", data)
     // return false
     let response = await ApiHelperFunction({
       urlPath: `/add-question`,
@@ -244,16 +245,17 @@ function NetWorking() {
   return (
     <section className="hubNetWorkingSection">
       <div className="headFirstPart">
-       
-          <GrowWel />
-       
+
+        <GrowWel />
+
       </div>
-      <div className="networkSecPart">
+      <div className="">
         <div className="custContain">
           <div className="row">
             <div className="col-xl-9 col-lg-8">
-              <div className="ntrkLeftStartDiv">
-                <div className="leftNtrkDiv">
+              <div className="mshjdivnet">
+                <div className="netwrkinghwrap">
+                  {/* <div className="leftNtrkDiv">
                   <figure className="mrkHubFig">
                     <img src={userData?.image} alt="..." />
                   </figure>
@@ -261,20 +263,47 @@ function NetWorking() {
                     <p className="mrkHbHead">{`${userData?.firstName} ${userData?.lastName}`}</p>
                     <div className="mrkNmBtnDiv">
                       <span className="mrkHbName">{userData?.designation}</span>
-                      {/* <button className="mrkPenBtn">
+                      <button className="mrkPenBtn">
                         <i class="fa-solid fa-pen"></i>
-                      </button> */}
+                      </button>
                     </div>
-                    {/* <p className="mrkHubEmpText">
+                    <p className="mrkHubEmpText">
                       Employee id: <span>1234</span>
-                    </p> */}
+                    </p>
+                  </div>
+                </div> */}
+                  <div className="user_about">
+                    <div className="bg-userdtwht" style={{ backgroundImage: `url(${bgprfldiv})` }}>
+                      <div className="bg-txtppp">
+                        <p className="bghhkpp">PLATINUM</p>
+                        <p>Club</p>
+                      </div>
+                      <div className="divpaddingghh">
+                        <div className="prflimgdiv">
+                          <div className="prflimgbrdr">
+                            <div className="prflimgfh">
+                              <img src={userData?.image} alt="..." />
+                            </div>
+                          </div>
+                          <div className="">
+                            <p className="thounsabpp">50,000</p>
+                            <p className="pointshttx">POINTS BALANCE</p>
+                          </div>
+                        </div>
+
+                        <div className="tstdfghmrl">
+                          <p className="txtppght">{`${userData?.firstName} ${userData.lastName}`}</p>
+                          <p className="dvjknjpp">{userData?.designation}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="rightNtrkDiv">
+                    <ShareThoughts />
                   </div>
                 </div>
-                <div className="rightNtrkDiv">
-                  <ShareThoughts />
-                </div>
               </div>
-              <div className="ntrkLeftSectDiv">
+              <div className="">
                 {/* <div className="ntrkLSInnerDiv">
                   <p className="perComText">% Complete</p>
                   <div className="perNumCirDiv">
@@ -422,21 +451,21 @@ function NetWorking() {
                                                     <div className="textareasubmitflx">
                                                       <div className="textarediv">
                                                         <textarea placeholder="Text in this box"
-                                                         rows="1" 
-                                                         cols="50"
-                                                         name={`question_${index}`} 
-                                                         value={questionInputs[index] || ""}
-                                                        //  value={question}
-                                                        //  onChange={(e)=>setQuestion(e.target.value)}
-                                                        onChange={(e) =>
-                                                          setQuestionInputs({
-                                                            ...questionInputs,
-                                                            [index]: e.target.value,
-                                                          })
-                                                        }
-                                                         ></textarea>
+                                                          rows="1"
+                                                          cols="50"
+                                                          name={`question_${index}`}
+                                                          value={questionInputs[index] || ""}
+                                                          //  value={question}
+                                                          //  onChange={(e)=>setQuestion(e.target.value)}
+                                                          onChange={(e) =>
+                                                            setQuestionInputs({
+                                                              ...questionInputs,
+                                                              [index]: e.target.value,
+                                                            })
+                                                          }
+                                                        ></textarea>
                                                       </div>
-                                                      <button className="sbmtbtn" onClick={() => handleSubmitQuestion(item?._id,index)}>Submit</button>
+                                                      <button className="sbmtbtn" onClick={() => handleSubmitQuestion(item?._id, index)}>Submit</button>
 
                                                     </div>
                                                   </div>
