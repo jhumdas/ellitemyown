@@ -20,6 +20,8 @@ import profileImg from "../../Images/Icons/PNG/Profile (2).png";
 import { getAllAffinityPosts } from "../../redux/slices/affinityPostSlice";
 import bi_calendarevent from "../../Images/bi_calendarevent.png";
 import Ask_HR from "../../Images/Icons/PNG/Ask_HR.png"
+import { BsEmojiSmileFill } from "react-icons/bs";
+import EmojiPicker from "emoji-picker-react";
 
 
 export default function ThoughtModalHome({
@@ -40,6 +42,7 @@ export default function ThoughtModalHome({
   const [groupid, setGroupId] = useState("");
   const [grpData, setGrpData] = useState([]);
   const { setModalF } = useAuthCtx();
+  const [isEmoji, setIsEmoji] = useState(false);
   const navigate = useNavigate();
 
   const getGroupData = async () => {
@@ -338,8 +341,25 @@ export default function ThoughtModalHome({
                     placeholder={!hide ? text : "Testimonials"}
                     onChange={(e) => handleChange(e)}
                   ></textarea>
-                </form>
 
+
+
+                  <BsEmojiSmileFill
+                    className="comment-emoji-icon"
+                    onClick={() => setIsEmoji((prev) => !prev)}
+                  />
+                  {isEmoji && (
+                    <EmojiPicker
+                      onEmojiClick={(emojiObject) => {
+                        const emoji = emojiObject.emoji;
+                        setPost((prev) => ({
+                          ...prev,
+                          description: prev.description + emoji,
+                        }));
+                      }}
+                    />
+                  )}
+                </form>
                 {/* <div className='attch_main_img'>
                                     <div className='attchfl'>
                                         <input type="file" id="myfile" name="myfile"  />
@@ -534,6 +554,10 @@ export default function ThoughtModalHome({
                   </div> */}
                 </div>
 
+                {/* <BsEmojiSmileFill className="comment-emoji-icon" onClick={() => setIsEmoji(prev => !prev)} />
+                {isEmoji &&
+                  <EmojiPicker onEmojiClick={(emojiObject) => setPost(prev => prev + emojiObject.emoji)} />
+                } */}
                 <div style={{ cursor: "pointer" }} className="post_btn">
                   <div className="post_btn_main" onClick={(e) => handlePost(e)}>
                     Post

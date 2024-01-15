@@ -36,7 +36,7 @@ function MyMentor() {
   };
 
   const AnotherProfile = async (userID) => {
-    
+
     if (userID == userData?._id) {
       // console.log(userID,userData,"uikodc")
       navigate("/profile");
@@ -68,14 +68,14 @@ function MyMentor() {
             <figure className="bulleBoardFig">
               <img src={Mentor_new} alt="..." />
             </figure>
-            {
+            {/* {
               userData?.userType === "Admin" ? (<p className="myMentPara">Mentor</p>) : (<p className="myMentPara">My Mentor</p>)
-            }
+            } */}
 
           </div>
-          {/* {
-          userData?.userType==="Admin"?(<button className="mentAddBtn" onClick={() => seModalMentor(true)}>Add</button>):(<></>)
-        } */}
+          {
+            userData?.userType === "Admin" ? (<button className="mentAddBtn" onClick={() => seModalMentor(true)}>Add</button>) : (<></>)
+          }
 
         </div>
         <ul className="myMentorUl">
@@ -84,8 +84,8 @@ function MyMentor() {
               <li className="myMentorLi">
                 <Link className="myMentorLiAn" onClick={() => AnotherProfile(item?.userID)}>
                   <figure className="myMentFig">
-                  <img src={item?.userImage} alt="..." />
-                </figure>
+                    <img src={item?.userImage} alt="..." />
+                  </figure>
 
                   {/* <figure className="mrkHubFig">
                     {userData?.image === "image" ? (
