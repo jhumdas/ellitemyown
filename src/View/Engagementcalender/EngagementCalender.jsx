@@ -252,8 +252,8 @@ function EngagementCalender() {
                       <div className="user_about">
                         <div className="bg-userdtwht" style={{ backgroundImage: `url(${bgprfldiv})` }}>
                           <div className="bg-txtppp">
-                            <p className="bghhkpp">PLATINUM</p>
-                            <p>Club</p>
+                            {/* <p className="bghhkpp">PLATINUM</p>
+                            <p>Club</p> */}
                           </div>
                           <div className="divpaddingghh">
                             <div className="prflimgdiv">
@@ -262,7 +262,7 @@ function EngagementCalender() {
                                   <img src={userData?.image} alt="..." />
                                 </div>
                               </div>
-                              <div className="">
+                              <div className="divpatyn">
                                 <p className="thounsabpp">50,000</p>
                                 <p className="pointshttx">POINTS BALANCE</p>
                               </div>
