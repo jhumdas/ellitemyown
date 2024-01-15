@@ -580,12 +580,12 @@ a {
 .viewbtnnn {
   border: none;
   box-shadow: 0px 0px 5px 0px #ccc;
-  padding: 2px 15px;
+  padding: 3px 6px;
   color: #000;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 10px;
+  /* line-height: 12px; */
   font-weight: 700;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #ffffff;
 }
 
