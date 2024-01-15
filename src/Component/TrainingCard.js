@@ -126,7 +126,7 @@ export default function TrainingCard() {
               <div
                 className="card_area"
                 style={{
-                  marginBottom: "20px",
+                  marginBottom: "10px",
                   position: "relative",
                   marginTop: "10px",
                 }}

@@ -313,7 +313,7 @@ export default function Index() {
             </div>
           </div>
           <div className="thought_area_mxh_right">
-            <div className="eliteFigDiv" style={{ marginBottom: "25px" }}>
+            <div className="eliteFigDiv" style={{ marginBottom: "8px" }}>
               {/* <figure className="eliteFig">
             <img src={eliteCard} alt="..." />
           </figure>

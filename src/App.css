@@ -261,7 +261,7 @@ a {
   background: #ffffff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.06);
   border-radius: 5px;
-  margin-bottom: 18px;
+  margin-bottom: 7px;
   /* padding-bottom: 10px; */
 }
 
@@ -367,7 +367,7 @@ a {
 }
 
 #eventsBulle .bottom {
-  max-height: 195px;
+  max-height: 222px;
 }
 
 .bulletin_board .bottom .card_area {
@@ -580,12 +580,12 @@ a {
 .viewbtnnn {
   border: none;
   box-shadow: 0px 0px 5px 0px #ccc;
-  padding: 2px 15px;
+  padding: 3px 6px;
   color: #000;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 10px;
+  /* line-height: 12px; */
   font-weight: 700;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #ffffff;
 }
 
@@ -626,7 +626,7 @@ a {
   background: #ffffff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.06);
   border-radius: 5px;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
   overflow: hidden;
   /* padding-bottom: 10px; */
 }
@@ -760,7 +760,7 @@ a {
 
 #halloof_fame .bottom_area .details_area {
   width: 100%;
-  height: 60px;
+  /* height: 60px; */
   padding: 5px 20px;
   display: flex;
   justify-content: space-between;
@@ -889,7 +889,7 @@ a {
   background: #ffffff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.06);
   border-radius: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   padding-bottom: 10px;
 }
 
@@ -1735,7 +1735,7 @@ a {
   padding: 15px 0;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.06);
   border-radius: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   height: 300px;
   overflow-y: hidden;
 }
@@ -1963,7 +1963,7 @@ a {
   background: #ffffff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.06);
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   max-width: 100%;
 }
 
@@ -2251,7 +2251,7 @@ a {
   background: #ffffff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.06);
   border-radius: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 8px;
 }
 
 #sara_tylor .top_area {
@@ -2553,7 +2553,7 @@ a {
   justify-content: space-between;
   /* flex-wrap: wrap; */
   padding: 20px 40px;
-  margin-bottom: 30px;
+  margin-bottom: 8px;
 }
 
 #sara_tylor .reaction_area .reaction {
@@ -3877,8 +3877,8 @@ a {
   background: #ffffff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.06);
   border-radius: 5px;
-  margin-bottom: 18px;
-  padding-bottom: 10px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
 }
 
 #training_card .top {
@@ -3923,8 +3923,7 @@ a {
 
 #training_card .bottom {
   width: 100%;
-  max-height: 253px;
-
+  max-height: 194px;
   padding: 0px 18px 0px 16px;
   overflow-y: hidden;
 }
@@ -5188,7 +5187,9 @@ a {
   }
 
   #halloof_fame .bottom_area .details_area {
-    padding: 10px 9px;
+    padding: 7px 9px;
+    height: 0px;
+    align-items: center;
   }
 
   #halloof_fame .top_area {
@@ -6983,7 +6984,7 @@ body {
 .goldClubDiv {
   background-color: #f0bc55;
   border-radius: 8px;
-  height: 146px;
+  height: 165px;
   padding: 10px;
   width: 100%;
 }
@@ -6999,7 +7000,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 5px;
+  padding-top: 20px;
 }
 
 .cardNumbText {
