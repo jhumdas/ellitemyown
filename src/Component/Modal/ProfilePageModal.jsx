@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Modal2.css";
 import { useDispatch } from "react-redux";
 import { ApiHelperFunction, fileUpload } from "../../services/api/apiHelpers";
@@ -17,6 +17,52 @@ function ProfilePageModal({ closemodal, activity, initialValues }) {
   const [uploading, setUploading] = useState(false);
   const [shouldValidateOnChange, setShouldValidateOnChange] = useState(false);
   const [shouldValidateOnBlur, setShouldValidateOnBlur] = useState(false);
+  const [badgeName, setBadgeName] = useState([]);
+  const [empData, setempData] = useState([]);
+
+
+  const getBadgeNameData = async () => {
+    const response = await ApiHelperFunction({
+      urlPath: `/view-all-badge`,
+      method: "GET",
+    });
+    console.log("RESPONSEFgb", response?.data?.data);
+    if (response && response.status) {
+      setBadgeName(response?.data?.data);
+    } else {
+      // toast.error(response.error);
+    }
+  };
+
+  console.log("njkvnfjn", badgeName)
+
+  const getEmployeeData = async () => {
+    const response = await ApiHelperFunction({
+      urlPath: `/view-all-employees`,
+      method: "GET",
+    });
+    console.log("RESPONSEF", response?.data?.data);
+    if (response && response.status) {
+      setempData(response?.data?.data);
+    } else {
+      // toast.error(response.error);
+    }
+  };
+
+  useEffect(() => {
+    getBadgeNameData();
+    getEmployeeData();
+  }, [])
+
+
+  // const getNameFromUserId = (selectedUserId) => {
+  //   const selectedEmployee = empData.find(
+  //     (employee) => employee._id === selectedUserId
+  //   );
+  //   return selectedEmployee ? selectedEmployee.userName : "";
+  // };
+
+  // console.log("pppmmmkkk", badgeName);
 
   const submitHandler = async (e, selectedSubscription) => {
     e.preventDefault();
@@ -25,13 +71,14 @@ function ProfilePageModal({ closemodal, activity, initialValues }) {
 
     let data = {};
     setLoading(true);
-    if (values.name == "" || values.desc == "") {
+    if (values.badgeID == "" || values.desc == "" || values?.employeeID == "") {
       return toast.error("All fields required");
     }
 
     data = {
-      name: values?.name,
+      badgeID: values?.badgeID,
       desc: values?.desc,
+      employeeID: values?.employeeID,
       image: imageURL,
     };
 
@@ -61,36 +108,36 @@ function ProfilePageModal({ closemodal, activity, initialValues }) {
       activity === "kababMenu" ||
       activity === "editEvent"
       ? {
-          eventName: Yup.string().required("Event Name is required"),
-          hostedBy: Yup.string().required("Host name is required"),
-          eventDate: Yup.string().required("Event date is required"),
-          eventstarttime: Yup.string().required("start Time is required"),
-          eventendtime: Yup.string().required(" End Time is required"),
-          notes: Yup.string().required(" Notes is required"),
-          addinvites: Yup.string().required(" Addinvites is required"),
-          lattitude: Yup.string().required(" lattitude is required"),
+        eventName: Yup.string().required("Event Name is required"),
+        hostedBy: Yup.string().required("Host name is required"),
+        eventDate: Yup.string().required("Event date is required"),
+        eventstarttime: Yup.string().required("start Time is required"),
+        eventendtime: Yup.string().required(" End Time is required"),
+        notes: Yup.string().required(" Notes is required"),
+        addinvites: Yup.string().required(" Addinvites is required"),
+        lattitude: Yup.string().required(" lattitude is required"),
 
-          longitude: Yup.string().required(" longitude is required"),
-        }
+        longitude: Yup.string().required(" longitude is required"),
+      }
       : activity === "training" || activity === "editTraining"
-      ? {
+        ? {
           name: Yup.string().required("Event Name is required"),
           trainingDate: Yup.string().required("Training date is required"),
         }
-      : activity === "badge" || activity === "editBadge"
-      ? {
-          name: Yup.string().required("Event Name is required"),
-          desc: Yup.string().required("Description is required"),
-        }
-      : activity === "jobReffered"
-      ? {
-          name: Yup.string().required("Job Name is required"),
-          location: Yup.string().required("Job location is required"),
-          salary: Yup.string().required("Salary range is required"),
-          description: Yup.string().required("Description range is required"),
-          opening: Yup.string().required("Opening is required"),
-        }
-      : ""
+        : activity === "badge" || activity === "editBadge"
+          ? {
+            name: Yup.string().required("Event Name is required"),
+            desc: Yup.string().required("Description is required"),
+          }
+          : activity === "jobReffered"
+            ? {
+              name: Yup.string().required("Job Name is required"),
+              location: Yup.string().required("Job location is required"),
+              salary: Yup.string().required("Salary range is required"),
+              description: Yup.string().required("Description range is required"),
+              opening: Yup.string().required("Opening is required"),
+            }
+            : ""
   );
 
   const handleImageChange = async (e) => {
@@ -129,7 +176,7 @@ function ProfilePageModal({ closemodal, activity, initialValues }) {
         <button className="bulleBrodCloseBtn" onClick={() => closemodal()}>
           <i class="fa-solid fa-xmark"></i>
         </button>
-        <div className="mb-3 mt-3">
+        {/* <div className="mb-3 mt-3">
           <p className="empListSubHead">Badge Name</p>
           <input
             type="text"
@@ -140,6 +187,27 @@ function ProfilePageModal({ closemodal, activity, initialValues }) {
             onBlur={handleBlur}
             onChange={handleChange}
           />
+        </div> */}
+
+        <div className="emplListDiv">
+          <p className="empListSubHead">Badge Name</p>
+          <select
+            class="empListSelect"
+            aria-label="Select Badge name"
+            name="badgeID"
+            value={values.badgeID}
+            onBlur={handleBlur}
+            onChange={handleChange}
+          >
+            <option value={""} disabled>
+              Select BadgeName
+            </option>
+            {badgeName?.map((item, i) => (
+              <option key={i} value={item?._id}>
+                {item?.badgename}
+              </option>
+            ))}
+          </select>
         </div>
 
         <div className="mb-3">
@@ -156,6 +224,27 @@ function ProfilePageModal({ closemodal, activity, initialValues }) {
           >
             Description
           </textarea>
+        </div>
+
+        <div className="emplListDiv">
+          <p className="empListSubHead">Employee Name</p>
+          <select
+            class="empListSelect"
+            aria-label="Select Employee name"
+            name="employeeID"
+            value={values.employeeID}
+            onBlur={handleBlur}
+            onChange={handleChange}
+          >
+            <option value={""} disabled>
+              Select Employee
+            </option>
+            {empData?.map((item, i) => (
+              <option key={i} value={item?._id}>
+                {`${item?.userName} - ${item?.employeeid}`}
+              </option>
+            ))}
+          </select>
         </div>
 
         <div className="mb-3">

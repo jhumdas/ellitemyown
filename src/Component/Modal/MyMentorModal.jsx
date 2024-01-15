@@ -29,7 +29,7 @@ const MyMentorModal = ({ closemodal, activity, initialValues }) => {
       method: "GET",
     });
     if (response && response.status === 200) {
-      setMentor(response?.data?.data.reverse());
+      setMentor(response?.data?.data?.reverse());
     } else {
       toast.error(response?.data?.message);
     }
@@ -54,13 +54,16 @@ const MyMentorModal = ({ closemodal, activity, initialValues }) => {
 
     let data = {};
     setLoading(true);
+    if (values.userID == "") {
+      return toast.error("All fields required");
+    }
     if (values.description == "") {
       return toast.error("All fields required");
     }
 
     data = {
       // name: getNameFromUserId(values?.userId),
-      userId: values?.userId,
+      userID: values?.userID,
       description: values?.description,
     };
     console.log("click_training", data);
@@ -172,8 +175,8 @@ const MyMentorModal = ({ closemodal, activity, initialValues }) => {
             <select
               class="empListSelect"
               aria-label="Select Employee name"
-              name="userId"
-              value={values.userId}
+              name="userID"
+              value={values.userID}
               onBlur={handleBlur}
               onChange={handleChange}
             >
@@ -189,17 +192,16 @@ const MyMentorModal = ({ closemodal, activity, initialValues }) => {
           </div>
 
           <div className="mb-3">
-            <textarea
+            <p className="empListSubHead">Department</p>
+            <input
               id="description"
-              cols=""
-              rows="8"
               className="empListTextArea"
-              placeholder="Designation"
+              placeholder="Department name"
               value={values.description}
               name="description"
               onBlur={handleBlur}
               onChange={handleChange}
-            ></textarea>
+            />
           </div>
           <div className="homePgCreModSubmitDiv">
             <button
