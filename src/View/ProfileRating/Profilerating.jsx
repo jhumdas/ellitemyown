@@ -660,7 +660,7 @@ function Profilerating() {
                                 <img src={user_image_2} alt="..." />
                               </figure>
                               <div>
-                                <span className="champHead">{item?.badgeName}</span>
+                                <span className="champHead">{item?.employeeFName} {item?.employeeLName}</span>
                                 <span className="champDate">17 Jan</span>
                               </div>
                             </div>
@@ -669,8 +669,9 @@ function Profilerating() {
                               <figure className="champFig2">
                                 <img src={item?.image} alt="..." />
                               </figure>
-                              <p className="chmpThisText">{item?.desc}</p>
+                              <p className="chmpThisText">{item?.badgeName}</p>
                             </div>
+                            <div> <p className="chmpThisText">{item?.desc}</p></div>
                             <div className="svCosMainDiv">
                               <div className="svCoShBtnDiv">
                                 <figure className="svMsgFig">
