@@ -710,6 +710,15 @@
   border-radius: 12px;
   padding: 10px 20px;
 }
+.netwrkinghwrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+}
+.mshjdivnet{
+  padding-top: 14px;
+}
 
 .engagementPlacecard p {
   color: #ADBDC6;

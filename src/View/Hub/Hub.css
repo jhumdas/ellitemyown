@@ -894,7 +894,7 @@
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.06);
-    margin-top: 15px;
+    margin-top: 8px;
 }
 
 /* .evetCresParentDiv {
@@ -1102,7 +1102,8 @@
 .ntrkLeftStartDiv {
     display: flex;
     justify-content: space-between;
-    position: relative;
+    /* position: relative; */
+    gap: 2%;
 }
 
 .ntrkLeftStartDiv .rightNtrkDiv #share_thoughts {
