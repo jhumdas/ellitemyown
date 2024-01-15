@@ -216,13 +216,13 @@ function EngagementCalender() {
   return (
     <>
       <section className="engaghementmaindiv">
-     
+
         <section id="usrclndr">
           <div className="headFirstPart">
-          
+
             <GrowWel />
-      
-        </div>
+
+          </div>
           <div className="">
             <div className="custContain">
               <div className="row">
@@ -252,21 +252,30 @@ function EngagementCalender() {
                           </div>
                       </div> */}
                       <div className="user_about">
-                         <div className="bg-userdtwht" style={{ backgroundImage: `url(${bgprfldiv})` }}>
-                            <div className="bg-txtppp">
-                               <p className="bghhkpp">PLATINUM</p>
-                               <p>Club</p>
-                            </div>
-                            <div className="prflimgbrdr">
-                              <div className="prflimgfh">
-                                <img src={prfl} alt="..." />
+                        <div className="bg-userdtwht" style={{ backgroundImage: `url(${bgprfldiv})` }}>
+                          <div className="bg-txtppp">
+                            <p className="bghhkpp">PLATINUM</p>
+                            <p>Club</p>
+                          </div>
+                          <div className="divpaddingghh">
+                            <div className="prflimgdiv">
+                              <div className="prflimgbrdr">
+                                <div className="prflimgfh">
+                                  <img src={userData?.image} alt="..." />
+                                </div>
                               </div>
+                              <div className="">
+                                <p className="thounsabpp">50,000</p>
+                                <p className="pointshttx">POINTS BALANCE</p>
+                              </div>
+                            </div>
 
+                            <div className="tstdfghmrl">
+                              <p className="txtppght">{`${userData?.firstName} ${userData.lastName}`}</p>
+                              <p className="dvjknjpp">{userData?.designation}</p>
                             </div>
-                            <div className="">
-                              <p>Irine Adler</p>
-                            </div>
-                         </div>
+                          </div>
+                        </div>
                       </div>
                       <ShareThoughts getAffinityPosts={getAffinityPosts} />
                       {/* <div className="user_helpdesk">
@@ -330,8 +339,8 @@ function EngagementCalender() {
                     {/* <div className="admin_calender"> */}
 
 
-                      {/* <div className="calender_head"> */}
-                      {/* <form className="form">
+                    {/* <div className="calender_head"> */}
+                    {/* <form className="form">
                       <input
                         type="text"
                         id=""
@@ -342,7 +351,7 @@ function EngagementCalender() {
                         <i className="fa-solid fa-magnifying-glass" />
                       </span>
                     </form> */}
-                      {/* <div className="calender_date">
+                    {/* <div className="calender_date">
                       <span className="prev_icon">
                         <i className="fa-solid fa-chevron-left" />
                       </span>
@@ -638,33 +647,33 @@ function EngagementCalender() {
 
 
 
-                    <div className="eliteFigDiv" style={{ marginTop: "15px", marginBottom: "25px" }}>
+                    <div className="eliteFigDiv" style={{ marginTop: "10px", marginBottom: "9px" }}>
                       {/* <figure className="eliteFig">
             <img src={eliteCard} alt="..." />
           </figure>
           <span className="goldCardText">GOLD CLUB</span> */}
-                      <div className="goldClubDiv">
-                        <div className="goldInnerDiv">
+                      <div className="">
+                        {/* <div className="goldInnerDiv">
                           <div>
-                            {/* <p className="eliteSubHead">Status</p> */}
+                            <p className="eliteSubHead">Status</p>
                             <p className="goldClHead">Gold</p>
                           </div>
                           <figure className="goldIconFig">
                             <img src={eliteExp} alt="..." />
                           </figure>
-                        </div>
-                        <div className="cardNameDiv">
+                        </div> */}
+                        {/* <div className="cardNameDiv">
                           <div>
                             <p className="cardNumbText">{goldCard?.goldClubNo}</p>
                             <p className="sanjNameText">
                               {goldCard?.firstName} {goldCard?.lastName}
                             </p>
                           </div>
-                          {/* <p className="goldSmClub">Gold Club</p> */}
+                          <p className="goldSmClub">Gold Club</p>
                           <figure className="goldIcoFigDiv">
                             <img src={goldIcon} alt="..." />
                           </figure>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
 
