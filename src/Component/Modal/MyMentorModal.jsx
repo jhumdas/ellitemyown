@@ -20,24 +20,24 @@ const MyMentorModal = ({ closemodal, activity, initialValues }) => {
   const [empData, setempData] = useState([]);
   const [mentor, setMentor] = useState([]);
 
-  // console.log(empData, "empData");
+  console.log(mentor, "mentor");
 
-    // fetch mentor
-    const fetchMentor = async () => {
-      let response = await ApiHelperFunction({
-        urlPath: "/view-mentor",
-        method: "GET",
-      });
-      if (response && response.status === 200) {
-        setMentor(response?.data?.data.reverse());
-      } else {
-        toast.error(response?.data?.message);
-      }
-    };
-  
-    useEffect(() => {
-      fetchMentor();
-    }, []);
+  // fetch mentor
+  const fetchMentor = async () => {
+    let response = await ApiHelperFunction({
+      urlPath: "/view-mentor",
+      method: "GET",
+    });
+    if (response && response.status === 200) {
+      setMentor(response?.data?.data.reverse());
+    } else {
+      toast.error(response?.data?.message);
+    }
+  };
+
+  useEffect(() => {
+    fetchMentor();
+  }, []);
 
   const getNameFromUserId = (selectedUserId) => {
     const selectedEmployee = empData.find(
@@ -59,7 +59,7 @@ const MyMentorModal = ({ closemodal, activity, initialValues }) => {
     }
 
     data = {
-      name: getNameFromUserId(values?.userId),
+      // name: getNameFromUserId(values?.userId),
       userId: values?.userId,
       description: values?.description,
     };
@@ -75,7 +75,7 @@ const MyMentorModal = ({ closemodal, activity, initialValues }) => {
       fetchMentor();
       closemodal();
     } else {
-      toast.error(res?.message || "Something went wrong");
+      toast.error(res?.response?.data?.message || "Something went wrong");
       console.log("ERROR CREATING USER3", res);
     }
     setLoading(false);
@@ -87,37 +87,42 @@ const MyMentorModal = ({ closemodal, activity, initialValues }) => {
       activity === "kababMenu" ||
       activity === "editEvent"
       ? {
-          eventName: Yup.string().required("Event Name is required"),
-          hostedBy: Yup.string().required("Host name is required"),
-          eventDate: Yup.string().required("Event date is required"),
-          eventstarttime: Yup.string().required("start Time is required"),
-          eventendtime: Yup.string().required(" End Time is required"),
-          notes: Yup.string().required(" Notes is required"),
-          addinvites: Yup.string().required(" Addinvites is required"),
-          lattitude: Yup.string().required(" lattitude is required"),
+        eventName: Yup.string().required("Event Name is required"),
+        hostedBy: Yup.string().required("Host name is required"),
+        eventDate: Yup.string().required("Event date is required"),
+        eventstarttime: Yup.string().required("start Time is required"),
+        eventendtime: Yup.string().required(" End Time is required"),
+        notes: Yup.string().required(" Notes is required"),
+        addinvites: Yup.string().required(" Addinvites is required"),
+        lattitude: Yup.string().required(" lattitude is required"),
 
-          longitude: Yup.string().required(" longitude is required"),
-        }
+        longitude: Yup.string().required(" longitude is required"),
+      }
       : activity === "training" || activity === "editTraining"
-      ? {
+        ? {
           name: Yup.string().required("Event Name is required"),
           trainingDate: Yup.string().required("Training date is required"),
           link: Yup.string().required("Training link is required"),
         }
-      : activity === "halloffame" || activity === "edithalloffame"
-      ? {
-          // name: Yup.string().required("name is required"),
-          reason: Yup.string().required("Reason is required"),
-        }
-      : activity === "jobReffered"
-      ? {
-          name: Yup.string().required("Job Name is required"),
-          location: Yup.string().required("Job location is required"),
-          salary: Yup.string().required("Salary range is required"),
-          description: Yup.string().required("Description range is required"),
-          opening: Yup.string().required("Opening is required"),
-        }
-      : ""
+        : activity === "halloffame" || activity === "edithalloffame"
+          ? {
+            // name: Yup.string().required("name is required"),
+            reason: Yup.string().required("Reason is required"),
+          }
+          : activity === "mymentor"
+            ? {
+              // name: Yup.string().required("name is required"),
+              description: Yup.string().required("Description is required"),
+            }
+            : activity === "jobReffered"
+              ? {
+                name: Yup.string().required("Job Name is required"),
+                location: Yup.string().required("Job location is required"),
+                salary: Yup.string().required("Salary range is required"),
+                description: Yup.string().required("Description range is required"),
+                opening: Yup.string().required("Opening is required"),
+              }
+              : ""
   );
 
   const getEmployeeData = async () => {
