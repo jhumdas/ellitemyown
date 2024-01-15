@@ -296,215 +296,215 @@ const SingleImage = () => {
 
     return (
         <>
-              <section className="mainpagediv">
+            <section className="mainpagediv">
                 <div className='mainpagecontainer'>
-            <div className="thought_area_mxh-left">
-                <BulletinBoard />
-                <HallofFame />
-                <Employees />
-                <EventCard />
-                <JobsReferred />
-            </div>
-            <div className='thought_area_mxh-mid'>
-                {/* <ShareThoughts getAffinityPosts={getAffinityPosts} /> */}
-                <section id='sara_tylor'>
-                    {
-                        postData?.map((item) => {
-                            return (
-                                <>
-                                    <div className='top_area'>
-                                        <div className='left'>
-                                            <div className='profile_img'>
-                                                <img src={item?.userImage} alt="..." />
-                                                {/* <img src={userData?.image} alt="..." /> */}
+                    <div className="thought_area_mxh-left">
+                        <BulletinBoard />
+                        <HallofFame />
+                        <Employees />
+                        <EventCard />
+                        <JobsReferred />
+                    </div>
+                    <div className='thought_area_mxh-mid'>
+                        {/* <ShareThoughts getAffinityPosts={getAffinityPosts} /> */}
+                        <section id='sara_tylor'>
+                            {
+                                postData?.map((item) => {
+                                    return (
+                                        <>
+                                            <div className='top_area'>
+                                                <div className='left'>
+                                                    <div className='profile_img'>
+                                                        <img src={item?.userImage} alt="..." />
+                                                        {/* <img src={userData?.image} alt="..." /> */}
+                                                    </div>
+
+                                                    <div className='details'>
+                                                        <div className='name' >
+                                                            <h2 >{item?.firstName} {item?.lastName}</h2>
+                                                            {/* <h2 >Manager Roy</h2> */}
+                                                            <span>
+                                                                <img src={RewardSilve} class="img-fluid" alt="icon" />
+                                                                Silver Batch Holder
+                                                            </span>
+                                                        </div>
+                                                        <div className="text">
+                                                            <p>
+                                                                <span>{item?.userType} </span>
+                                                                {/* <div> */}
+                                                                <span>Posted on {moment(item?.createdOn).format('YYYY - MM - DD')}</span>
+                                                                {/* </div> */}
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
 
-                                            <div className='details'>
-                                                <div className='name' >
-                                                    <h2 >{item?.firstName} {item?.lastName}</h2>
-                                                    {/* <h2 >Manager Roy</h2> */}
-                                                    <span>
-                                                        <img src={RewardSilve} class="img-fluid" alt="icon" />
-                                                        Silver Batch Holder
-                                                    </span>
-                                                </div>
-                                                <div className="text">
-                                                    <p>
-                                                        <span>{item?.userType} </span>
-                                                        {/* <div> */}
-                                                        <span>Posted on {moment(item?.createdOn).format('YYYY - MM - DD')}</span>
-                                                        {/* </div> */}
-                                                    </p>
-                                                </div>
+
+                                            <div className="content">
+                                                <p>{item?.description}
+                                                </p>
                                             </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div className="content">
-                                        <p>{item?.description}
-                                        </p>
-                                    </div>
-                                </>
-                            )
-                        })
-                    }
-                    {/* <div className="content">
+                                        </>
+                                    )
+                                })
+                            }
+                            {/* <div className="content">
                         <p>WE ARE HIRING
                             REFER YOUR FRIENDS
                         </p>
                     </div> */}
-                    <div className="gallery_area">
-                        {postData?.map((item) => {
-                            // console.log("item", item?.image)
-                            return (
-                                <Fancybox options={{ infinite: false }}>
-                                    <p className="all_box">
-                                        {item?.image?.length > 0 &&
-                                            item?.image?.slice(0, 4)?.map((item, index) => {
-                                                return (
-                                                    <button
-                                                        data-fancybox="gallery"
-                                                        data-src="https://lipsum.app/id/1/800x600"
-                                                        className="button button--secondary"
-                                                        style={{
-                                                            width: `${item?.image?.length === 1 ? "" : "100%"
-                                                                }`,
-                                                            height: `${item?.image?.length === 1 ? "" : "auto"
-                                                                }`,
-                                                        }}
-                                                    >
-                                                        <div className="card-image">
-                                                            <a
-                                                                href={item}
+                            <div className="gallery_area">
+                                {postData?.map((item) => {
+                                    // console.log("item", item?.image)
+                                    return (
+                                        <Fancybox options={{ infinite: false }}>
+                                            <p className="all_box">
+                                                {item?.image?.length > 0 &&
+                                                    item?.image?.slice(0, 4)?.map((item, index) => {
+                                                        return (
+                                                            <button
                                                                 data-fancybox="gallery"
-                                                                data-caption="Caption Images 1"
+                                                                data-src="https://lipsum.app/id/1/800x600"
+                                                                className="button button--secondary"
+                                                                style={{
+                                                                    width: `${item?.image?.length === 1 ? "" : "100%"
+                                                                        }`,
+                                                                    height: `${item?.image?.length === 1 ? "" : "auto"
+                                                                        }`,
+                                                                }}
                                                             >
-                                                                <img
-                                                                    src={item}
-                                                                    className="img-fluid"
-                                                                    alt=""
-                                                                />
+                                                                <div className="card-image">
+                                                                    <a
+                                                                        href={item}
+                                                                        data-fancybox="gallery"
+                                                                        data-caption="Caption Images 1"
+                                                                    >
+                                                                        <img
+                                                                            src={item}
+                                                                            className="img-fluid"
+                                                                            alt=""
+                                                                        />
 
-                                                                {item?.image?.length > 4 && index === 3 && (
-                                                                    <div className="moreimgOverlay">
-                                                                        <div className="count_img">
-                                                                            <p>{item?.image?.length - 4}+</p>
-                                                                        </div>
-                                                                    </div>
-                                                                )}
-                                                            </a>
-                                                        </div>
-                                                    </button>
-                                                );
-                                            })}
-                                    </p>
-                                </Fancybox>
-                            )
-                        })}
+                                                                        {item?.image?.length > 4 && index === 3 && (
+                                                                            <div className="moreimgOverlay">
+                                                                                <div className="count_img">
+                                                                                    <p>{item?.image?.length - 4}+</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        )}
+                                                                    </a>
+                                                                </div>
+                                                            </button>
+                                                        );
+                                                    })}
+                                            </p>
+                                        </Fancybox>
+                                    )
+                                })}
 
-                    </div>
+                            </div>
 
-                    <div className='like_comment_area'>
-                        {
-                            postData?.map((item) => {
-                                return (
-                                    <div class="left">
-                                        {/* <i class="fa-solid fa-thumbs-up"></i> */}
-                                        {reactionIconMemo
-                                            ?
-                                            reactionIconMemo?.reactionData === "like" ? (<img src={like} alt="..." className="likeIconImgg" />) :
+                            <div className='like_comment_area'>
+                                {
+                                    postData?.map((item) => {
+                                        return (
+                                            <div class="left">
+                                                {/* <i class="fa-solid fa-thumbs-up"></i> */}
+                                                {reactionIconMemo
+                                                    ?
+                                                    reactionIconMemo?.reactionData === "like" ? (<img src={like} alt="..." className="likeIconImgg" />) :
 
-                                                reactionIconMemo?.reactionData === "love" ? (<img src={love} alt="..." className="likeIconImgg" />) :
-                                                    reactionIconMemo?.reactionData === "support" ? (<img src={support} alt="..." className="likeIconImgg" />) :
-                                                        reactionIconMemo?.reactionData === "celebrate" ? (<img src={celebrate} alt="..." className="likeIconImgg" />) :
-                                                            reactionIconMemo?.reactionData === "curious" ? (<img src={curious} alt="..." className="likeIconImgg" />) :
-                                                                reactionIconMemo?.reactionData === "insightful" ? (<img src={insightful} alt="..." className="likeIconImgg" />)
-                                                                    :
-                                                                    // selectedReaction === "angry" ? (<img src={angry} alt="..." className="likeIconImgg" />) :
-                                                                    (<img src={like} alt="..." className="likeIconImg" />)
-                                            :
-                                            (<img src={like} alt="..." className="likeIconImg" />)
+                                                        reactionIconMemo?.reactionData === "love" ? (<img src={love} alt="..." className="likeIconImgg" />) :
+                                                            reactionIconMemo?.reactionData === "support" ? (<img src={support} alt="..." className="likeIconImgg" />) :
+                                                                reactionIconMemo?.reactionData === "celebrate" ? (<img src={celebrate} alt="..." className="likeIconImgg" />) :
+                                                                    reactionIconMemo?.reactionData === "curious" ? (<img src={curious} alt="..." className="likeIconImgg" />) :
+                                                                        reactionIconMemo?.reactionData === "insightful" ? (<img src={insightful} alt="..." className="likeIconImgg" />)
+                                                                            :
+                                                                            // selectedReaction === "angry" ? (<img src={angry} alt="..." className="likeIconImgg" />) :
+                                                                            (<img src={like} alt="..." className="likeIconImg" />)
+                                                    :
+                                                    (<img src={like} alt="..." className="likeIconImg" />)
 
-                                        }
-                                        <p>{imagesArray?.totalReaction} People Reacted</p>
-                                    </div>
-                                )
+                                                }
+                                                <p>{imagesArray?.totalReaction} People Reacted</p>
+                                            </div>
+                                        )
 
-                            })
-                        }
-                        {/* <div class="left">
+                                    })
+                                }
+                                {/* <div class="left">
                             <i class="fa-solid fa-thumbs-up"></i>
                             <p>1 People Reacted</p>
                         </div> */}
 
-                        {
-                            commentData?.length !== 0 && (
-                                <div className="right">
-                                    <h6>
-                                        <span>{commentData?.length} </span>
-                                        People Commented
-                                    </h6>
-                                    <p>
-                                        <span>1</span> Share
-                                    </p>
-                                </div>
-                            )
-                        }
-                    </div>
-                    <div className='reaction_area'>
-                        <button
-                            className="reaction"
-                            onClick={handleemojiClick}
-                        // onMouseLeave={() => setEmojimodal(false)}
-                        >
-                            {/* <img src={alike} alt="..." className="likeIconImg" /> */}
-                            {/* <span style={{ color: "blue" }}>Reaction</span> */}
-                            {/* <img src={selectedReaction ? reactions[selectedReaction] : alike} alt="..." className="likeIconImg" /> */}
-                            {reactionIconMemo
-                                ?
-                                reactionIconMemo?.reactionData === "like" ? (<img src={like} alt="..." className="likeIconImgg" />) :
+                                {
+                                    commentData?.length !== 0 && (
+                                        <div className="right">
+                                            <h6>
+                                                <span>{commentData?.length} </span>
+                                                People Commented
+                                            </h6>
+                                            <p>
+                                                <span>1</span> Share
+                                            </p>
+                                        </div>
+                                    )
+                                }
+                            </div>
+                            <div className='reaction_area'>
+                                <button
+                                    className="reaction"
+                                    onClick={handleemojiClick}
+                                // onMouseLeave={() => setEmojimodal(false)}
+                                >
+                                    {/* <img src={alike} alt="..." className="likeIconImg" /> */}
+                                    {/* <span style={{ color: "blue" }}>Reaction</span> */}
+                                    {/* <img src={selectedReaction ? reactions[selectedReaction] : alike} alt="..." className="likeIconImg" /> */}
+                                    {reactionIconMemo
+                                        ?
+                                        reactionIconMemo?.reactionData === "like" ? (<img src={like} alt="..." className="likeIconImgg" />) :
 
-                                    reactionIconMemo?.reactionData === "love" ? (<img src={love} alt="..." className="likeIconImgg" />) :
-                                        reactionIconMemo?.reactionData === "support" ? (<img src={support} alt="..." className="likeIconImgg" />) :
-                                            reactionIconMemo?.reactionData === "celebrate" ? (<img src={celebrate} alt="..." className="likeIconImgg" />) :
-                                                reactionIconMemo?.reactionData === "curious" ? (<img src={curious} alt="..." className="likeIconImgg" />) :
-                                                    reactionIconMemo?.reactionData === "insightful" ? (<img src={insightful} alt="..." className="likeIconImgg" />)
-                                                        :
-                                                        // selectedReaction === "angry" ? (<img src={angry} alt="..." className="likeIconImgg" />) :
-                                                        (<img src={like} alt="..." className="likeIconImg" />)
-                                :
-                                (<img src={like} alt="..." className="likeIconImg" />)
+                                            reactionIconMemo?.reactionData === "love" ? (<img src={love} alt="..." className="likeIconImgg" />) :
+                                                reactionIconMemo?.reactionData === "support" ? (<img src={support} alt="..." className="likeIconImgg" />) :
+                                                    reactionIconMemo?.reactionData === "celebrate" ? (<img src={celebrate} alt="..." className="likeIconImgg" />) :
+                                                        reactionIconMemo?.reactionData === "curious" ? (<img src={curious} alt="..." className="likeIconImgg" />) :
+                                                            reactionIconMemo?.reactionData === "insightful" ? (<img src={insightful} alt="..." className="likeIconImgg" />)
+                                                                :
+                                                                // selectedReaction === "angry" ? (<img src={angry} alt="..." className="likeIconImgg" />) :
+                                                                (<img src={like} alt="..." className="likeIconImg" />)
+                                        :
+                                        (<img src={like} alt="..." className="likeIconImg" />)
 
-                            }
-                            <span style={{ color: "blue" }}>Reaction</span>
-                            {emojimodal &&
-                                <div className='emojimodalbg'>
-                                    <button className="reaction">
-                                        <img src={like} alt="..." className="likeIconImgg" onClick={() => handleReactionSelect(SingleimageId, "like")} />
-                                    </button>
-                                    <button className="reaction">
-                                        <img src={love} alt="..." className="likeIconImgg" onClick={() => handleReactionSelect(SingleimageId, "love")} />
-                                    </button>
-                                    <button className="reaction">
-                                        <img src={support} alt="..." className="likeIconImgg" onClick={() => handleReactionSelect(SingleimageId, "support")} />
-                                    </button>
-                                    <button className="reaction">
-                                        <img src={celebrate} alt="..." className="likeIconImgg" onClick={() => handleReactionSelect(SingleimageId, "celebrate")} />
-                                    </button>
-                                    <button className="reaction">
-                                        <img src={curious} alt="..." className="likeIconImgg" onClick={() => handleReactionSelect(SingleimageId, "curious")} />
-                                    </button>
-                                    <button className="reaction">
-                                        <img src={insightful} alt="..." className="likeIconImgg" onClick={() => handleReactionSelect(SingleimageId, "insightful")} />
-                                    </button>
-                                    {/* <button className="reaction">
+                                    }
+                                    <span style={{ color: "blue" }}>Reaction</span>
+                                    {emojimodal &&
+                                        <div className='emojimodalbg'>
+                                            <button className="reaction">
+                                                <img src={like} alt="..." className="likeIconImgg" onClick={() => handleReactionSelect(SingleimageId, "like")} />
+                                            </button>
+                                            <button className="reaction">
+                                                <img src={love} alt="..." className="likeIconImgg" onClick={() => handleReactionSelect(SingleimageId, "love")} />
+                                            </button>
+                                            <button className="reaction">
+                                                <img src={support} alt="..." className="likeIconImgg" onClick={() => handleReactionSelect(SingleimageId, "support")} />
+                                            </button>
+                                            <button className="reaction">
+                                                <img src={celebrate} alt="..." className="likeIconImgg" onClick={() => handleReactionSelect(SingleimageId, "celebrate")} />
+                                            </button>
+                                            <button className="reaction">
+                                                <img src={curious} alt="..." className="likeIconImgg" onClick={() => handleReactionSelect(SingleimageId, "curious")} />
+                                            </button>
+                                            <button className="reaction">
+                                                <img src={insightful} alt="..." className="likeIconImgg" onClick={() => handleReactionSelect(SingleimageId, "insightful")} />
+                                            </button>
+                                            {/* <button className="reaction">
                                         <img src={angry} alt="..." className="likeIconImgg" onClick={() => handleReactionSelect(SingleimageId, "angry")} />
                                     </button> */}
-                                </div>
-                            }
-                        </button>
-                        {/* {emojimodal &&
+                                        </div>
+                                    }
+                                </button>
+                                {/* {emojimodal &&
                             <div className='emojimodalbg'>
                                 <button className="reaction">
                                     <img src={alike} alt="..." className="likeIconImgg" onClick={() => handleReactionSelect(SingleimageId, "alike")} />
@@ -531,7 +531,7 @@ const SingleImage = () => {
                         } */}
 
 
-                        {/* <button className="comments">
+                                {/* <button className="comments">
                             <img src={Comment} alt="..." className="chatIconImg" />
                             <span style={{ color: "blue" }} >Comments</span>
                         </button>
@@ -540,81 +540,102 @@ const SingleImage = () => {
                             <span style={{ color: "blue" }}>Share</span>
                         </button> */}
 
-                        <button
-                            className="comments"
-                            onClick={() => {
-                                // setModalId(SingleimageId);
-                                setCommentView(!commentView);
-                            }}
-                        >
-                            <img src={msgChat} alt="..." className="chatIconImg" />
-                            <span>Comments</span>
-                        </button>
-                        <RWebShare
-                            data={{
-                                text: "Like humans, flamingos make friends for life",
-                                url: "https://google.com",
-                                title: "Share Posts",
-                            }}
-                            onClick={() => console.log("shared successfully!")}
-                        >
-                            <button className="share">
+                                <button
+                                    className="comments"
+                                    onClick={() => {
+                                        // setModalId(SingleimageId);
+                                        setCommentView(!commentView);
+                                    }}
+                                >
+                                    <img src={msgChat} alt="..." className="chatIconImg" />
+                                    <span>Comments</span>
+                                </button>
+                                <RWebShare
+                                    data={{
+                                        text: "Like humans, flamingos make friends for life",
+                                        // url: "https://google.com",
+                                        title: "Share Posts",
+                                    }}
+                                    // onClick={() => console.log("shared successfully!")}
+                                    sites={[
+                                        "linkedin",
+                                        "facebook",
+                                        "twitter",
+                                        "whatsapp",
+                                        "mail",
+                                        "copy",
+                                    ]}
+                                    // onClick={() => console.log("shared successfully!")}
+                                    onClick={(platform) => {
+                                        if (platform === "copy") {
+                                            // Copy to clipboard logic
+                                            const textToCopy = "Your custom text or post content here";
+                                            navigator.clipboard.writeText(textToCopy).then(() => {
+                                                console.log("Text copied to clipboard:", textToCopy);
+                                                toast.success("Text copied to clipboard!");
+                                            });
+                                        } else {
+                                            console.log("Shared successfully on", platform);
+                                        }
+                                    }}
+                                >
+                                    <button className="share">
 
-                                <img src={table_icon} alt="..." className="shareIconImg" />
-                                <span>Share</span>
-                            </button>
+                                        <img src={table_icon} alt="..." className="shareIconImg" />
+                                        <span>Share</span>
+                                    </button>
 
-                        </RWebShare>
-                    </div>
+                                </RWebShare>
+                            </div>
 
 
-                    {showComment && commentView && (
-                        <div className="commentshow_area">
-                            {commentData?.length > 0 ? (
-                                commentData?.slice(0, commentIndex)?.map((item, index) => {
-                                    console.log("COMMDATA", item);
-                                    return (
-                                        <div className="others_comment">
-                                            <div className="profile_pic">
-                                                {item?.userImage ? (
-                                                    <img
-                                                        src={item?.userImage}
-                                                        className="img-fluid"
-                                                        alt="profile"
-                                                    />
-                                                ) : (
-                                                    <img
-                                                        src={ProfileImg1}
-                                                        className="img-fluid"
-                                                        alt="profile"
-                                                    />
-                                                )}
-                                            </div>
-                                            <div className="man_details">
-                                                <div className="wrap_box">
-                                                    <div className="name">
-                                                        <h4>{item?.firstName + " " + item?.lastName}</h4>
+                            {showComment && commentView && (
+                                <div className="commentshow_area">
+                                    {commentData?.length > 0 ? (
+                                        commentData?.slice(0, commentIndex)?.map((item, index) => {
+                                            console.log("COMMDATA", item);
+                                            return (
+                                                <div className="others_comment">
+                                                    <div className="profile_pic">
+                                                        {item?.userImage ? (
+                                                            <img
+                                                                src={item?.userImage}
+                                                                className="img-fluid"
+                                                                alt="profile"
+                                                            />
+                                                        ) : (
+                                                            <img
+                                                                src={ProfileImg1}
+                                                                className="img-fluid"
+                                                                alt="profile"
+                                                            />
+                                                        )}
                                                     </div>
-                                                    {item?.image ? (
-                                                        <img style={{ width: "200px", height: "200px" }}
-                                                            src={item?.image}
-                                                            className="img-fluid"
-                                                            alt=""
-                                                        />
-                                                    ) : (
-                                                        <></>
-                                                    )}
-                                                    {/* <img style={{ width: "60px", height: "60px" }}
+                                                    <div className="man_details">
+                                                        <div className="wrap_box">
+                                                            <div className="name">
+                                                                <h4>{item?.firstName + " " + item?.lastName}</h4>
+                                                            </div>
+                                                            {item?.image ? (
+                                                                <img style={{ width: "200px", height: "200px" }}
+                                                                    src={item?.image}
+                                                                    className="img-fluid"
+                                                                    alt=""
+                                                                />
+                                                            ) : (
+                                                                <></>
+                                                            )}
+                                                            {/* <img style={{ width: "60px", height: "60px" }}
                           src={item?.image}
                           className="img-fluid"
                           alt=""
                         /> */}
-                                                    {/* <div className="text">{item?.imageURL}</div> */}
-                                                    <div className="text">
-                                                        <p>{item?.comment}</p>
-                                                    </div>
-                                                </div>
-                                                {/* <div className="bottom">
+                                                            {/* <div className="text">{item?.imageURL}</div> */}
+                                                            <div className="text">
+                                                                <p>{item?.comment}</p>
+                                                            </div>
+                                                        </div>
+                                                        {/* <div className="bottom">
                 <div className="text">
                   <p>Reactions</p>
                 </div>
@@ -645,115 +666,115 @@ const SingleImage = () => {
                   </a>
                 </div>
               </div> */}
+                                                    </div>
+                                                </div>
+                                            );
+                                        })
+                                    ) : (
+                                        <p>No comments to show!</p>
+                                    )}
+
+                                    {commentData?.length > 3 && commentData?.length != commentIndex && (
+                                        <div className="ShowMoreDialogue_btn">
+                                            <butsetEmojimodalton
+                                                className="btn"
+                                                onClick={() => setCommetIndex(commentData?.length)}
+                                            >
+                                                Show More Comments
+                                            </butsetEmojimodalton>
+                                        </div>
+                                    )}
+
+                                    {imageURL !== "" && (
+
+                                        <div style={{
+                                            display: "flex", position: "relative",
+                                            bottom: "0", left: '0', paddingTop: "10px"
+                                        }}>
+                                            <img
+                                                style={{ marginTop: "1rem" }}
+                                                src={imageURL}
+                                                alt=""
+                                                height="100rem"
+                                                width="100rem"
+                                            />
+                                            <div
+                                                onClick={() => {
+                                                    setImageURL("");
+                                                    setImage('')
+                                                }}
+                                            >
+                                                <i
+                                                    class="fa-solid fa-xmark"
+                                                    style={{
+                                                        color: "red",
+                                                        fontSize: "2rem",
+                                                        cursor: "pointer",
+                                                    }}
+                                                ></i>
                                             </div>
                                         </div>
-                                    );
-                                })
-                            ) : (
-                                <p>No comments to show!</p>
-                            )}
 
-                            {commentData?.length > 3 && commentData?.length != commentIndex && (
-                                <div className="ShowMoreDialogue_btn">
-                                    <butsetEmojimodalton
-                                        className="btn"
-                                        onClick={() => setCommetIndex(commentData?.length)}
-                                    >
-                                        Show More Comments
-                                    </butsetEmojimodalton>
-                                </div>
-                            )}
+                                    )}
 
-                            {imageURL !== "" && (
 
-                                <div style={{
-                                    display: "flex", position: "relative",
-                                    bottom: "0", left: '0', paddingTop: "10px"
-                                }}>
-                                    <img
-                                        style={{ marginTop: "1rem" }}
-                                        src={imageURL}
-                                        alt=""
-                                        height="100rem"
-                                        width="100rem"
-                                    />
-                                    <div
-                                        onClick={() => {
-                                            setImageURL("");
-                                            setImage('')
-                                        }}
-                                    >
-                                        <i
-                                            class="fa-solid fa-xmark"
-                                            style={{
-                                                color: "red",
-                                                fontSize: "2rem",
-                                                cursor: "pointer",
-                                            }}
-                                        ></i>
+
+                                    {/* <div style={{height:'100px',width:'100%'}}></div> */}
+                                    <div className="mycomment_push">
+
+                                        <form>
+                                            <div className="form-group">
+                                                <input
+                                                    type="text"
+                                                    className="form-control"
+                                                    id=""
+                                                    aria-describedby="textHelp"
+                                                    placeholder="Write a comment..."
+                                                    value={commentText}
+                                                    onChange={(e) => setCommentText(e.target.value)}
+                                                />
+
+                                                <div className="inpCmntAttach">
+                                                    <i class="fa-solid fa-paperclip"></i>
+                                                    <input
+                                                        type="file"
+                                                        class="form-control"
+                                                        id="hostedBy"
+                                                        placeholder="Choose a photo"
+                                                        value={image}
+                                                        name="hostedBy"
+
+                                                        onChange={handleImageChange}
+                                                    />
+                                                </div>
+
+                                                {/* <div style={{}}> */}
+                                                {uploading ? <p style={{
+                                                    position: 'absolute',
+                                                    right: 0,
+                                                    top: '-84%'
+                                                }}>image uploading......</p> : null}
+
+
+                                                {/* </div> */}
+
+                                                <BsEmojiSmileFill className="comment-emoji-icon" onClick={() => setIsEmoji(prev => !prev)} />
+                                                {isEmoji &&
+                                                    <EmojiPicker onEmojiClick={(emojiObject) => setCommentText(prev => prev + emojiObject.emoji)} />
+                                                }
+                                                <button className="sendcommentbtn" onClick={handleComment}>
+                                                    <i className="fa-solid fa-paper-plane"></i>
+                                                </button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
-
                             )}
 
+                        </section >
+                    </div >
 
-
-                            {/* <div style={{height:'100px',width:'100%'}}></div> */}
-                            <div className="mycomment_push">
-
-                                <form>
-                                    <div className="form-group">
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                            id=""
-                                            aria-describedby="textHelp"
-                                            placeholder="Write a comment..."
-                                            value={commentText}
-                                            onChange={(e) => setCommentText(e.target.value)}
-                                        />
-
-                                        <div className="inpCmntAttach">
-                                            <i class="fa-solid fa-paperclip"></i>
-                                            <input
-                                                type="file"
-                                                class="form-control"
-                                                id="hostedBy"
-                                                placeholder="Choose a photo"
-                                                value={image}
-                                                name="hostedBy"
-
-                                                onChange={handleImageChange}
-                                            />
-                                        </div>
-
-                                        {/* <div style={{}}> */}
-                                        {uploading ? <p style={{
-                                            position: 'absolute',
-                                            right: 0,
-                                            top: '-84%'
-                                        }}>image uploading......</p> : null}
-
-
-                                        {/* </div> */}
-
-                                        <BsEmojiSmileFill className="comment-emoji-icon" onClick={() => setIsEmoji(prev => !prev)} />
-                                        {isEmoji &&
-                                            <EmojiPicker onEmojiClick={(emojiObject) => setCommentText(prev => prev + emojiObject.emoji)} />
-                                        }
-                                        <button className="sendcommentbtn" onClick={handleComment}>
-                                            <i className="fa-solid fa-paper-plane"></i>
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    )}
-
-                </section >
-            </div >
-
-            {/* {
+                    {/* {
                 modalA && (
                     <CommentModal
                         closemodal={setModalA}
@@ -766,57 +787,57 @@ const SingleImage = () => {
                 )
             } */}
 
-            <div className="thought_area_mxh_right">
-                <div className="eliteFigDiv" style={{ marginBottom: "1rem" }}>
-                    {/* <figure className="eliteFig">
+                    <div className="thought_area_mxh_right">
+                        <div className="eliteFigDiv" style={{ marginBottom: "1rem" }}>
+                            {/* <figure className="eliteFig">
             <img src={eliteCard} alt="..." />
           </figure>
           <span className="goldCardText">GOLD CLUB</span> */}
-                    <div className="goldClubDiv">
-                        <div className="goldInnerDiv">
-                            <div>
-                                {/* <p className="eliteSubHead">Status</p> */}
-                                <p className="goldClHead">Gold</p>
+                            <div className="goldClubDiv">
+                                <div className="goldInnerDiv">
+                                    <div>
+                                        {/* <p className="eliteSubHead">Status</p> */}
+                                        <p className="goldClHead">Gold</p>
+                                    </div>
+                                    <figure className="goldIconFig">
+                                        <img src={eliteExp} alt="..." />
+                                    </figure>
+                                </div>
+                                <div className="cardNameDiv">
+                                    <div>
+                                        <p className="cardNumbText">{goldCard?.goldClubNo}</p>
+                                        <p className="sanjNameText">
+                                            {goldCard?.firstName} {goldCard?.lastName}
+                                        </p>
+                                    </div>
+                                    {/* <p className="goldSmClub">Gold Club</p> */}
+                                    <figure className="goldIcoFigDiv">
+                                        <img src={goldIcon} alt="..." />
+                                    </figure>
+                                </div>
                             </div>
-                            <figure className="goldIconFig">
-                                <img src={eliteExp} alt="..." />
-                            </figure>
                         </div>
-                        <div className="cardNameDiv">
-                            <div>
-                                <p className="cardNumbText">{goldCard?.goldClubNo}</p>
-                                <p className="sanjNameText">
-                                    {goldCard?.firstName} {goldCard?.lastName}
-                                </p>
-                            </div>
-                            {/* <p className="goldSmClub">Gold Club</p> */}
-                            <figure className="goldIcoFigDiv">
-                                <img src={goldIcon} alt="..." />
-                            </figure>
+                        <div className="iniSusTabDiv">
+                            <Tabs>
+                                <TabList>
+                                    <Tab>Initiative</Tab>
+                                    <Tab>Sustainable</Tab>
+                                </TabList>
+
+                                <TabPanel>
+                                    <Initiative />
+                                </TabPanel>
+                                <TabPanel>
+                                    <GoalAchiver />
+                                </TabPanel>
+                            </Tabs>
+                        </div>
+                        <TrainingCard />
+                        <div className="myAffitiDiv">
+                            <HubAffinityGrp />
                         </div>
                     </div>
                 </div>
-                <div className="iniSusTabDiv">
-                    <Tabs>
-                        <TabList>
-                            <Tab>Initiative</Tab>
-                            <Tab>Sustainable</Tab>
-                        </TabList>
-
-                        <TabPanel>
-                            <Initiative />
-                        </TabPanel>
-                        <TabPanel>
-                            <GoalAchiver />
-                        </TabPanel>
-                    </Tabs>
-                </div>
-                <TrainingCard />
-                <div className="myAffitiDiv">
-                    <HubAffinityGrp />
-                </div>
-            </div>
-            </div>
             </section>
         </>
     )

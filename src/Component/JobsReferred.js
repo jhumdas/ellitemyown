@@ -263,7 +263,30 @@ export default function JobsReferred() {
                           // url: "https://google.com",
                           title: "Share job",
                         }}
-                        onClick={() => console.log("shared successfully!")}
+                        sites={[
+                          "linkedin",
+                          "facebook",
+                          "twitter",
+                          "whatsapp",
+                          "mail",
+                          "copy",
+                        ]}
+
+                        // onClick={() => console.log("shared successfully!")}
+                        onClick={(platform) => {
+                          if (platform === "copy") {
+                            // Copy to clipboard logic
+                            const textToCopy = `${item?.name}`;
+                            navigator.clipboard.writeText(textToCopy).then(() => {
+                              console.log("Text copied to clipboard:", textToCopy);
+                              // You can also show a notification or toast here
+                              toast.success("Text copied to clipboard!");
+                            });
+                          } else {
+                            // Handle other platforms
+                            console.log("Shared successfully on", platform);
+                          }
+                        }}
                       >
                         <div className="share">
                           <img src={table_icon} alt="..." className="shareIconImg" />

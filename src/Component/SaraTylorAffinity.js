@@ -451,10 +451,32 @@ export default function SaraTylorAffinity({
           <RWebShare
             data={{
               text: "Like humans, flamingos make friends for life",
-              url: "https://google.com",
+              // url: "https://google.com",
               title: "Share Posts",
             }}
-            onClick={() => console.log("shared successfully!")}
+            // onClick={() => console.log("shared successfully!")}
+            sites={[
+              "linkedin",
+              "facebook",
+              "twitter",
+              "whatsapp",
+              "mail",
+              "copy",
+            ]}
+            // onClick={() => console.log("shared successfully!")}
+            onClick={(platform) => {
+              if (platform === "copy") {
+                // Copy to clipboard logic
+                const textToCopy = "Your custom text or post content here";
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                  console.log("Text copied to clipboard:", textToCopy);
+                  toast.success("Text copied to clipboard!");
+                });
+              } else {
+                console.log("Shared successfully on", platform);
+              }
+            }}
+
           >
             <button className="share">
               {/* <Link to="/" className="btn">
