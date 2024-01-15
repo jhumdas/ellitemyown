@@ -14,6 +14,7 @@ import { ApiHelperFunction } from "../services/api/apiHelpers";
 import BillBoardModal from "../SeprateModal/BillBoardModal";
 import KababMenu from "../SeprateModal/KababMenu";
 import Bulletin_Board from "../Images/Icons/PNG/Bulletin_Board.png"
+import BulletinView from "../SeprateModal/BulletinView";
 
 
 export default function BulletinBoard() {
@@ -224,11 +225,11 @@ export default function BulletinBoard() {
                         onClick={() => openDetails(item, item._id, index)}
                       >
                         View
-                        {viewDetails && index === indx && (
+                        {/* {viewDetails && index === indx && (
                           <div key={index} className="modaldescript">
                             {item.addNotes}
                           </div>
-                        )}
+                        )} */}
 
                         {/* {viewDetails && (
                     <div className="modaldescript">
@@ -249,7 +250,7 @@ export default function BulletinBoard() {
           )}
         </div>
       </div>
-
+      {viewDetails && <BulletinView selectedDescription={selectedDescription} closemodal={setViewDetails} />}
 
     </>
   );
