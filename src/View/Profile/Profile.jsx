@@ -58,7 +58,7 @@ function Profile() {
 
   const badgeData = useSelector((state) => state?.badgeSlice?.badge);
 
-  console.log(userData,"userDaaklb")
+  console.log(userData, "userDaaklb")
 
   const [post, setPost] = useState({
     description: "",
@@ -66,9 +66,10 @@ function Profile() {
   });
 
   const initialValues = {
-    name: "",
+    badgeID: "",
     image: "",
     desc: "",
+    employeeID: ""
   };
 
   useEffect(() => {
@@ -76,7 +77,7 @@ function Profile() {
     ViewAllSkill();
     HandleSkill(skillData[0]?._id);
     getGoldCard();
-  
+
   }, []);
 
   useEffect(() => {
@@ -322,7 +323,7 @@ function Profile() {
 
   const handlePost = async (e, item) => {
     let data = {
-      description: item?.name,
+      description: item?.badgeName,
       image: [item.image],
       postType: "public",
     };
@@ -1514,7 +1515,7 @@ function Profile() {
                                 <img src={user_image_2} alt="..." />
                               </figure>
                               <div>
-                                <span className="champHead">{item?.name}</span>
+                                <span className="champHead">{item?.badgeName}</span>
                                 <span className="champDate">17 Jan</span>
                               </div>
                             </div>
@@ -1552,7 +1553,7 @@ function Profile() {
 
                               <RWebShare
                                 data={{
-                                  text: `${item?.name}`,
+                                  text: `${item?.badgeName}`,
                                   // url: `${item?.link}`,
                                   title: "Share badge",
                                 }}
