@@ -1512,11 +1512,11 @@ function Profile() {
                           >
                             <div className="champFigTextDiv">
                               <figure className="champFig">
-                                <img src={user_image_2} alt="..." />
+                                <img src={item?.userImage} alt="..." />
                               </figure>
                               <div>
                                 <span className="champHead">{item?.employeeFName} {item?.employeeLName}</span>
-                                <span className="champDate">17 Jan</span>
+                                {/* <span className="champDate">17 Jan</span> */}
                               </div>
                             </div>
 
@@ -1526,7 +1526,7 @@ function Profile() {
                               </figure>
                               <p className="chmpThisText">{item?.badgeName}</p>
                             </div>
-                            <div> <p className="chmpThisText">{item?.desc}</p></div>
+                            <div style={{ paddingBottom: "10px" }}> <p className="chmpThisText">{item?.desc}</p></div>
                             <div className="svCosMainDiv">
                               <div className="svCoShBtnDiv">
                                 <figure className="svMsgFig">
