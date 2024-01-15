@@ -61,7 +61,7 @@ function GrowWel() {
         )}
       </figure>
       <div>
-        <p className="proCvrTagLine">Your Tag Line</p>
+        {/* <p className="proCvrTagLine">Your Tag Line</p> */}
         {userData?.userType === "Admin" ? (
           <div className="proEditFigText">
             <input

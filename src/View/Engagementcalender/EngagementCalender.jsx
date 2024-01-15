@@ -227,7 +227,7 @@ function EngagementCalender() {
                 <div className="col-xl-9 col-lg-9">
                   <div className="">
                     <div className="user_wrap">
-                      <div className="user_about">
+                      {/* <div className="user_about">
                         <div className="user_image">
                           <img
                             className="img-fluid"
@@ -240,7 +240,15 @@ function EngagementCalender() {
                           <h5>{userData?.designation}</h5>
 
                         </div>
-                      </div>
+                      </div> */}
+                      {/* <div className="user_about">
+                          <div className="bg-userdtwht">
+                      
+                            <div className="bg-wht">
+
+                            </div>
+                          </div>
+                      </div> */}
                       <ShareThoughts getAffinityPosts={getAffinityPosts} />
                       {/* <div className="user_helpdesk">
                     <div className="top_desk">
