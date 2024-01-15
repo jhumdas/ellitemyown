@@ -119,7 +119,7 @@ function NotiHome() {
     if (res && res?.status) {
       setNotiData(res?.data?.data);
     } else {
-      toast.error(res?.message);
+      toast.error(res?.response?.data?.message);
     }
   };
 
@@ -205,52 +205,52 @@ function NotiHome() {
   ];
   return (
     <>
-     <section className="mainpagediv">
+      <section className="mainpagediv">
         <div className="mainpagecontainer">
-      <div className="thought_area_mxh-left">
-        <BulletinBoard />
-        <HallofFame />
-        <Employees />
-        <EventCard />
-        <JobsReferred />
-      </div>
-      <div className="thought_area_mxh-mid notiMidThgtDiv">
-        <div className="notifiInnerDiv">
-          <p className="notifiHead">Notifications</p>
-          <div className="allNotiTabDiv">
-            <Tabs>
-              <TabList>
-                <Tab>All</Tab>
-                <Tab>Unread</Tab>
-              </TabList>
+          <div className="thought_area_mxh-left">
+            <BulletinBoard />
+            <HallofFame />
+            <Employees />
+            <EventCard />
+            <JobsReferred />
+          </div>
+          <div className="thought_area_mxh-mid notiMidThgtDiv">
+            <div className="notifiInnerDiv">
+              <p className="notifiHead">Notifications</p>
+              <div className="allNotiTabDiv">
+                <Tabs>
+                  <TabList>
+                    <Tab>All</Tab>
+                    <Tab>Unread</Tab>
+                  </TabList>
 
-              <TabPanel>
-                <div className="newNotifiDiv">
-                  <p className="allNotiSubHeads">New</p>
-                  <div>
-                    {notiData?.map((value) => (
-                      <NotificationActual
-                        // activeY={value.bgColor}
-                        // icon={value.icon}
-                        id={value?._id}
-                        advocacyPostId={value?.advocacyPostId}
-                        title={value?.title}
-                        description={value?.description}
-                        image={value?.image}
-                        advocacyPostedBy={value?.advocacyPostedBy}
-                        userFirstName={value?.userFirstName}
-                        userLastName={value?.userLastName}
-                        isAdminApproved={value?.isAdminApproved}
-                        groupId={value?.groupId}
-                        requestId={value?.requestId}
-                        userID={value?.userID}
-                        createdOn={value?.createdOn}
-                        value={value}
-                      />
-                    ))}
-                  </div>
-                </div>
-                {/* <div>
+                  <TabPanel>
+                    <div className="newNotifiDiv">
+                      <p className="allNotiSubHeads">New</p>
+                      <div>
+                        {notiData?.map((value) => (
+                          <NotificationActual
+                            // activeY={value.bgColor}
+                            // icon={value.icon}
+                            id={value?._id}
+                            advocacyPostId={value?.advocacyPostId}
+                            title={value?.title}
+                            description={value?.description}
+                            image={value?.image}
+                            advocacyPostedBy={value?.advocacyPostedBy}
+                            userFirstName={value?.userFirstName}
+                            userLastName={value?.userLastName}
+                            isAdminApproved={value?.isAdminApproved}
+                            groupId={value?.groupId}
+                            requestId={value?.requestId}
+                            userID={value?.userID}
+                            createdOn={value?.createdOn}
+                            value={value}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                    {/* <div>
                   <p className="allNotiSubHeads">Today</p>
                   {todayNotiArr.map((value) => (
                     <NotificationActual
@@ -259,55 +259,55 @@ function NotiHome() {
                     />
                   ))}
                 </div> */}
-              </TabPanel>
-              <TabPanel>
-                <div className="newNotifiDiv">
-                  <p className="allNotiSubHeads">New</p>
-                  <div>
-                    {unreadArr.map((value) => (
-                      <NotificationActual
-                        activeY={value.bgColor}
-                        icon={value.icon}
-                      />
-                    ))}
-                  </div>
-                </div>
-                <div>
-                  <p className="allNotiSubHeads">Today</p>
-                  {unreadArr.map((value) => (
-                    <NotificationActual
-                      activeY={value.bgColor}
-                      icon={value.icon}
-                    />
-                  ))}
-                </div>
-              </TabPanel>
-            </Tabs>
+                  </TabPanel>
+                  <TabPanel>
+                    <div className="newNotifiDiv">
+                      <p className="allNotiSubHeads">New</p>
+                      <div>
+                        {unreadArr.map((value) => (
+                          <NotificationActual
+                            activeY={value.bgColor}
+                            icon={value.icon}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                    <div>
+                      <p className="allNotiSubHeads">Today</p>
+                      {unreadArr.map((value) => (
+                        <NotificationActual
+                          activeY={value.bgColor}
+                          icon={value.icon}
+                        />
+                      ))}
+                    </div>
+                  </TabPanel>
+                </Tabs>
+              </div>
+            </div>
+          </div>
+          <div className="thought_area_mxh_right">
+            <div className="iniSusTabDiv">
+              <Tabs>
+                <TabList>
+                  <Tab>Initiative</Tab>
+                  <Tab>Sustainable</Tab>
+                </TabList>
+
+                <TabPanel>
+                  <Initiative />
+                </TabPanel>
+                <TabPanel>
+                  <GoalAchiver />
+                </TabPanel>
+              </Tabs>
+            </div>
+            <TrainingCard />
+            <div className="myAffitiDiv">
+              <HubAffinityGrp />
+            </div>
           </div>
         </div>
-      </div>
-      <div className="thought_area_mxh_right">
-        <div className="iniSusTabDiv">
-          <Tabs>
-            <TabList>
-              <Tab>Initiative</Tab>
-              <Tab>Sustainable</Tab>
-            </TabList>
-
-            <TabPanel>
-              <Initiative />
-            </TabPanel>
-            <TabPanel>
-              <GoalAchiver />
-            </TabPanel>
-          </Tabs>
-        </div>
-        <TrainingCard />
-        <div className="myAffitiDiv">
-          <HubAffinityGrp />
-        </div>
-      </div>
-      </div>
       </section>
 
       {/* *************************************** */}
