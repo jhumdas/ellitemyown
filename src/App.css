@@ -628,7 +628,7 @@ a {
   border-radius: 5px;
   margin-bottom: 18px;
   overflow: hidden;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
 
 #halloof_fame .top_area {
@@ -807,7 +807,25 @@ a {
   text-transform: uppercase;
   position: relative;
 }
+/* .hallofdotbdt{
+  position: absolute;
+  z-Index: 2;
+  left: 44px;
+  bottom: 77px;
+}
+.btndotlistdiv{
+  position: absolute;
 
+  background-color: #fff;
+  padding: 3px;
+  border: none;
+
+  padding: 3px 8px;
+  margin-Left: -27px;
+  border-Radius: 4px;
+  cursor: pointer;
+  box-Shadow: 0 0 0.1rem 0;
+} */
 #halloof_fame .bottom_area .details_area .chat_icon .btn {
   width: 100%;
   max-width: 18px;
@@ -5254,6 +5272,12 @@ a {
 }
 
 @media (max-width: 1199px) {
+  #halloof_fame .bottom_area {
+    width: 100%;
+    /* height: 257px; */
+    padding: 0px 18px 20px 22px;
+    /* overflow-y: hidden; */
+}
   .resToggleBtn {
     display: block;
   }
@@ -7653,6 +7677,11 @@ body {
     padding: 10px;
     margin-right: 22px;
   }
+  #halloof_fame .bottom_area .hallofmain .profile_img {
+    max-width: 61px;
+    height: 60px;
+    margin: auto;
+}
 }
 
 .ReactModalPortal .bulletin_board .bottom {
