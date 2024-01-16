@@ -445,6 +445,11 @@ aside.EmojiPickerReact.epr-main {
 .EmojiPickerReact .epr-category-nav {
    padding: 7px !important;
 }
+.__EmojiPicker__{
+      width: 20px !important;
+      height: 20px !important;
+      font-size: 20px !important;
+}
 
 .modAddLocaInp::placeholder {
     color: #5E5E5E;

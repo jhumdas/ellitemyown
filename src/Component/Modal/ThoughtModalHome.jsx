@@ -469,12 +469,12 @@ export default function ThoughtModalHome({
                   </div>
                   <div className="attachpostflxdiv">
                     <div className="bsimgicon" >
-                      <BsEmojiSmileFill
+                      <BsEmojiSmileFill 
                         className=""
                         onClick={() => setIsEmoji((prev) => !prev)}
                       />
                       {isEmoji && (
-                        <EmojiPicker
+                        <EmojiPicker width={20} fontSize={20}
                           onEmojiClick={(emojiObject) => {
                             const emoji = emojiObject.emoji;
                             setPost((prev) => ({
