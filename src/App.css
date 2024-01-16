@@ -283,7 +283,8 @@ a {
   cursor: pointer;
   transition: 0.5s;
 }
-.flscghujndiv{
+
+.flscghujndiv {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -804,6 +805,7 @@ a {
   text-transform: uppercase;
   position: relative;
 }
+
 /* .hallofdotbdt{
   position: absolute;
   z-Index: 2;
@@ -1796,7 +1798,7 @@ a {
   flex-wrap: wrap;
   padding: 15px 15px 0px 25px;
   gap: 1%;
-  height:auto;
+  height: auto;
   overflow-y: auto;
 }
 
@@ -1984,23 +1986,25 @@ a {
   border-bottom: 1px solid rgba(198, 198, 210, 0.48);
   display: flex;
   align-items: center;
+  gap: 5%;
 }
 
 #share_thoughts .top .profile_img {
   width: 100%;
-  max-width: 62px;
-  height: 60px;
+  max-width: 76px;
+  height: 76px;
   border-radius: 50%;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   padding: 0;
-  margin: 0 15px 0 0;
+  /* margin: 0 15px 0 0; */
 }
 
 #share_thoughts .top .profile_img img {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
 }
 
 #share_thoughts .top .form-group input {
@@ -2039,8 +2043,15 @@ a {
   padding: 16px 20px 16px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   /* flex-wrap: wrap; */
+}
+
+.crdrtaskthank {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
 }
 
 .thoughtsimg_up {
@@ -2159,6 +2170,7 @@ a {
   font-weight: 400;
   line-height: 25px;
   letter-spacing: 0.1px;
+  white-space: nowrap;
 }
 
 #share_thoughts .bottom .request_credits .btn img {
@@ -2239,6 +2251,7 @@ a {
   box-shadow: none;
   outline: 0;
 }
+
 
 /******sara_tylor********/
 
@@ -3386,12 +3399,16 @@ a {
   height: 100vh;
   overflow-y: auto;
 }
+
 .eventbottom::-webkit-scrollbar {
   display: none;
 }
+
 .eventbottom {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .bulletin_board .eventbottom .card_area_event {
@@ -4717,6 +4734,16 @@ a {
   height: 100%;
 }
 
+.profilebrdr {
+  border: 4px solid #fac00d;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /******Responsive********/
 
 @media only screen and (max-width: 1600px) {
@@ -5102,9 +5129,9 @@ a {
   }
 
   #share_thoughts .top .profile_img {
-    max-width: 65px;
-    height: 65px;
-    margin: 0 24px 0 0;
+    max-width: 83px;
+    height: 78px;
+    /* margin: 0 24px 0 0; */
   }
 
   #sara_tylor .top_area .left .profile_img {
@@ -5275,7 +5302,8 @@ a {
     /* height: 257px; */
     padding: 0px 18px 20px 22px;
     /* overflow-y: hidden; */
-}
+  }
+
   .resToggleBtn {
     display: block;
   }
@@ -5530,29 +5558,32 @@ a {
 
 @media (max-width: 767px) {
   #initiative_sec .bottomdiv_ara {
-   flex-wrap: wrap;
+    flex-wrap: wrap;
     height: auto;
     overflow-y: auto;
-}
-#initiative_sec .bottom_ara .card_area_indtls {
-  width: 100%;
-  max-width: 48%;
-  height: auto;
-  border-radius: 10px;
-  padding: 11px 16px;
-  margin-bottom: 18px;
-  position: relative;
-}
-#initiative_sec .bottomdiv_ara {
-  display: flex;
-  justify-content: space-between;
-  /* align-items: center; */
-  flex-wrap: wrap;
-  padding: 15px 15px 40px 25px;
-  gap: 1%;
-  height: auto;
-  overflow-y: auto;
-}
+  }
+
+  #initiative_sec .bottom_ara .card_area_indtls {
+    width: 100%;
+    max-width: 48%;
+    height: auto;
+    border-radius: 10px;
+    padding: 11px 16px;
+    margin-bottom: 18px;
+    position: relative;
+  }
+
+  #initiative_sec .bottomdiv_ara {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    padding: 15px 15px 40px 25px;
+    gap: 1%;
+    height: auto;
+    overflow-y: auto;
+  }
+
   #share_thoughts .bottom {
     flex-wrap: wrap;
   }
@@ -6559,6 +6590,7 @@ input[type="number"] {
     font-size: 11px;
     line-height: 18px;
   }
+
   #initiative_sec .bottom_ara .card_area_indtls {
     width: 100%;
     max-width: 100%;
@@ -6567,7 +6599,7 @@ input[type="number"] {
     padding: 11px 16px;
     margin-bottom: 18px;
     position: relative;
-}
+  }
 }
 
 @media(max-width:450px) {
@@ -7049,20 +7081,24 @@ body {
 .ReactModalPortal #eventsBulle {
   display: block !important;
 }
+
 .logoheadertop {
   width: 32px;
   height: 29px;
 }
-.logoheadertop img{
+
+.logoheadertop img {
   width: 100%;
   height: 100%;
 }
-.logoimgtxttpflx{
+
+.logoimgtxttpflx {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-.topheader{
+
+.topheader {
   background-color: #f0bc55;
   width: 100%;
   height: 31px;
@@ -7074,11 +7110,13 @@ body {
   padding: 7px 0;
   z-index: 8;
 }
-.elttxtpp{
+
+.elttxtpp {
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
 }
+
 @media (max-width: 1365px) {
   /* .goldClHead {
     font-size: 20px;
@@ -7704,11 +7742,12 @@ body {
     padding: 10px;
     margin-right: 22px;
   }
+
   #halloof_fame .bottom_area .hallofmain .profile_img {
     max-width: 61px;
     height: 60px;
     margin: auto;
-}
+  }
 }
 
 .ReactModalPortal .bulletin_board .bottom {

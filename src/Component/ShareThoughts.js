@@ -11,11 +11,13 @@ import { ToastBar, toast } from "react-hot-toast";
 import { ApiHelperFunction, fileUpload } from "../services/api/apiHelpers";
 import ThoughtModalHome from "../../src/Component/Modal/ThoughtModalHome";
 import Loader from "./loader/Loader";
-import Ask_HR from "../Images/Icons/PNG/Ask_HR.png"
+import Ask_HR from "../Images/Icons/PNG/Ask_HR.png";
+import connection8 from "../Images/connection8.png"
 // Constants
 import { BASE_URL } from "../constants/config";
 import Askhrmodal from "../SeprateModal/Askhrmodal";
-
+import Thankyou from "../../src/Images/Icons/PNG/Thankyou.png"
+import CreateNewPost from "../../src/Images/Icons/PNG/CreateNewPost.png"
 export default function ShareThoughts({ getAffinityPosts }) {
   const { setLoading, userData, setModalF } = useAuthCtx();
   const postLoading = useSelector((state) => state.postGetSlice.isLoading);
@@ -89,12 +91,13 @@ export default function ShareThoughts({ getAffinityPosts }) {
     <>
       <section id="share_thoughts" >
         <div className="top">
-          <div
-            className="profile_img"
-            style={{ borderRadius: "50%", overflow: "hidden" }}
-          >
-            <img src={ThoughtsImg} className="img-fluid" alt="profile" />
-            {/* {userData?.image ? (
+          <div className="profilebrdr">
+            <div
+              className="profile_img"
+              style={{ borderRadius: "50%", overflow: "hidden" }}
+            >
+              <img src={connection8} className="img-fluid" alt="profile" />
+              {/* {userData?.image ? (
               <img src={userData?.image} className="img-fluid" alt="profile" />
             ) : (
               <img
@@ -103,6 +106,7 @@ export default function ShareThoughts({ getAffinityPosts }) {
                 alt="profile"
               />
             )} */}
+            </div>
           </div>
           <form>
             <div className="form-group mb-0">
@@ -178,12 +182,13 @@ export default function ShareThoughts({ getAffinityPosts }) {
 
         {/* </div> */}
         <div className="bottom">
-          <div className="attach_btn" style={{ marginRight: "20px" }} onClick={handlethoughtModal}>
+
+          {/* <div className="attach_btn" style={{ marginRight: "20px" }} onClick={handlethoughtModal}>
             <div className="file_upload" >
               <div className="input_img" style={{ cursor: "pointer" }}>
                 <img src={InputImg} className="img-fluid" alt="icon" />
-              </div>
-              {/* <input
+              </div> */} {/* today */}
+          {/* <input
                 id=""
                 type="file"
                 value={image}
@@ -192,33 +197,49 @@ export default function ShareThoughts({ getAffinityPosts }) {
                 multiple
                 style={{ cursor: "pointer" }}
               /> */}
-            </div>
+          {/* </div>
             <div className="attach">
               <p style={{ cursor: "pointer" }}>Attach</p>
             </div>
-          </div>
+          </div> */}
           {/* event  */}
-          <div className="request_credits" style={{ marginRight: "20px" }}>
-            {
-              userData?.userType === "Admin" || userData?.userType === "Manager" ? (<> <button className="btn">
-                <img src={CreditsIcon} className="img-fluid" alt="icon" onClick={closeEventModal} />
-              </button>
-                <p style={{ cursor: "pointer" }} onClick={closeEventModal}>Create Events</p></>) :
+          <div className="crdrtaskthank">
+            <div className="request_credits" style={{ marginRight: "20px" }}>
+              {
+                userData?.userType === "Admin" || userData?.userType === "Manager" ? (<> <button className="btn">
+                  <img src={CreditsIcon} className="img-fluid" alt="icon" onClick={closeEventModal} />
+                </button>
+                  <p style={{ cursor: "pointer" }} onClick={closeEventModal}>Create Events</p></>) :
 
-                (<>
-                  <div className="" style={{ display: "flex", alignItems: "center" }} onClick={handleaskClick}>
-                    <button className="btn">
-                      <img src={Ask_HR} className="img-fluid" alt="icon" />
-                    </button>
-                    <p style={{ cursor: "pointer", whiteSpace: "nowrap" }}>Ask HR</p>
-                  </div>
-                </>
-                )
-            }
-            {/* // <button className="btn">
+                  (<>
+                    <div className="" style={{ display: "flex", alignItems: "center" }} onClick={handleaskClick}>
+                      <button className="btn">
+                        <img src={Ask_HR} className="img-fluid" alt="icon" />
+                      </button>
+                      <p style={{ cursor: "pointer", whiteSpace: "nowrap" }}>Ask HR</p>
+                    </div>
+                  </>
+                  )
+              }
+              {/* // <button className="btn">
             //   <img src={CreditsIcon} className="img-fluid" alt="icon" />
             // </button>
             // <p style={{ cursor: "pointer" }}>Event</p> */}
+            </div>
+            <div className="request_credits" style={{ display: "flex", alignItems: "center" }}>
+              <button className="btn">
+                <img src={Thankyou} lassName="img-fluid" alt="icon" />
+              </button>
+              <p style={{ cursor: "pointer", whiteSpace: "nowrap" }}>Thank You</p>
+            </div>
+          </div>
+          <div className="">
+          <div className="request_credits" style={{ display: "flex", alignItems: "center" }}>
+              <button className="btn">
+                <img src={CreateNewPost} lassName="img-fluid" alt="icon" />
+              </button>
+              <p style={{ cursor: "pointer", whiteSpace: "nowrap" }}>Create New Post</p>
+            </div>
           </div>
           {/* post card  */}
           {/* <div style={{ cursor: "pointer" }} className="Post_Card">
