@@ -394,14 +394,14 @@ function Profilerating() {
                                     <p className="rateJavaHead">
                                       {AvgRating?.skillname} Skill Vetted Score
                                     </p>
-                                    <div className="rateLinkShareDiv">
+                                    {/* <div className="rateLinkShareDiv">
                                       <button className="rateLinkedinBtn">
                                         <i class="fa-brands fa-linkedin"></i>
                                       </button>
                                       <figure className="tabRateIconFig">
                                         <img src={Img12} alt="..." />
                                       </figure>
-                                    </div>
+                                    </div> */}
                                   </div>
                                   <div className="row">
                                     <div className="col-xl-3 col-lg-3 col-md-4 col-12">
@@ -568,7 +568,7 @@ function Profilerating() {
                                             <div className="person_description">
                                               <p>{ele?.review}</p>
                                             </div>
-                                            <div className="comment_icon">
+                                            {/* <div className="comment_icon">
                                               <button className="cmntLinkBtn">
                                                 <i class="fa-brands fa-linkedin"></i>
                                               </button>
@@ -577,7 +577,7 @@ function Profilerating() {
                                                 src={Img12}
                                                 alt="icon"
                                               />
-                                            </div>
+                                            </div> */}
                                           </div>
                                         </div>
                                       );

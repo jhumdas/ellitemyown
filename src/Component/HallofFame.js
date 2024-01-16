@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import HalloofImg from "../Images/halloof1.png";
 import AlartIcon1 from "../Images/awyaicon1.png";
 import ChatIcon from "../Images/chaticon.png";
@@ -18,6 +18,7 @@ import HallOfFrameModal from "./Modal/HallOfFrameModal";
 import { getEmployeeData } from "../redux/slices/employeeSlice";
 import moment from "moment";
 import hallOfFrame from "../Images/Icons/PNG/Hall_of_fame.png"
+import { ApiHelperFunction } from "../services/api/apiHelpers";
 
 export default function HallofFame() {
   const [modalA, setModalA] = useState(false);
@@ -26,12 +27,34 @@ export default function HallofFame() {
   const { userData, setModalK } = useAuthCtx();
   const hallFame = useSelector((state) => state?.hallOfFameSlice?.data);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   console.log(hallFame, "hallFameee")
 
   useEffect(() => {
     dispatch(getHallOfFame());
     dispatch(getEmployeeData());
   }, []);
+
+  const AnotherProfile = async (userID) => {
+
+    if (userID == userData?._id) {
+      // console.log(userID,userData,"uikodc")
+      navigate("/profile");
+    } else {
+      let response = await ApiHelperFunction({ urlPath: `/get-others-profile/${userID}`, method: "GET" })
+      if (response && response?.status) {
+        console.log("RESPONSE", response?.data?.data);
+        let data = response?.data?.data;
+        response && navigate("/Profile_rating", {
+          state: {
+            data
+          }
+        })
+      } else {
+        // toast.error('Error to fetching another profile data')
+      }
+    }
+  }
 
   return (
     <>
@@ -128,8 +151,8 @@ export default function HallofFame() {
 
           {hallFame?.map((item, index) => {
             return (
-              <div className="main" key={index}>
-                <div className="profile_img">
+              <div className="main" key={index} >
+                <div className="profile_img" onClick={() => AnotherProfile(item?.userId)}>
                   {item?.userImage ? (
                     <img
                       src={item?.userImage}
@@ -143,7 +166,7 @@ export default function HallofFame() {
 
                 <div className="details_area">
                   <div className="name">
-                    <div className="d-flex justify-content-between">
+                    <div className="d-flex justify-content-between" onClick={() => AnotherProfile(item?.userId)}>
                       <h4>{item?.name}</h4>
                       {/* <div className="icon">
                         <img

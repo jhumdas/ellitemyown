@@ -49,7 +49,7 @@ const BigCalender = ({ fetchcalenderdata }) => {
 
   const localizer = momentLocalizer(moment);
   const views = [Views.MONTH, Views.AGENDA];
-
+  // const views = [Views.AGENDA]
 
   const handleNavigate = (date, view) => {
     let NewDate;

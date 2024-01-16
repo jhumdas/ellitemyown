@@ -102,6 +102,28 @@ function Employees() {
   };
   // console.log("employees",employeeData);
 
+
+  const AnotherProfile = async (userID) => {
+
+    if (userID == userData?._id) {
+      // console.log(userID,userData,"uikodc")
+      navigate("/profile");
+    } else {
+      let response = await ApiHelperFunction({ urlPath: `/get-others-profile/${userID}`, method: "GET" })
+      if (response && response?.status) {
+        console.log("RESPONSE", response?.data?.data);
+        let data = response?.data?.data;
+        response && navigate("/Profile_rating", {
+          state: {
+            data
+          }
+        })
+      } else {
+        // toast.error('Error to fetching another profile data')
+      }
+    }
+  }
+
   return (
     <>
       {userData?.userType === "Admin" ? (
@@ -139,7 +161,7 @@ function Employees() {
                   return (
                     <div className="main" style={{ marginBottom: "25px" }}>
                       <div className="left_area">
-                        <div className="profile_img">
+                        <div className="profile_img" onClick={() => AnotherProfile(item?._id)}>
                           {item?.image ? (
                             <img
                               src={item?.image}
@@ -154,7 +176,7 @@ function Employees() {
                             />
                           )}
                         </div>
-                        <div className="details" style={{ width: "110px" }}>
+                        <div className="details" style={{ width: "110px" }} onClick={() => AnotherProfile(item?._id)}>
                           <h4>{`${item?.firstName} ${item?.lastName}`}</h4>
                           <p>{item.userType}</p>
                         </div>

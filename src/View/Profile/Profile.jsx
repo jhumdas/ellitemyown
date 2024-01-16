@@ -547,14 +547,14 @@ function Profile() {
                                     <p className="rateJavaHead">
                                       {AvgRating?.skillname} Skill Vetted Score
                                     </p>
-                                    <div className="rateLinkShareDiv">
+                                    {/* <div className="rateLinkShareDiv">
                                       <button className="rateLinkedinBtn">
                                         <i class="fa-brands fa-linkedin"></i>
                                       </button>
                                       <figure className="tabRateIconFig">
                                         <img src={Img12} alt="..." />
                                       </figure>
-                                    </div>
+                                    </div> */}
                                   </div>
                                   <div className="row">
                                     <div className="col-xl-3 col-lg-3 col-md-4 col-12">
@@ -715,9 +715,9 @@ function Profile() {
                                                 </div>
                                               </div>
                                               <div className="comment_top_right">
-                                                <p>5 months ago</p>
+                                                {/* <p>5 months ago</p> */}
                                               </div>
-                                              <div className="comment_icon cmnticnk">
+                                              {/* <div className="comment_icon cmnticnk">
                                                 <button className="cmntLinkBtn">
                                                   <i class="fa-brands fa-linkedin"></i>
                                                 </button>
@@ -726,7 +726,7 @@ function Profile() {
                                                   src={Img12}
                                                   alt="icon"
                                                 />
-                                              </div>
+                                              </div> */}
                                             </div>
                                             <div className="person_description">
                                               <p>{ele?.review}</p>

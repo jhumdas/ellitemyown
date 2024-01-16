@@ -92,7 +92,7 @@ export default function EventCard() {
             <figure className="bulleBoardFig">
               <img src={eventsPic} alt="..." />
             </figure>
-            <h4>Create Events</h4>
+            <h4>Events</h4>
           </div>
           <div className="">
             {(userData?.userType === "Admin" || userData?.userType === "Manager") ? (

@@ -156,6 +156,10 @@ const EmployeePage = () => {
     },
 
     {
+      name: "Department",
+      selector: (row) => row.department,
+    },
+    {
       name: "Employee Status",
       selector: (row) => row.status,
     },
@@ -184,6 +188,7 @@ const EmployeePage = () => {
     return {
       name: item?.firstName + " " + item?.lastName,
       designation: item?.userType,
+      department: item?.designation,
       status: item?.employeeStatus ? (
         <div
           style={{
@@ -243,7 +248,7 @@ const EmployeePage = () => {
             // width: "5rem",
             borderRadius: "0.5rem",
           }}
-          // onClick={() => ViewEmail(item)}
+        // onClick={() => ViewEmail(item)}
         >
           Rewards
         </button>
