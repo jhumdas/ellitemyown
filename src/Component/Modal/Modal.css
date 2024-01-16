@@ -170,7 +170,7 @@
 }
 
 .thought_moadal_main .thoghts_txt_top_btm .bottom {
-    padding: 19px 21px 14px;
+    /* padding: 19px 21px 14px; */
     max-height: auto;
     overflow-y: auto;
 }
@@ -244,7 +244,7 @@ agenInnerWrap
 }
 
 .thought_moadal_main ::placeholder {
-    color: #d3a145;
+    color: #d3a14569;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -252,15 +252,24 @@ agenInnerWrap
     line-height: 34px;
     cursor: pointer;
 }
+.bsimgicon{
+    color: #fac00d;
+    font-size: 27px;
+    margin-right: 20px;
+    /* position: relative; */
+}   
 
 .txtar {
     height: 95px;
     width: 100%;
     border: 0px solid #ccc;
     resize: none;
-    margin-top: 63px;
+    margin-top: 100px;
     margin-bottom: 10px;
     padding: 5px 8px;
+}
+.dbdyptrtddiv{
+    padding: 10px 20px;
 }
 
 .thought_moadal_main .close_icon {
@@ -307,6 +316,20 @@ agenInnerWrap
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+aside.EmojiPickerReact.epr-main {
+    border-color: var(--epr-picker-border-color);
+    border-radius: var(--epr-picker-border-radius);
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 299px !important;
+    width: 283px !important;
 }
 
 .pht p {
@@ -414,6 +437,13 @@ agenInnerWrap
     border: 0;
     background-color: transparent;
     outline: none;
+}
+.EmojiPickerReact .epr-preview {
+  
+    height: 40px !important;
+}
+.EmojiPickerReact .epr-category-nav {
+   padding: 7px !important;
 }
 
 .modAddLocaInp::placeholder {
@@ -628,10 +658,29 @@ agenInnerWrap
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 15px;
+    border-top: 1px solid rgba(198, 198, 210, 0.48);
+    width: 100%;
+    padding: 7px 10px;
 }
+.pstimg {
+    width: 28px;
+    height: 30px;
+  }
+  .pstimg img{
+    width: 100%;
+    height: 100%;
+  }
+  .postimgicon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:2%
+  }
+  .attachpostflxdiv{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 
 /* Employee List Modal */
 .advocacyModalSection {

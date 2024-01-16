@@ -23,7 +23,7 @@ import Ask_HR from "../../Images/Icons/PNG/Ask_HR.png"
 import { BsEmojiSmileFill } from "react-icons/bs";
 import EmojiPicker from "emoji-picker-react";
 import Createnewpost from "../../Images/Icons/PNG/CreateNewPost.png"
-
+import Post from "../../Images/Icons/PNG/Post.png"
 export default function ThoughtModalHome({
   closemodal,
   text,
@@ -62,6 +62,9 @@ export default function ThoughtModalHome({
     setModalF(true);
     closemodal();
   };
+  const handleset =(e)=>{
+    e.stopPropagation()
+  }
 
   useEffect(() => {
     getGroupData();
@@ -211,10 +214,10 @@ export default function ThoughtModalHome({
 
   return (
     <>
-      <div className="thought_moadal_main">
+      <div className="thought_moadal_main"  onClick={() => closemodal()}>
         <div className="thought_moadal">
           {/* <div className="Create_overlay"></div> */}
-          <div className="thought_modal_content">
+          <div className="thought_modal_content" onClick={(e)=>handleset(e)}>
             {/* <div className="close_icon" onClick={() => closemodal()}>
               <i
                 class="fa-solid fa-xmark"
@@ -263,68 +266,11 @@ export default function ThoughtModalHome({
                     <p>{`${userData?.firstName} ${userData?.lastName}`}</p>
                   </div> */}
                 </div>
-                    
-                    {/* share anf affinity group end */}
-                {/* <div
-                  className="share_public_checkbox"
-                  style={{ marginTop: "15px" }}
-                >
-                  <input
-                    type="radio"
-                    id="sharePublicly"
-                    name="sharePublicly"
-                    value="publicly"
-                    checked={sharePublicly === "publicly" ? true : false}
-                    onChange={handleCheckboxChange}
-                  />
-                  <label htmlFor="sharePublicly" style={{ paddingLeft: "5px" }}>
-                    Share publicly
-                  </label>
 
-                  <input
-                    type="radio"
-                    id="sharePublicly"
-                    name="sharePublicly"
-                    value="affinity"
-                    checked={sharePublicly === "affinity" ? true : false}
-                    onChange={handleCheckboxChange}
-                    style={{ marginLeft: "10px" }}
-                  />
-                  <label htmlFor="sharePublicly" style={{ paddingLeft: "5px" }}>
-                    Share Affinity Group
-                  </label>
 
-                  {showAffinityDropdown && (
-                    // <div className="affinityDropdown">
-                    //   Share Affinity Group Dropdown
-                    // </div>
-
-                    <div className="emplListDiv">
-                      <p className="empListSubHead">Groups Name</p>
-                      <select
-                        class="empListSelect"
-                        aria-label="Select Employee name"
-                        name="groupid"
-                        value={groupid}
-                        // onBlur={handleBlur}
-                        onChange={(e) => setGroupId(e.target.value)}
-                      >
-                        <option value={""} disabled>
-                          Select Group
-                        </option>
-                        {grpData?.map((item, i) => (
-                          <option key={i} value={item?._id}>
-                            {item?.groupName}
-                          </option>
-                        ))}
-                      </select>
-                    </div>
-                  )}
-                </div> */}
-                {/*share anf affinity group end  */}
-
-                <form>
-                  {/* <div className="form-group">
+                <div className="dbdyptrtddiv">
+                  <form>
+                    {/* <div className="form-group">
                                         <input
                                             type="text"
                                             className="form-control"
@@ -336,20 +282,20 @@ export default function ThoughtModalHome({
                                         />
                                     </div> */}
 
-                  <textarea
-                    id=""
-                    name="description"
-                    value={setPost?.description}
-                    rows="4"
-                    cols="50"
-                    className="txtar"
-                    placeholder={!hide ? text : "Testimonials"}
-                    onChange={(e) => handleChange(e)}
-                  ></textarea>
+                    <textarea
+                      id=""
+                      name="description"
+                      value={setPost?.description}
+                      rows="4"
+                      cols="50"
+                      className="txtar"
+                      placeholder={!hide ? text : "Testimonials"}
+                      onChange={(e) => handleChange(e)}
+                    ></textarea>
 
 
 
-                  {/* <BsEmojiSmileFill
+                    {/* <BsEmojiSmileFill
                     className="comment-emoji-icon"
                     onClick={() => setIsEmoji((prev) => !prev)}
                   />
@@ -364,7 +310,8 @@ export default function ThoughtModalHome({
                       }}
                     />
                   )} */}
-                </form>
+                  </form>
+                </div>
                 {/* <div className='attch_main_img'>
                                     <div className='attchfl'>
                                         <input type="file" id="myfile" name="myfile"  />
@@ -460,34 +407,121 @@ export default function ThoughtModalHome({
                 )}
 
                 <div className="shrtatchps">
-                  <div
-                    className="attach_btn"
-                    style={
-                      {
-                        // marginRight: "20px",
-                        // display: "flex",
-                        // alignItems: "center",
-                      }
-                    }
-                  >
-                    <div className="file_upload">
-                      <div className="input_img" style={{ cursor: "pointer" }}>
-                        <img src={InputImg} className="img-fluid" alt="icon" />
-                      </div>
+                  <div className="">
+                    {/* share anf affinity group end */}
+                    <div
+                      className="share_public_checkbox"
+                      style={{ marginTop: "15px" }}
+                    >
                       <input
-                        id=""
-                        type="file"
-                        value={image}
-                        onChange={handleImageChange}
-                        accept="image/*"
-                        multiple
-                        style={{ cursor: "pointer" }}
+                        type="radio"
+                        id="sharePublicly"
+                        name="sharePublicly"
+                        value="publicly"
+                        checked={sharePublicly === "publicly" ? true : false}
+                        onChange={handleCheckboxChange}
                       />
+                      <label htmlFor="sharePublicly" style={{ paddingLeft: "5px" }}>
+                        Share publicly
+                      </label>
+
+                      <input
+                        type="radio"
+                        id="sharePublicly"
+                        name="sharePublicly"
+                        value="affinity"
+                        checked={sharePublicly === "affinity" ? true : false}
+                        onChange={handleCheckboxChange}
+                        style={{ marginLeft: "10px" }}
+                      />
+                      <label htmlFor="sharePublicly" style={{ paddingLeft: "5px" }}>
+                        Share Affinity Group
+                      </label>
+
+                      {showAffinityDropdown && (
+                        // <div className="affinityDropdown">
+                        //   Share Affinity Group Dropdown
+                        // </div>
+
+                        <div className="emplListDiv">
+                          <p className="empListSubHead">Groups Name</p>
+                          <select
+                            class="empListSelect"
+                            aria-label="Select Employee name"
+                            name="groupid"
+                            value={groupid}
+                            // onBlur={handleBlur}
+                            onChange={(e) => setGroupId(e.target.value)}
+                          >
+                            <option value={""} disabled>
+                              Select Group
+                            </option>
+                            {grpData?.map((item, i) => (
+                              <option key={i} value={item?._id}>
+                                {item?.groupName}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                      )}
                     </div>
-                    <div className="attach">
-                      <p style={{ cursor: "pointer" }}>
-                        {!hide ? attach : "Attach"}
-                      </p>
+                    {/*share anf affinity group end  */}
+                  </div>
+                  <div className="attachpostflxdiv">
+                    <div className="bsimgicon" >
+                      <BsEmojiSmileFill 
+                        className=""
+                        onClick={() => setIsEmoji((prev) => !prev)}
+                      />
+                      {isEmoji && (
+                        <EmojiPicker 
+                          onEmojiClick={(emojiObject) => {
+                            const emoji = emojiObject.emoji;
+                            setPost((prev) => ({
+                              ...prev,
+                              description: prev.description + emoji,
+                            }));
+                          }}
+                        />
+                      )}
+                    </div>
+                    <div
+                      className="attach_btn"
+                      style={
+                        {
+                          // marginRight: "20px",
+                          // display: "flex",
+                          // alignItems: "center",
+                        }
+                      }
+                    >
+                      <div className="file_upload">
+                        <div className="input_img" style={{ cursor: "pointer" }}>
+                          <img src={InputImg} className="img-fluid" alt="icon" />
+                        </div>
+                        <input
+                          id=""
+                          type="file"
+                          value={image}
+                          onChange={handleImageChange}
+                          accept="image/*"
+                          multiple
+                          style={{ cursor: "pointer" }}
+                        />
+                      </div>
+                      <div className="attach">
+                        <p style={{ cursor: "pointer" }}>
+                          {!hide ? attach : "Attach"}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="postimgicon" style={{cursor:"pointer"}} onClick={(e) => handlePost(e)}>
+                      <div className="pstimg">
+                        <img src={Post} alt="..." />
+                      </div>
+                      <div className="">
+                        <p>Post</p>
+                      </div>
                     </div>
                   </div>
                   {/* {userData?.userType === "Admin" || userData?.userType === "Manager" ? (
@@ -563,11 +597,11 @@ export default function ThoughtModalHome({
                 {isEmoji &&
                   <EmojiPicker onEmojiClick={(emojiObject) => setPost(prev => prev + emojiObject.emoji)} />
                 } */}
-                <div style={{ cursor: "pointer" }} className="post_btn">
+                {/* <div style={{ cursor: "pointer" }} className="post_btn">
                   <div className="post_btn_main" onClick={(e) => handlePost(e)}>
                     Post
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
