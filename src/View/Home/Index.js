@@ -363,8 +363,8 @@ export default function Index() {
             </div>
           </div>
         </div>
-     
-     
+
+
       </section>
       <Chatbot />
 

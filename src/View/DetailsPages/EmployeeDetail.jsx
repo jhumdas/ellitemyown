@@ -75,6 +75,27 @@ function EmployeeDetail() {
     }
   };
 
+  const AnotherProfile = async (userID) => {
+
+    if (userID == userData?._id) {
+      // console.log(userID,userData,"uikodc")
+      navigate("/profile");
+    } else {
+      let response = await ApiHelperFunction({ urlPath: `/get-others-profile/${userID}`, method: "GET" })
+      if (response && response?.status) {
+        console.log("RESPONSE", response?.data?.data);
+        let data = response?.data?.data;
+        response && navigate("/Profile_rating", {
+          state: {
+            data
+          }
+        })
+      } else {
+        // toast.error('Error to fetching another profile data')
+      }
+    }
+  }
+
   return (
     <section className="bulleDetail">
       <div className="container">
@@ -87,7 +108,7 @@ function EmployeeDetail() {
                     <img src={askhr} alt="..." />
                   </figure>
                   <h4>Employees</h4>
-                  <div className="tyEvMainDiv" style={{marginLeft:"10px"}}>
+                  <div className="tyEvMainDiv" style={{ marginLeft: "10px" }}>
                     <span className="tyEvIcon">
                       <i class="fa-solid fa-plus"></i>
                     </span>
@@ -114,9 +135,9 @@ function EmployeeDetail() {
                   ) : (
                     employeeData?.map((item, index) => {
                       return (
-                        <div className="left_hallofarea" style={{ marginBottom: "25px"}}>
+                        <div className="left_hallofarea" style={{ marginBottom: "25px" }}>
                           <div className="">
-                            <div className="profile_img">
+                            <div className="profile_img" onClick={() => AnotherProfile(item?._id)}>
                               {item?.image ? (
                                 <img
                                   src={item?.image}
@@ -131,9 +152,9 @@ function EmployeeDetail() {
                                 />
                               )}
                             </div>
-                            <div className="details" style={{marginTop:"10px"}}>
+                            <div className="details" style={{ marginTop: "10px" }} onClick={() => AnotherProfile(item?._id)}>
                               <h4>{`${item?.firstName} ${item?.lastName}`}</h4>
-                              <p style={{textAlign:"center"}}>{item.userType}</p>
+                              <p style={{ textAlign: "center" }}>{item.userType}</p>
                             </div>
                           </div>
                           {/* <div className="right_area">

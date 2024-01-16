@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import AlartIcon1 from "../../Images/awyaicon1.png";
 import { useDispatch, useSelector } from "react-redux";
 import { getHallOfFame } from "../../redux/slices/hallOffameSlice";
@@ -34,6 +34,7 @@ export default function HallOfDetails() {
 
   const hallFame = useSelector((state) => state?.hallOfFameSlice?.data);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   useEffect(() => {
     dispatch(getHallOfFame());
@@ -80,6 +81,27 @@ export default function HallOfDetails() {
     }
   };
 
+  const AnotherProfile = async (userID) => {
+
+    if (userID == userData?._id) {
+      // console.log(userID,userData,"uikodc")
+      navigate("/profile");
+    } else {
+      let response = await ApiHelperFunction({ urlPath: `/get-others-profile/${userID}`, method: "GET" })
+      if (response && response?.status) {
+        console.log("RESPONSE", response?.data?.data);
+        let data = response?.data?.data;
+        response && navigate("/Profile_rating", {
+          state: {
+            data
+          }
+        })
+      } else {
+        // toast.error('Error to fetching another profile data')
+      }
+    }
+  }
+
   return (
     <section className="bulleDetail">
       <div className="container">
@@ -92,7 +114,7 @@ export default function HallOfDetails() {
                     <img src={hallOfPic} alt="..." />
                   </figure>
                   <h4>Hall of Fame</h4>
-                  <div className="" style={{marginLeft:"10px"}}>
+                  <div className="" style={{ marginLeft: "10px" }}>
                     {userData?.userType === "Admin" || userData?.userType === "Manager" ? (
                       <div className="tyEvMainDiv" onClick={() => setModalK(true)}>
                         <span className="tyEvIcon">
@@ -153,7 +175,7 @@ export default function HallOfDetails() {
                   return (
                     <div className="hallofmain" key={index}>
                       {/* profile image */}
-                      <div className="profile_img">
+                      <div className="profile_img" onClick={() => AnotherProfile(item?.userId)}>
                         {item?.userImage ? (
                           <img
                             src={item?.userImage}
@@ -172,7 +194,7 @@ export default function HallOfDetails() {
                       {/* name */}
                       <div className="details_area">
                         <div className="name">
-                          <div className="d-flex justify-content-between">
+                          <div className="d-flex justify-content-between" onClick={() => AnotherProfile(item?.userId)}>
                             <h4>{item?.name}</h4>
                             {/* <div className="icon">
                               <img

@@ -6,6 +6,11 @@ import { toast } from 'react-hot-toast';
 import { ApiHelperFunction, fileUpload } from '../services/api/apiHelpers';
 import { useDispatch } from 'react-redux';
 import { getEventData } from '../redux/slices/eventSlice';
+import Select from "react-select";
+import makeAnimated from "react-select/animated";
+
+
+const animatedComponents = makeAnimated();
 
 const EventsModal = ({ closemodal, activity, initialValues }) => {
   const { setLoading, loading, getUserDetails, userData } = useAuthCtx();
@@ -16,6 +21,41 @@ const EventsModal = ({ closemodal, activity, initialValues }) => {
   const [uploading, setUploading] = useState(false);
   const [shouldValidateOnChange, setShouldValidateOnChange] = useState(false);
   const [shouldValidateOnBlur, setShouldValidateOnBlur] = useState(false);
+  const [selectedOptions, setSelectedOptions] = useState([]);
+  const [colourOptions, setColourOptions] = useState([]);
+  const [empData, setempData] = useState([]);
+
+  useEffect(() => {
+    getEmployeeData()
+  }, [])
+
+  const handleSelectChange = (e) => {
+    console.log("Selected Options:", e);
+
+    // Update the colourOptions state with the selected options
+    setSelectedOptions(e);
+  };
+
+  const getEmployeeData = async () => {
+    const response = await ApiHelperFunction({
+      urlPath: `/view-all-employees`,
+      method: "GET",
+    });
+
+    console.log("RESPONSEF", response?.data?.data);
+
+    if (response && response.status) {
+      const formattedOptions = response?.data?.data?.map((item) => ({
+        value: item?._id,
+        label: item?.userName,
+      }));
+
+      setColourOptions(formattedOptions);
+      setempData(response?.data?.data);
+    } else {
+      // toast.error(response.message);
+    }
+  };
 
   const submitHandler = async (e, selectedSubscription) => {
     e.preventDefault();
@@ -39,6 +79,7 @@ const EventsModal = ({ closemodal, activity, initialValues }) => {
       eventDate: values?.eventDate,
       image: imageURL,
       notes: values?.notes,
+      addEmploee: selectedOptions?.map((item) => item?.value),
       isHighLighted: values?.isHighLighted
     };
 
@@ -53,7 +94,7 @@ const EventsModal = ({ closemodal, activity, initialValues }) => {
       dispatch(getEventData());
       closemodal();
     } else {
-      toast.error(res?.message || "Something went wrong");
+      toast.error(res?.response?.data?.message || "Something went wrong");
       console.log("ERROR CREATING USER3", res);
     }
 
@@ -304,7 +345,7 @@ const EventsModal = ({ closemodal, activity, initialValues }) => {
               </div> */}
               </div>
               <div className="homePgModInnerInpDivs">
-                <input
+                {/* <input
                   type="text"
                   id="hostedBy"
                   placeholder="Add Invites"
@@ -313,10 +354,18 @@ const EventsModal = ({ closemodal, activity, initialValues }) => {
                   onBlur={handleBlur}
                   onChange={handleChange}
                   className="homePgMoInps"
+                /> */}
+                <Select
+                  closeMenuOnSelect={false}
+                  components={animatedComponents}
+                  defaultValue={[]}
+                  isMulti
+                  options={colourOptions}
+                  onChange={handleSelectChange}
                 />
-                <small id="emailHelp" style={{ color: "red" }}>
+                {/* <small id="emailHelp" style={{ color: "red" }}>
                   {errors?.addinvites}
-                </small>
+                </small> */}
               </div>
               <div className="homePgModInnerInpDivs">
                 <label htmlFor="" className="addNoteLablCreMod">
