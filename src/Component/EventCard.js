@@ -92,17 +92,17 @@ export default function EventCard() {
             <figure className="bulleBoardFig">
               <img src={eventsPic} alt="..." />
             </figure>
-            <h4>Events</h4>
+            <h4>Create Events</h4>
           </div>
           <div className="">
-          {(userData?.userType === "Admin" || userData?.userType === "Manager") ? (
-            <div className="tyEvMainDiv" onClick={createModal}>
-              <span className="tyEvIcon">
-                <i class="fa-solid fa-plus"></i>
-              </span>
-              {/* <p className="tyEvText">Add Event</p> */}
-            </div>
-          ) : (<></>)}
+            {(userData?.userType === "Admin" || userData?.userType === "Manager") ? (
+              <div className="tyEvMainDiv" onClick={createModal}>
+                <span className="tyEvIcon">
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+                {/* <p className="tyEvText">Add Event</p> */}
+              </div>
+            ) : (<></>)}
           </div>
           <div>
             <Link to="/eventsDeails" className="seeAllAn">
@@ -207,7 +207,7 @@ export default function EventCard() {
                         </div>
                       )}
 
-                      {item?.isHighLighted==="yes"?"+":""}
+                      {item?.isHighLighted === "yes" ? "+" : ""}
                     </div>
                     <div className="hosted">
                       <p>Hosted by {item.hostedBy}</p>

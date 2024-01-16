@@ -203,7 +203,7 @@ export default function ShareThoughts({ getAffinityPosts }) {
               userData?.userType === "Admin" || userData?.userType === "Manager" ? (<> <button className="btn">
                 <img src={CreditsIcon} className="img-fluid" alt="icon" onClick={closeEventModal} />
               </button>
-                <p style={{ cursor: "pointer" }} onClick={closeEventModal}>Event</p></>) :
+                <p style={{ cursor: "pointer" }} onClick={closeEventModal}>Create Events</p></>) :
 
                 (<>
                   <div className="" style={{ display: "flex", alignItems: "center" }} onClick={handleaskClick}>
