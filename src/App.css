@@ -1984,23 +1984,25 @@ a {
   border-bottom: 1px solid rgba(198, 198, 210, 0.48);
   display: flex;
   align-items: center;
+  gap: 5%;
 }
 
 #share_thoughts .top .profile_img {
   width: 100%;
-  max-width: 62px;
-  height: 60px;
+  max-width: 76px;
+  height: 76px;
   border-radius: 50%;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   padding: 0;
-  margin: 0 15px 0 0;
+  /* margin: 0 15px 0 0; */
 }
 
 #share_thoughts .top .profile_img img {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
 }
 
 #share_thoughts .top .form-group input {
@@ -2039,8 +2041,14 @@ a {
   padding: 16px 20px 16px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   /* flex-wrap: wrap; */
+}
+.crdrtaskthank{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
 }
 
 .thoughtsimg_up {
@@ -2159,6 +2167,7 @@ a {
   font-weight: 400;
   line-height: 25px;
   letter-spacing: 0.1px;
+  white-space: nowrap;
 }
 
 #share_thoughts .bottom .request_credits .btn img {
@@ -4716,7 +4725,15 @@ a {
   width: 100%;
   height: 100%;
 }
-
+.profilebrdr{
+  border: 4px solid #fac00d;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}   
 /******Responsive********/
 
 @media only screen and (max-width: 1600px) {
@@ -5102,9 +5119,9 @@ a {
   }
 
   #share_thoughts .top .profile_img {
-    max-width: 65px;
-    height: 65px;
-    margin: 0 24px 0 0;
+    max-width: 83px;
+    height: 78px;
+    /* margin: 0 24px 0 0; */
   }
 
   #sara_tylor .top_area .left .profile_img {

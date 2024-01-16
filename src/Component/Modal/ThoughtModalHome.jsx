@@ -223,7 +223,7 @@ export default function ThoughtModalHome({
             </div>
             <div className="thoghts_txt_top_btm">
               <div className="top">
-                <p>Create post</p>
+                <p>Create New Post</p>
               </div>
               <div className="bottom">
                 <div className="img_thght">
