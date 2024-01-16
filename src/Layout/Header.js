@@ -114,6 +114,18 @@ export default function Header() {
 
   return (
     <>
+      <section className="topheader">
+        <div className="container-fluid">
+          <div className="logoimgtxttpflx">
+            <div className="logoheadertop">
+              <img src={employeeexperiencehub} alt="..." />
+            </div>
+            <div className="elttxtpp">
+              Elite Employee Esperience Hub
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="main_header">
         <div className="container-fluid">
           <nav className="navbar navbar-expand-xl navbar-light">
