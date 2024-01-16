@@ -22,7 +22,7 @@ import bi_calendarevent from "../../Images/bi_calendarevent.png";
 import Ask_HR from "../../Images/Icons/PNG/Ask_HR.png"
 import { BsEmojiSmileFill } from "react-icons/bs";
 import EmojiPicker from "emoji-picker-react";
-
+import Createnewpost from "../../Images/Icons/PNG/CreateNewPost.png"
 
 export default function ThoughtModalHome({
   closemodal,
@@ -215,14 +215,17 @@ export default function ThoughtModalHome({
         <div className="thought_moadal">
           {/* <div className="Create_overlay"></div> */}
           <div className="thought_modal_content">
-            <div className="close_icon" onClick={() => closemodal()}>
+            {/* <div className="close_icon" onClick={() => closemodal()}>
               <i
                 class="fa-solid fa-xmark"
                 style={{ color: "red", fontSize: "16px", cursor: "pointer" }}
               ></i>
-            </div>
+            </div> */}
             <div className="thoghts_txt_top_btm">
               <div className="top">
+                <div className="crtimg">
+                  <img src={Createnewpost} alt="..." />
+                </div>
                 <p>Create New Post</p>
               </div>
               <div className="bottom">
@@ -256,12 +259,13 @@ export default function ThoughtModalHome({
                       />
                     )}
                   </div>
-                  <div className="prfl_mnm">
+                  {/* <div className="prfl_mnm">
                     <p>{`${userData?.firstName} ${userData?.lastName}`}</p>
-                  </div>
+                  </div> */}
                 </div>
-
-                <div
+                    
+                    {/* share anf affinity group end */}
+                {/* <div
                   className="share_public_checkbox"
                   style={{ marginTop: "15px" }}
                 >
@@ -316,7 +320,8 @@ export default function ThoughtModalHome({
                       </select>
                     </div>
                   )}
-                </div>
+                </div> */}
+                {/*share anf affinity group end  */}
 
                 <form>
                   {/* <div className="form-group">
@@ -344,7 +349,7 @@ export default function ThoughtModalHome({
 
 
 
-                  <BsEmojiSmileFill
+                  {/* <BsEmojiSmileFill
                     className="comment-emoji-icon"
                     onClick={() => setIsEmoji((prev) => !prev)}
                   />
@@ -358,7 +363,7 @@ export default function ThoughtModalHome({
                         }));
                       }}
                     />
-                  )}
+                  )} */}
                 </form>
                 {/* <div className='attch_main_img'>
                                     <div className='attchfl'>
