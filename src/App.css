@@ -59,8 +59,9 @@ a {
   display: flex;
   align-items: center;
   position: fixed;
-  padding: 20px 0;
+  padding: 19px 0;
   z-index: 8;
+  margin-top: 31px;
 }
 
 #main_header .navbar .navbar-brand {
@@ -387,7 +388,7 @@ a {
   width: 20%;
   position: fixed;
   left: 20px;
-  top: 120px;
+  top: 148px;
   z-index: 7;
   margin-left: 70px;
 }
@@ -397,7 +398,7 @@ a {
   overflow-y: auto;
   width: 20%;
   position: fixed;
-  top: 120px;
+  top: 148px;
   right: 20px;
   z-index: 7;
   margin-right: 70px;
@@ -414,11 +415,7 @@ a {
 .thought_area_mxh-mid {
   width: 54%;
   /* width: 100%; */
-  /* position: relative;
-  top: 0;
-  left: 50.5%;
-  transform: translate(-50%, 0); */
-  padding-top: 120px;
+  padding-top: 150px;
   margin: 0 auto;
 }
 
@@ -7052,7 +7049,36 @@ body {
 .ReactModalPortal #eventsBulle {
   display: block !important;
 }
-
+.logoheadertop {
+  width: 32px;
+  height: 29px;
+}
+.logoheadertop img{
+  width: 100%;
+  height: 100%;
+}
+.logoimgtxttpflx{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.topheader{
+  background-color: #f0bc55;
+  width: 100%;
+  height: 31px;
+  /* background: #ffffff; */
+  box-shadow: 0px -29px 56px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  padding: 7px 0;
+  z-index: 8;
+}
+.elttxtpp{
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
 @media (max-width: 1365px) {
   /* .goldClHead {
     font-size: 20px;
