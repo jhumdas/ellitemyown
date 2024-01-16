@@ -1190,12 +1190,18 @@
     height: 118px;
     border-radius: 50%;
     /* margin-left: 30px; */
-    margin-top: -47px;
+    margin-top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+.divpatyn{
+    padding-top: 50px;
+}
+.user_aboutnbet{
+    width: 100%;
+    max-width: 35%;
+}
 .prflimgfh{
     width: 100%;
     max-width: 203px;
@@ -1233,7 +1239,7 @@
 }
 .thounsabpp{
     color: red;
-    font-size: 40px;
+    font-size: 34px;
     font-weight: 700;
 }
 .pointshttx{

@@ -43,7 +43,7 @@ import { toast } from "react-toastify";
 import profileImg from "../../Images/Icons/PNG/Profile (2).png";
 import { RWebShare } from "react-web-share";
 import GrowWel from "../Hub/GrowWel";
-
+import bgprfldiv from "../../Images/bgprfldiv.png";
 function Advocacy() {
   const { userData } = useAuthCtx();
   const [advocacyCategory, setAdvocacyCategory] = useState([]);
@@ -115,33 +115,59 @@ function Advocacy() {
     <section className="advocacySection">
       <div className="headFirstPart">
         {/* <div className="custContain"> */}
-          <GrowWel />
+        <GrowWel />
         {/* </div> */}
       </div>
       <div className="custContain">
         <div className="row">
           <div className="col-lg-9">
             <div className="advocayskillengage">
-              <div className="nameFigAdvo">
-                <div className="advbhdivmaingh">
-                  <figure className="advoProFig">
-                    {/* <img src={userData?.image} alt="..." /> */}
-                    {userData?.image === "image" ? (
+              {/* <div className="nameFigAdvo"> */}
+              {/* <div className="advbhdivmaingh"> */}
+              {/* <figure className="advoProFig"> */}
+              {/* <img src={userData?.image} alt="..." /> */}
+              {/* {userData?.image === "image" ? (
                       <img src={profileImg} alt="..." />
                     ) : (
                       <img src={userData?.image} alt="..." />
                     )}
-                  </figure>
-                  <div className="nameTextAdvo">
-                    <p className="proAdvoName">{`${userData?.firstName} ${userData.lastName}`}</p>
-                    <p className="proAdvoDesig">{userData?.designation}</p>
-                    {/* <p className="proAdvoEmpId">
+                  </figure> */}
+              {/* <div className="nameTextAdvo"> */}
+              {/* <p className="proAdvoName">{`${userData?.firstName} ${userData.lastName}`}</p>
+                    <p className="proAdvoDesig">{userData?.designation}</p> */}
+              {/* <p className="proAdvoEmpId">
                   Employee Id: <span>1234</span>
                 </p> */}
-                  </div>
-                </div>
+              {/* </div> */}
+              {/* </div> */}
 
-              </div>
+              {/* </div> */}
+              <div className="user_aboutnbet">
+                    <div className="bg-userdtwht" style={{ backgroundImage: `url(${bgprfldiv})` }}>
+                      <div className="bg-txtppp">
+                        {/* <p className="bghhkpp">PLATINUM</p>
+                        <p>Club</p> */}
+                      </div>
+                      <div className="divpaddingghh">
+                        <div className="prflimgdiv">
+                          <div className="prflimgbrdr">
+                            <div className="prflimgfh">
+                              <img src={userData?.image} alt="..." />
+                            </div>
+                          </div>
+                          <div className="divpatyn">
+                            <p className="thounsabpp">50,000</p>
+                            <p className="pointshttx">POINTS BALANCE</p>
+                          </div>
+                        </div>
+
+                        <div className="tstdfghmrl">
+                          <p className="txtppght">{`${userData?.firstName} ${userData.lastName}`}</p>
+                          <p className="dvjknjpp">{userData?.designation}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
               <div className="advoRateSkillDiv advocayskilldiv">
                 <RateSkills />
               </div>
