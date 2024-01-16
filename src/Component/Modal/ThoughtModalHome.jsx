@@ -62,7 +62,7 @@ export default function ThoughtModalHome({
     setModalF(true);
     closemodal();
   };
-  const handleset =(e)=>{
+  const handleset = (e) => {
     e.stopPropagation()
   }
 
@@ -214,10 +214,10 @@ export default function ThoughtModalHome({
 
   return (
     <>
-      <div className="thought_moadal_main"  onClick={() => closemodal()}>
+      <div className="thought_moadal_main" onClick={() => closemodal()}>
         <div className="thought_moadal">
           {/* <div className="Create_overlay"></div> */}
-          <div className="thought_modal_content" onClick={(e)=>handleset(e)}>
+          <div className="thought_modal_content" onClick={(e) => handleset(e)}>
             {/* <div className="close_icon" onClick={() => closemodal()}>
               <i
                 class="fa-solid fa-xmark"
@@ -469,12 +469,12 @@ export default function ThoughtModalHome({
                   </div>
                   <div className="attachpostflxdiv">
                     <div className="bsimgicon" >
-                      <BsEmojiSmileFill 
+                      <BsEmojiSmileFill
                         className=""
                         onClick={() => setIsEmoji((prev) => !prev)}
                       />
                       {isEmoji && (
-                        <EmojiPicker 
+                        <EmojiPicker
                           onEmojiClick={(emojiObject) => {
                             const emoji = emojiObject.emoji;
                             setPost((prev) => ({
@@ -515,7 +515,7 @@ export default function ThoughtModalHome({
                         </p>
                       </div>
                     </div>
-                    <div className="postimgicon" style={{cursor:"pointer"}} onClick={(e) => handlePost(e)}>
+                    <div className="postimgicon" style={{ cursor: "pointer" }} onClick={(e) => handlePost(e)}>
                       <div className="pstimg">
                         <img src={Post} alt="..." />
                       </div>
