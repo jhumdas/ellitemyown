@@ -797,13 +797,24 @@
     position: relative;
 }
 
-.manageFigDiv {
+/* .manageFigDiv {
     width: auto;
     height: 100%;
     position: absolute;
     top: 0;
     right: 0;
+} */
+.lottie-animation-vh-scroll.waveanimunique-billion-001 {
+    z-index: -1;
+    height: auto;
+    top: 0%;
+    bottom: 0%;
+    left: 25%;
+    right: 0%;
+    position:absolute;
 }
+
+
 
 .manageFig {
     height: 100%;
@@ -978,6 +989,7 @@
     top: 0;
     left: 0;
     z-index: 5;
+    overflow: hidden;
 }
 
 .banLeftFigDiv {
